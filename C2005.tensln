@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TenSolution Version="2">
   <Projects>
-    <Project Value="N:\Project\C2005\services\services.frwproject" />
     <Project Value="app\SystemUI\SystemUI.apkproject" />
+    <Project Value="framework\services\services.frwproject" />
   </Projects>
   <Settings>
     <Setting Name="solutionname" Value="Recompile Xperia JB4.3" />
