@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtuousTenProject>
+  <Settings>
+    <Setting Name="binaryname" Value="SystemUI.apk" />
+    <Setting Name="version" Value="4" />
+    <Setting Name="hassuccessfulimport" Value="True" />
+    <Setting Name="activeconfiguration" Value="c2005" />
+    <Setting Name="isdebugtarget" Value="False" />
+  </Settings>
+  <OpenDocuments />
+  <MarkedLines />
+  <ScriptConfigurations>
+    <ScriptConfiguration ConfigurationName="c2005" Description="15.5.A.1.5" Type="Apk" ID="C45557AD-5352-4C28-BCCC-5708CEF82FBB" SortOrder="21">
+      <Import SyncWith="Build, GenerateJava">
+        <VariableModule Name="TmpImportDir" Value="$(NewTmpPath())" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <UnzipModule ZipFile="$(ImportBinaryPath)" OutputDirectory="$(TmpImportDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ApkToolDecompileModule FrameworkTag="Recompile_Xperia_JB4.3" AdditionalCommandlineFlags="$(DefaultApkToolDecompileArgs)" ApkToolType="UseNewest" CustomApkToolVersion="2.0.0" DataDirectory="$(TmpImportDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <BakSmaliModule DexFileDirectory="$(TmpImportDir)" APILevel="JellyBeanMR2" AdditionalCommandlineFlags="$(DefaultBakSmaliArgs)" SmaliType="UseNewest" CustomSmaliVersion="2.0.3" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <BackupOriginalDataModule BinaryPath="$(ImportBinaryPath)" BackupDirectory="$(MiscDirectory)\Original files" IsEssential="false" IsEnabled="true" />
+        <!---->
+        <GenerateJavaModule BinaryPath="$(ImportBinaryPath)" JavaFilesDirectory="$(MiscDirectory)\JavaSrc" GenerationMethod="Procyon" IsEssential="false" IsEnabled="true" />
+        <!---->
+        <CleanupModule TargetDirectory="$(DataDirectory)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CopyModule SourceDirectory="$(TmpImportDir)" TargetDirectory="$(DataDirectory)" IsEssential="true" IsEnabled="true" />
+        <!---->
+      </Import>
+      <Build>
+        <VariableModule Name="TmpBuildDir" Value="$(NewTmpPath())" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CopyModule SourceDirectory="$(DataDirectory)" TargetDirectory="$(TmpBuildDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <SmaliModule SmaliFilesDirectory="$(TmpBuildDir)\smali" DexFileDirectory="$(TmpBuildDir)" APILevel="JellyBeanMR2" AdditionalCommandlineFlags="$(DefaultSmaliArgs)" SmaliType="UseNewest" CustomSmaliVersion="2.0.3" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ApkToolCompileModule DataDirectory="$(TmpBuildDir)" ApkToolType="UseNewest" CustomApkToolVersion="2.0.0" AdditionalCommandlineFlags="$(DefaultApkToolCompileArgs) " IsEssential="true" IsEnabled="true" />
+        <!---->
+        <VariableModule Name="BinaryFilePath" Value="$(BinaryDirectory)\$(BinaryName)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ZipModule InputDirectory="$(TmpBuildDir)" OutputZipFile="$(BinaryFilePath)" CompressionLevel="5" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <SignModule TargetFile="$(BinaryFilePath)" SignType="KeepOldSignature" CustomSignCert="N:\Project\testkey.x509.pem" CustomSignKey="N:\Project\testkey.pk8" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ZipalignModule TargetFile="$(BinaryFilePath)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <GenerateJavaModule BinaryPath="$(BinaryFilePath)" JavaFilesDirectory="$(MiscDirectory)\JavaSrc" GenerationMethod="Procyon" IsEssential="false" IsEnabled="true" />
+        <!---->
+      </Build>
+      <Push>
+        <VariableModule Name="FileToPush" Value="$(BinaryDirectory)\$(BinaryName)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CheckForUnbuildChangesModule IsEssential="false" IsEnabled="true" />
+        <!---->
+        <VerifyUnsecureBootImageModule IsEssential="false" IsEnabled="true" />
+        <!---->
+        <ADBRemountModule IsEssential="false" IsEnabled="true" />
+        <!---->
+        <ADBTransferModule TransferMethod="Push" FilePath="$(FileToPush)" PushPath="/system/app/" IsEssential="true" IsEnabled="true" />
+        <!---->
+      </Push>
+      <GenerateJava>
+        <VariableModule Name="TmpBuildDir" Value="$(NewTmpPath())" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <CopyModule SourceDirectory="$(DataDirectory)" TargetDirectory="$(TmpBuildDir)" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <SmaliModule SmaliFilesDirectory="$(TmpBuildDir)\smali" DexFileDirectory="$(TmpBuildDir)" APILevel="JellyBeanMR2" AdditionalCommandlineFlags="$(DefaultSmaliArgs)" SmaliType="UseNewest" CustomSmaliVersion="2.0.3" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <VariableModule Name="BinaryFilePath" Value="$(NewTmpPath())\tmp.bin" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <ZipModule InputDirectory="$(TmpBuildDir)" OutputZipFile="$(BinaryFilePath)" CompressionLevel="5" IsEssential="true" IsEnabled="true" />
+        <!---->
+        <GenerateJavaModule BinaryPath="$(BinaryFilePath)" JavaFilesDirectory="$(MiscDirectory)\JavaSrc" GenerationMethod="Procyon" IsEssential="false" IsEnabled="true" />
+        <!---->
+      </GenerateJava>
+    </ScriptConfiguration>
+  </ScriptConfigurations>
+</VirtuousTenProject>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">I-WLAN</string>
+    <string name="accessibility_wifi_off">I-WLAN ivaliwe.</string>
+    <string name="accessibility_no_wifi">I-WLAN ayixhunywanga.</string>
+    <string name="accessibility_wifi_one_bar">Ibha elilodwa le-WLAN.</string>
+    <string name="accessibility_wifi_two_bars">Amabha amabili we-WLAN.</string>
+    <string name="accessibility_wifi_three_bars">Amabha amathathu we-WLAN.</string>
+    <string name="accessibility_wifi_signal_full">Isiginali ye-WLAN igcwele.</string>
+    <string name="accessibility_data_connection_wifi">I-WLAN</string>
+    <string name="accessibility_quick_settings_wifi">%1$s. %2$s</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">I-WLAN ixhunyiwe</string>
+    <string name="quick_settings_wifi_label">I-WLAN</string>
+    <string name="quick_settings_wifi_off_label">I-WLAN icimile</string>
+    <string name="quick_settings_wifi_display_label">Ukuboniswa kwe-Wi-</string>
+</resources>
