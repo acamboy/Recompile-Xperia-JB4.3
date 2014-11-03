@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="toast_message_not_allow_turn_on_hotspot">Không sử dụng được điểm truy cập WLAN ở chế độ máy bay</string>
+    <string name="status_bar_settings_wifi">WLAN</string>
+    <string name="status_bar_settings_wifi_hotspot">Điểm phát sóng WLAN</string>
+    <string name="status_bar_wifi">WLAN</string>
     <string name="status_bar_settings_wifi_button">WLAN</string>
     <string name="accessibility_wifi_off">Đã tắt WLAN.</string>
     <string name="accessibility_no_wifi">Đã ngắt kết nối WLAN.</string>
@@ -13,8 +17,4 @@
     <string name="quick_settings_wifi_label">WLAN</string>
     <string name="quick_settings_wifi_off_label">Tắt WLAN</string>
     <string name="quick_settings_wifi_display_label">Hiển thị WLAN</string>
-    <string name="status_bar_settings_wifi">WLAN</string>
-    <string name="status_bar_settings_wifi_hotspot">Điểm phát sóng WLAN</string>
-    <string name="status_bar_wifi">WLAN</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">Không sử dụng được điểm truy cập WLAN ở chế độ máy bay</string>
 </resources>

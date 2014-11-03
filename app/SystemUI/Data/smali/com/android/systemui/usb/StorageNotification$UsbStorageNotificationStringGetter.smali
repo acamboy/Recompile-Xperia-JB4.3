@@ -19,7 +19,7 @@
     .locals 1
 
     .prologue
-    .line 662
+    .line 622
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/android/systemui/usb/StorageNotification$StorageNotificationStringGetter;-><init>(Lcom/android/systemui/usb/StorageNotification$1;)V
@@ -32,7 +32,7 @@
     .param p1, "x0"    # Lcom/android/systemui/usb/StorageNotification$1;
 
     .prologue
-    .line 662
+    .line 622
     invoke-direct {p0}, Lcom/android/systemui/usb/StorageNotification$UsbStorageNotificationStringGetter;-><init>()V
 
     return-void
@@ -44,8 +44,8 @@
     .locals 1
 
     .prologue
-    .line 672
-    const v0, 0x10405b2
+    .line 632
+    const v0, 0x10405ac
 
     return v0
 .end method
@@ -54,8 +54,8 @@
     .locals 1
 
     .prologue
-    .line 704
-    const v0, 0x10405b6
+    .line 664
+    const v0, 0x10405b0
 
     return v0
 .end method
@@ -64,8 +64,8 @@
     .locals 1
 
     .prologue
-    .line 696
-    const v0, 0x10405ae
+    .line 656
+    const v0, 0x10405a8
 
     return v0
 .end method
@@ -74,8 +74,8 @@
     .locals 1
 
     .prologue
-    .line 688
-    const v0, 0x10405b4
+    .line 648
+    const v0, 0x10405ae
 
     return v0
 .end method
@@ -84,8 +84,8 @@
     .locals 1
 
     .prologue
-    .line 680
-    const v0, 0x10405b0
+    .line 640
+    const v0, 0x10405aa
 
     return v0
 .end method
@@ -94,8 +94,8 @@
     .locals 1
 
     .prologue
-    .line 668
-    const v0, 0x10405b1
+    .line 628
+    const v0, 0x10405ab
 
     return v0
 .end method
@@ -104,8 +104,8 @@
     .locals 1
 
     .prologue
-    .line 664
-    const v0, 0x10405ac
+    .line 624
+    const v0, 0x10405a6
 
     return v0
 .end method
@@ -114,8 +114,8 @@
     .locals 1
 
     .prologue
-    .line 700
-    const v0, 0x10405b5
+    .line 660
+    const v0, 0x10405af
 
     return v0
 .end method
@@ -124,8 +124,8 @@
     .locals 1
 
     .prologue
-    .line 692
-    const v0, 0x10405ad
+    .line 652
+    const v0, 0x10405a7
 
     return v0
 .end method
@@ -134,8 +134,8 @@
     .locals 1
 
     .prologue
-    .line 684
-    const v0, 0x10405b3
+    .line 644
+    const v0, 0x10405ad
 
     return v0
 .end method
@@ -144,8 +144,8 @@
     .locals 1
 
     .prologue
-    .line 676
-    const v0, 0x10405af
+    .line 636
+    const v0, 0x10405a9
 
     return v0
 .end method

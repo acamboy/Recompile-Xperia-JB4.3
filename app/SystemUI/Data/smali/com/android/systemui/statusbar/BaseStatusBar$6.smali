@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 624
+    .line 623
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$6;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -40,20 +40,20 @@
     .locals 4
 
     .prologue
-    .line 626
+    .line 625
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.android.systemui.recent.action.WINDOW_ANIMATION_START"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 627
+    .line 626
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "com.android.systemui"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 628
+    .line 627
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$6;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
@@ -66,6 +66,6 @@
 
     invoke-virtual {v1, v0, v2}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 629
+    .line 628
     return-void
 .end method

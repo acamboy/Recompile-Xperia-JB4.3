@@ -20,18 +20,22 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
+.field final synthetic val$selectedView:Landroid/view/View;
+
 .field final synthetic val$thumbnailView:Landroid/view/View;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/recent/RecentsPanelView;Landroid/view/View;)V
+.method constructor <init>(Lcom/android/systemui/recent/RecentsPanelView;Landroid/view/View;Landroid/view/View;)V
     .locals 0
 
     .prologue
-    .line 829
+    .line 858
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsPanelView$2;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
-    iput-object p2, p0, Lcom/android/systemui/recent/RecentsPanelView$2;->val$thumbnailView:Landroid/view/View;
+    iput-object p2, p0, Lcom/android/systemui/recent/RecentsPanelView$2;->val$selectedView:Landroid/view/View;
+
+    iput-object p3, p0, Lcom/android/systemui/recent/RecentsPanelView$2;->val$thumbnailView:Landroid/view/View;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,14 +49,24 @@
     .param p1, "menu"    # Landroid/widget/PopupMenu;
 
     .prologue
-    .line 831
+    .line 862
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$2;->val$selectedView:Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->isSelected()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 863
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$2;->val$thumbnailView:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setSelected(Z)V
 
-    .line 832
+    .line 865
+    :cond_0
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$2;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     const/4 v1, 0x0
@@ -60,6 +74,6 @@
     # setter for: Lcom/android/systemui/recent/RecentsPanelView;->mPopup:Landroid/widget/PopupMenu;
     invoke-static {v0, v1}, Lcom/android/systemui/recent/RecentsPanelView;->access$1102(Lcom/android/systemui/recent/RecentsPanelView;Landroid/widget/PopupMenu;)Landroid/widget/PopupMenu;
 
-    .line 833
+    .line 866
     return-void
 .end method

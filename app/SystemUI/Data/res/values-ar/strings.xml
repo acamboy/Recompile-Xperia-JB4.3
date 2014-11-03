@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="carrier_invalid_sim_card">بطاقة SIM غير صالحة</string>
+    <string name="power_settings_instructions">سيؤدي تمكين وضع الاستعداد الموسع في إدارة الطاقة إلى تحسين العمر الافتراضي للبطارية</string>
+    <string name="battery_low_power_settings">معلومات البطارية</string>
+    <string name="toast_message_not_allow_turn_on_hotspot">نقطة اتصال بشبكة Wi-Fi غير متوفرة في وضع الطائرة</string>
+    <string name="status_bar_toolsbar_settings_title">تحديد الإعدادات السريعة</string>
+    <string name="status_bar_recent_failed_to_launch_app">تعذّر بدء التطبيق</string>
+    <string name="toast_message_maximum_number_of_tools_reached">تم تحديد الحد الأقصى لعدد الإعدادات السريعة</string>
+    <string name="status_bar_settings_airplanemode">وضع الطائرة</string>
+    <string name="status_bar_settings_autorotate">التدوير التلقائي للشاشة</string>
+    <string name="status_bar_settings_gps">نظام GPS</string>
+    <string name="status_bar_settings_settings">اختصار للإعدادات</string>
+    <string name="status_bar_settings_wifi">‏Wi-Fi</string>
+    <string name="status_bar_settings_bluetooth">‏Bluetooth</string>
+    <string name="status_bar_settings_mobile_data">مرور بيانات النقال</string>
+    <string name="status_bar_settings_brightness">السطوع</string>
+    <string name="status_bar_settings_sound">الصوت</string>
+    <string name="status_bar_settings_wifi_hotspot">نقطة اتصال Wi-Fi</string>
+    <string name="status_bar_settings_nfc">‏NFC</string>
+    <string name="status_bar_settings_roaming">تجوال</string>
+    <string name="status_bar_settings_autosync">مزامنة البيانات تلقائيًا</string>
+    <string name="status_bar_airplanemode">الطائرة</string>
+    <string name="status_bar_autorotate">تدوير تلقائي</string>
+    <string name="status_bar_gps">نظام GPS</string>
+    <string name="status_bar_settings">الإعدادات</string>
+    <string name="status_bar_wifi">‏Wi-Fi</string>
+    <string name="status_bar_bluetooth">‏Bluetooth</string>
+    <string name="status_bar_mobile_data">بيانات النقال</string>
+    <string name="status_bar_brightness">السطوع</string>
+    <string name="status_bar_sound">الصوت</string>
+    <string name="status_bar_wifi_hotspot">نقطة اتصال بالشبكة</string>
+    <string name="status_bar_nfc">‏NFC</string>
+    <string name="status_bar_roaming">تجوال</string>
+    <string name="status_bar_autosync">مزامنة تلقائية</string>
+    <string name="accessibility_state_vibrate">الاهتزاز</string>
+    <string name="quick_Settings">إعدادات سريعة</string>
+    <string name="quick_settings_description">تحديد عدد الإعدادات السريعة في لوحة الإشعار وتعديل ترتيبها</string>
+    <string name="status_bar_autosync_dialog_enable_title">تشغيل مزامنة البيانات تلقائيًا؟</string>
+    <string name="status_bar_autosync_dialog_enable_warning">"سيتم نسخ أية تغييرات تجريها على حساباتك على الويب تلقائيًا إلى الهاتف. 
+
+قد تقوم بعض الحسابات أيضًا بنسخ أية تغييرات تجريها على الهاتف إلى الويب تلقائيًا.
+
+لاختيار أنواع المعلومات المراد مزامنتها داخل كل حساب، انتقل إلى الإعدادات > الحسابات."</string>
+    <string name="status_bar_autosync_dialog_extended_enable_warning">"سيتم نسخ أية تغييرات تقوم بإدخالها على حساباتك على الويب إلى جهازك بشكل تلقائي.
+
+قد يتم كذلك نسخ أية تغييرات تجريها على الجهاز إلى الويب بشكل تلقائي.
+
+لتحديد نوع المعلومات المطلوب مزامنتها داخل الحساب، انتقل إلى الإعدادات > الحسابات.
+
+قد يتم فرض رسوم على إرسال البيانات عند إجراء تحديثات على جهازك. ويوصى باستخدام خطة بيانات غير محدودة."</string>
+    <string name="status_bar_autosync_dialog_disable_title">إيقاف مزامنة البيانات تلقائيًا؟</string>
+    <string name="status_bar_autosync_dialog_disable_warning">سيؤدي هذا إلى الحفاظ على استخدام البيانات والبطارية، ولكنك ستحتاج إلى مزامنة كل حساب يدويًا لجمع المعلومات الحديثة. ولن تتلقى إشعارات عند حدوث التحديثات.</string>
+    <string name="new_sketch">تخطيط جديد</string>
+    <string name="new_note">ملاحظة جديدة</string>
+    <string name="brightness_adapt_checkbox_information">التكيف مع ظروف الإضاءة</string>
     <string name="app_label">واجهة مستخدم النظام</string>
     <string name="status_bar_clear_all_button">مسح</string>
     <string name="status_bar_do_not_disturb_button">عدم الإزعاج</string>
@@ -108,6 +162,7 @@
     <string name="accessibility_data_connection_3g">شبكة الجيل الثالث</string>
     <string name="accessibility_data_connection_3.5g">شبكة 3.5G</string>
     <string name="accessibility_data_connection_4g">شبكة الجيل الرابع</string>
+    <string name="accessibility_data_connection_h_plus">HSPAP</string>
     <string name="accessibility_data_connection_lte">LTE</string>
     <string name="accessibility_data_connection_cdma">CDMA</string>
     <string name="accessibility_data_connection_roaming">تجوال</string>
@@ -189,73 +244,20 @@
     <string name="status_bar_help_text">"يمكنك الوصول إليها في أي وقت بالتمرير السريع إلى أسفل.
 
 يمكنك التمرير السريع إلى أسفل مرة أخرى للوصول إلى عناصر تحكم النظام."</string>
-    <string name="data_service_except_mms_warning_txt">السماح بحركة مرور البيانات؟ قد يتم فرض رسوم إضافية حسب اشتراك الشبكة. لتجنب تحمل الرسوم الإضافية، قم بتعطيل حركة مرور البيانات عند الانتهاء.</string>
-    <string name="expanded_no_simcard">ليست هناك بطاقة SIM</string>
-    <string name="accessibility_data_connection_h_plus">HSPAP</string>
-    <string name="expanded_airplane_no_service">وضع الطائرة</string>
     <string name="unmount_strings_dialog_content_txt">لا تقم بإزالة بطاقة SD أثناء الفصل</string>
     <string name="accessibility_desc_tab_quick_settings_edit">تحرير الإعدادات السريعة</string>
-    <string name="accessibility_state_vibrate">الاهتزاز</string>
-    <string name="battery_low_power_settings">معلومات البطارية</string>
-    <string name="brightness_adapt_checkbox_information">التكيف مع ظروف الإضاءة</string>
-    <string name="carrier_invalid_sim_card">بطاقة SIM غير صالحة</string>
-    <string name="new_note">ملاحظة جديدة</string>
-    <string name="new_sketch">تخطيط جديد</string>
-    <string name="power_settings_instructions">سيؤدي تمكين وضع الاستعداد الموسع في إدارة الطاقة إلى تحسين العمر الافتراضي للبطارية</string>
-    <string name="quick_Settings">إعدادات سريعة</string>
-    <string name="quick_settings_description">تحديد عدد الإعدادات السريعة في لوحة الإشعار وتعديل ترتيبها</string>
+    <string name="description_direction_left_down">اسحب قطريًا أسفل اليسار من أجل %s.</string>
+    <string name="description_direction_left_up">اسحب قطريًا أعلى اليمين لـ%s.</string>
+    <string name="description_direction_up_left">اسحب قطريًا أعلى اليمين لـ %s.</string>
+    <string name="description_direction_up_right">اسحب قطريًا أعلى اليمين لـ%s.</string>
+    <string name="description_target_sonyentrance">"What's New"</string>
     <string name="start_note_app">بدء تشغيل تطبيق الملاحظات</string>
     <string name="start_sketch_app">بدء تشغيل تطبيق التخطيطات</string>
-    <string name="status_bar_airplanemode">الطائرة</string>
-    <string name="status_bar_autorotate">تدوير تلقائي</string>
-    <string name="status_bar_autosync">مزامنة تلقائية</string>
-    <string name="status_bar_autosync_dialog_disable_title">إيقاف مزامنة البيانات تلقائيًا؟</string>
-    <string name="status_bar_autosync_dialog_disable_warning">سيؤدي هذا إلى الحفاظ على استخدام البيانات والبطارية، ولكنك ستحتاج إلى مزامنة كل حساب يدويًا لجمع المعلومات الحديثة. ولن تتلقى إشعارات عند حدوث التحديثات.</string>
-    <string name="status_bar_autosync_dialog_enable_title">تشغيل مزامنة البيانات تلقائيًا؟</string>
-    <string name="status_bar_autosync_dialog_enable_warning">"سيتم نسخ أية تغييرات تجريها على حساباتك على الويب تلقائيًا إلى الهاتف. 
-
-قد تقوم بعض الحسابات أيضًا بنسخ أية تغييرات تجريها على الهاتف إلى الويب تلقائيًا.
-
-لاختيار أنواع المعلومات المراد مزامنتها داخل كل حساب، انتقل إلى الإعدادات > الحسابات."</string>
-    <string name="status_bar_autosync_dialog_extended_enable_warning">"سيتم نسخ أية تغييرات تقوم بإدخالها على حساباتك على الويب إلى جهازك بشكل تلقائي.
-
-قد يتم كذلك نسخ أية تغييرات تجريها على الجهاز إلى الويب بشكل تلقائي.
-
-لتحديد نوع المعلومات المطلوب مزامنتها داخل الحساب، انتقل إلى الإعدادات > الحسابات.
-
-قد يتم فرض رسوم على إرسال البيانات عند إجراء تحديثات على جهازك. ويوصى باستخدام خطة بيانات غير محدودة."</string>
-    <string name="status_bar_bluetooth">‏Bluetooth</string>
-    <string name="status_bar_brightness">السطوع</string>
-    <string name="status_bar_gps">نظام GPS</string>
     <string name="status_bar_mirroring">عكس</string>
-    <string name="status_bar_mobile_data">بيانات النقال</string>
-    <string name="status_bar_nfc">‏NFC</string>
-    <string name="status_bar_recent_failed_to_launch_app">تعذّر بدء التطبيق</string>
-    <string name="status_bar_roaming">تجوال</string>
-    <string name="status_bar_settings">الإعدادات</string>
-    <string name="status_bar_settings_airplanemode">وضع الطائرة</string>
-    <string name="status_bar_settings_autorotate">التدوير التلقائي للشاشة</string>
-    <string name="status_bar_settings_autosync">مزامنة البيانات تلقائيًا</string>
-    <string name="status_bar_settings_bluetooth">‏Bluetooth</string>
-    <string name="status_bar_settings_brightness">السطوع</string>
-    <string name="status_bar_settings_gps">نظام GPS</string>
     <string name="status_bar_settings_mirroring">انعكاس الشاشة</string>
-    <string name="status_bar_settings_mobile_data">مرور بيانات النقال</string>
-    <string name="status_bar_settings_nfc">‏NFC</string>
-    <string name="status_bar_settings_roaming">تجوال</string>
-    <string name="status_bar_settings_settings">اختصار للإعدادات</string>
-    <string name="status_bar_settings_sound">الصوت</string>
-    <string name="status_bar_settings_wifi">‏Wi-Fi</string>
-    <string name="status_bar_settings_wifi_hotspot">نقطة اتصال Wi-Fi</string>
-    <string name="status_bar_sound">الصوت</string>
     <string name="status_bar_tab_notifications_title">الإشعارات</string>
     <string name="status_bar_tab_quick_settings_edit">تعديل</string>
     <string name="status_bar_tab_quick_settings_title">إعدادات سريعة</string>
-    <string name="status_bar_toolsbar_settings_title">تحديد الإعدادات السريعة</string>
-    <string name="status_bar_wifi">‏Wi-Fi</string>
-    <string name="status_bar_wifi_hotspot">نقطة اتصال بالشبكة</string>
     <string name="to_charge_use_charger_txt">لشحن جهازك، استخدم شاحن Sony™‎</string>
-    <string name="toast_message_maximum_number_of_tools_reached">تم تحديد الحد الأقصى لعدد الإعدادات السريعة</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">نقطة اتصال بشبكة Wi-Fi غير متوفرة في وضع الطائرة</string>
     <string name="usb_connected_txt">تم توصيل USB</string>
 </resources>

@@ -27,7 +27,7 @@
 
     iput-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 44
+    .line 51
     return-void
 .end method
 
@@ -35,23 +35,23 @@
     .locals 3
 
     .prologue
-    .line 98
+    .line 105
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    .line 100
+    .line 107
     .local v1, "wifiMgr":Landroid/net/wifi/WifiManager;
     const/16 v0, 0xc
 
-    .line 101
+    .line 108
     .local v0, "state":I
     if-eqz v1, :cond_0
 
-    .line 102
+    .line 109
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->getWifiApState()I
 
     move-result v0
 
-    .line 104
+    .line 111
     :cond_0
     const/16 v2, 0xd
 
@@ -72,28 +72,28 @@
     .locals 3
 
     .prologue
-    .line 88
+    .line 95
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    .line 89
+    .line 96
     .local v1, "wifiMgr":Landroid/net/wifi/WifiManager;
     if-eqz v1, :cond_0
 
-    .line 90
+    .line 97
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->getWifiApConfiguration()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v0
 
-    .line 91
+    .line 98
     .local v0, "config":Landroid/net/wifi/WifiConfiguration;
     if-eqz v0, :cond_0
 
-    .line 92
+    .line 99
     const/4 v2, 0x0
 
     invoke-virtual {v1, v0, v2}, Landroid/net/wifi/WifiManager;->setWifiApEnabled(Landroid/net/wifi/WifiConfiguration;Z)Z
 
-    .line 95
+    .line 102
     .end local v0    # "config":Landroid/net/wifi/WifiConfiguration;
     :cond_0
     return-void
@@ -106,21 +106,21 @@
     .param p1, "state"    # I
 
     .prologue
-    .line 77
+    .line 84
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    .line 78
+    .line 85
     .local v1, "wifiManager":Landroid/net/wifi/WifiManager;
     if-eqz v1, :cond_1
 
-    .line 79
+    .line 86
     const/4 v2, 0x2
 
     if-ne p1, v2, :cond_2
 
     const/4 v0, 0x1
 
-    .line 80
+    .line 87
     .local v0, "enable":Z
     :goto_0
     if-eqz v0, :cond_0
@@ -131,19 +131,19 @@
 
     if-eqz v2, :cond_0
 
-    .line 81
+    .line 88
     invoke-direct {p0}, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->turnOffWifiHotspot()V
 
-    .line 83
+    .line 90
     :cond_0
     invoke-virtual {v1, v0}, Landroid/net/wifi/WifiManager;->setWifiEnabled(Z)Z
 
-    .line 85
+    .line 92
     .end local v0    # "enable":Z
     :cond_1
     return-void
 
-    .line 79
+    .line 86
     :cond_2
     const/4 v0, 0x0
 
@@ -156,40 +156,40 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 48
+    .line 55
     iget-boolean v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mIsRegistered:Z
 
     if-nez v1, :cond_0
 
-    .line 49
+    .line 56
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 50
+    .line 57
     .local v0, "wifiFilter":Landroid/content/IntentFilter;
     const-string v1, "android.net.wifi.WIFI_STATE_CHANGED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 51
+    .line 58
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsService;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 52
+    .line 59
     iput-boolean v3, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mIsRegistered:Z
 
-    .line 54
+    .line 61
     .end local v0    # "wifiFilter":Landroid/content/IntentFilter;
     :cond_0
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     if-nez v1, :cond_1
 
-    .line 55
+    .line 62
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsService;->mContext:Landroid/content/Context;
 
     const-string v2, "wifi"
@@ -202,13 +202,13 @@
 
     iput-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    .line 57
+    .line 64
     :cond_1
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     if-eqz v1, :cond_2
 
-    .line 58
+    .line 65
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
@@ -217,19 +217,50 @@
 
     if-eqz v1, :cond_3
 
-    .line 59
+    .line 66
     const/4 v1, 0x2
 
     invoke-virtual {p0, v1}, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->notifyStateChanged(I)V
 
-    .line 64
+    .line 71
     :cond_2
     :goto_0
     return-void
 
-    .line 61
+    .line 68
     :cond_3
     invoke-virtual {p0, v3}, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->notifyStateChanged(I)V
 
     goto :goto_0
+.end method
+
+.method public stop()V
+    .locals 2
+
+    .prologue
+    .line 75
+    iget-boolean v0, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mIsRegistered:Z
+
+    if-eqz v0, :cond_0
+
+    .line 76
+    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsService;->mContext:Landroid/content/Context;
+
+    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    .line 77
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mIsRegistered:Z
+
+    .line 79
+    :cond_0
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->mWifiManager:Landroid/net/wifi/WifiManager;
+
+    .line 80
+    return-void
 .end method

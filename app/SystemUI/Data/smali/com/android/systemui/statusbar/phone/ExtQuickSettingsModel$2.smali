@@ -55,7 +55,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020113
+    const v1, 0x7f02011b
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->setImageResource(I)V
 
@@ -72,7 +72,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f020112
+    const v1, 0x7f02011a
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->setImageResource(I)V
 

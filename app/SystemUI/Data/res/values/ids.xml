@@ -20,47 +20,63 @@
     <item type="id" name="global_screenshot">false</item>
     <item type="id" name="global_screenshot_flash">false</item>
     <item type="id" name="contentHolder">false</item>
-    <item type="id" name="msim_carrier_label">false</item>
-    <item type="id" name="expanded_slot_1">false</item>
-    <item type="id" name="slot_1_icon">false</item>
-    <item type="id" name="slot_1_spn">false</item>
-    <item type="id" name="expanded_slot_2">false</item>
-    <item type="id" name="slot_2_icon">false</item>
-    <item type="id" name="slot_2_spn">false</item>
-    <item type="id" name="emergence_call_text">false</item>
+    <item type="id" name="divider">false</item>
+    <item type="id" name="drag_handle">false</item>
+    <item type="id" name="settings_icon">false</item>
+    <item type="id" name="text1">false</item>
+    <item type="id" name="checkbox">false</item>
     <item type="id" name="wifi_combo">false</item>
     <item type="id" name="wifi_signal">false</item>
     <item type="id" name="wifi_inout">false</item>
     <item type="id" name="spacer">false</item>
-    <item type="id" name="slot_1">false</item>
-    <item type="id" name="mobile_slot_1">false</item>
-    <item type="id" name="disabled_sim1">false</item>
     <item type="id" name="mobile_combo">false</item>
+    <item type="id" name="sim_index">false</item>
+    <item type="id" name="no_sim">false</item>
+    <item type="id" name="call_busying">false</item>
+    <item type="id" name="telephony_separate">false</item>
+    <item type="id" name="mobile_separate_type">false</item>
+    <item type="id" name="mobile_separate_inout">false</item>
+    <item type="id" name="telephony">false</item>
     <item type="id" name="mobile_type">false</item>
     <item type="id" name="mobile_inout">false</item>
     <item type="id" name="mobile_signal">false</item>
-    <item type="id" name="no_sim">false</item>
-    <item type="id" name="slot_2">false</item>
-    <item type="id" name="mobile_slot_2">false</item>
-    <item type="id" name="disabled_sim2">false</item>
+    <item type="id" name="mobile_roaming">false</item>
     <item type="id" name="mobile_combo_sub2">false</item>
-    <item type="id" name="mobile_signal_sub2">false</item>
+    <item type="id" name="sim_index_sub2">false</item>
+    <item type="id" name="no_sim_slot2">false</item>
+    <item type="id" name="call_busying_sub2">false</item>
+    <item type="id" name="telephony_separate_sub2">false</item>
+    <item type="id" name="mobile_separate_type_sub2">false</item>
+    <item type="id" name="mobile_separate_inout_sub2">false</item>
+    <item type="id" name="telephony_sub2">false</item>
     <item type="id" name="mobile_type_sub2">false</item>
     <item type="id" name="mobile_inout_sub2">false</item>
-    <item type="id" name="no_sim_slot2">false</item>
+    <item type="id" name="mobile_signal_sub2">false</item>
+    <item type="id" name="mobile_roaming_sub2">false</item>
+    <item type="id" name="mobile_combo_sub3">false</item>
+    <item type="id" name="sim_index_sub3">false</item>
+    <item type="id" name="no_sim_slot3">false</item>
+    <item type="id" name="call_busying_sub3">false</item>
+    <item type="id" name="telephony_separate_sub3">false</item>
+    <item type="id" name="mobile_separate_type_sub3">false</item>
+    <item type="id" name="mobile_separate_inout_sub3">false</item>
+    <item type="id" name="telephony_sub3">false</item>
+    <item type="id" name="mobile_type_sub3">false</item>
+    <item type="id" name="mobile_inout_sub3">false</item>
+    <item type="id" name="mobile_signal_sub3">false</item>
+    <item type="id" name="mobile_roaming_sub3">false</item>
     <item type="id" name="airplane">false</item>
-    <item type="id" name="no_sim_card">false</item>
-    <item type="id" name="no_sim_card1">false</item>
-    <item type="id" name="no_sim_card2">false</item>
     <item type="id" name="msim_status_bar">false</item>
     <item type="id" name="opaque_bg">false</item>
+    <item type="id" name="somc_phone_status_bg">false</item>
     <item type="id" name="transparent_bg">false</item>
     <item type="id" name="light_bg">false</item>
     <item type="id" name="lights_out_bg">false</item>
     <item type="id" name="notification_lights_out">false</item>
+    <item type="id" name="operator">false</item>
     <item type="id" name="status_bar_contents">false</item>
-    <item type="id" name="notification_icon_area">false</item>
     <item type="id" name="moreIcon">false</item>
+    <item type="id" name="notification_icon_area">false</item>
     <item type="id" name="notificationIcons">false</item>
     <item type="id" name="system_icon_area">false</item>
     <item type="id" name="statusIcons">false</item>
@@ -72,12 +88,8 @@
     <item type="id" name="ticker">false</item>
     <item type="id" name="tickerIcon">false</item>
     <item type="id" name="tickerText">false</item>
-    <item type="id" name="notification_panel">false</item>
-    <item type="id" name="handle">false</item>
-    <item type="id" name="emergency_calls_only">false</item>
-    <item type="id" name="flip_settings_stub">false</item>
-    <item type="id" name="scroll">false</item>
-    <item type="id" name="latestItems">false</item>
+    <item type="id" name="rounded_corner_ul">false</item>
+    <item type="id" name="rounded_corner_ur">false</item>
     <item type="id" name="msim_panel_holder">false</item>
     <item type="id" name="quick_settings_stub">false</item>
     <item type="id" name="rot0">false</item>
@@ -99,6 +111,7 @@
     <item type="id" name="notification_adaptive_wrapper">false</item>
     <item type="id" name="recents_inject_custom_view">false</item>
     <item type="id" name="settings_panel">false</item>
+    <item type="id" name="handle">false</item>
     <item type="id" name="brightness_icon">false</item>
     <item type="id" name="brightness_slider">false</item>
     <item type="id" name="brightness_mode">false</item>
@@ -111,11 +124,19 @@
     <item type="id" name="analog_clock">false</item>
     <item type="id" name="user_imageview">false</item>
     <item type="id" name="user_textview">false</item>
+    <item type="id" name="mobile_separate">false</item>
+    <item type="id" name="mobile_separate_roaming">false</item>
+    <item type="id" name="mobile_separate_signal">false</item>
     <item type="id" name="status_bar">false</item>
     <item type="id" name="signal_cluster">false</item>
-    <item type="id" name="rounded_corner_ul">false</item>
-    <item type="id" name="rounded_corner_ur">false</item>
-    <item type="id" name="tools">false</item>
+    <item type="id" name="notification_panel">false</item>
+    <item type="id" name="emergency_calls_only">false</item>
+    <item type="id" name="flip_settings_stub">false</item>
+    <item type="id" name="scroll">false</item>
+    <item type="id" name="latestItems">false</item>
+    <item type="id" name="tools_row_0">false</item>
+    <item type="id" name="tools_row_1">false</item>
+    <item type="id" name="statusbar_hr">false</item>
     <item type="id" name="datetime">false</item>
     <item type="id" name="clock_expanded">false</item>
     <item type="id" name="date">false</item>
@@ -125,6 +146,8 @@
     <item type="id" name="settings_button_holder">false</item>
     <item type="id" name="settings_button">false</item>
     <item type="id" name="notification_button">false</item>
+    <item type="id" name="stylus_left_button">false</item>
+    <item type="id" name="stylus_right_button">false</item>
     <item type="id" name="status_bar_cling">false</item>
     <item type="id" name="ok">false</item>
     <item type="id" name="number">false</item>
@@ -134,14 +157,19 @@
     <item type="id" name="adaptive">false</item>
     <item type="id" name="bottom_glow">false</item>
     <item type="id" name="debug_info">false</item>
+    <item type="id" name="tools_button_layout">false</item>
+    <item type="id" name="tools_button_img">false</item>
+    <item type="id" name="tools_button_anim">false</item>
+    <item type="id" name="tools_button_text">false</item>
     <item type="id" name="recent_item">false</item>
     <item type="id" name="app_label">false</item>
-    <item type="id" name="app_icon">false</item>
     <item type="id" name="app_thumbnail">false</item>
     <item type="id" name="app_thumbnail_image">false</item>
     <item type="id" name="recents_callout_line">false</item>
+    <item type="id" name="app_icon">false</item>
     <item type="id" name="app_description">false</item>
     <item type="id" name="recents_root">false</item>
+    <item type="id" name="recents_inject_closeall_button">false</item>
     <item type="id" name="recents_layout">false</item>
     <item type="id" name="recents_bg_protect">false</item>
     <item type="id" name="recents_container">false</item>
@@ -231,4 +259,7 @@
     <item type="id" name="notification_inspect_item">false</item>
     <item type="id" name="recent_remove_item">false</item>
     <item type="id" name="recent_inspect_item">false</item>
+    <item type="id" name="recents_clear">false</item>
+    <item type="id" name="recents_transition_background" />
+    <item type="id" name="recents_transition_placeholder_icon" />
 </resources>

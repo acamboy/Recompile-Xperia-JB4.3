@@ -166,7 +166,7 @@
     invoke-super {p0}, Landroid/widget/FrameLayout;->onAttachedToWindow()V
 
     .line 76
-    const v3, 0x7f07004f
+    const v3, 0x7f070087
 
     invoke-virtual {p0, v3}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->findViewById(I)Landroid/view/View;
 
@@ -177,7 +177,7 @@
     iput-object v3, p0, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->latestItems:Lcom/android/systemui/statusbar/policy/NotificationRowLayout;
 
     .line 77
-    const v3, 0x7f07004e
+    const v3, 0x7f070086
 
     invoke-virtual {p0, v3}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->findViewById(I)Landroid/view/View;
 
@@ -188,7 +188,7 @@
     iput-object v3, p0, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->mScrollView:Landroid/widget/ScrollView;
 
     .line 78
-    const v3, 0x7f07004a
+    const v3, 0x7f070083
 
     invoke-virtual {p0, v3}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->findViewById(I)Landroid/view/View;
 
@@ -389,30 +389,30 @@
 
     .prologue
     .line 59
-    const v0, 0x7f070038
+    const v0, 0x7f070047
 
-    const v1, 0x7f0201da
+    const v1, 0x7f02023c
 
     invoke-direct {p0, v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->updateImageView(II)V
 
     .line 60
-    const v0, 0x7f070037
+    const v0, 0x7f070045
 
-    const v1, 0x7f0201d9
+    const v1, 0x7f02023b
 
     invoke-direct {p0, v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->updateImageView(II)V
 
     .line 61
-    const v0, 0x7f07003a
+    const v0, 0x7f070049
 
-    const v1, 0x7f0201dc
+    const v1, 0x7f02023e
 
     invoke-direct {p0, v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->updateImageView(II)V
 
     .line 62
-    const v0, 0x7f070039
+    const v0, 0x7f070048
 
-    const v1, 0x7f0201db
+    const v1, 0x7f02023d
 
     invoke-direct {p0, v0, v1}, Lcom/android/systemui/statusbar/phone/StatusBarWindowView;->updateImageView(II)V
 

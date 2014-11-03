@@ -1036,7 +1036,7 @@
     iput v1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mFlingGestureMaxOutputVelocityPx:F
 
     .line 342
-    const v1, 0x7f0c0043
+    const v1, 0x7f0c004a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -1575,7 +1575,7 @@
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
     .line 366
-    const v0, 0x7f07004b
+    const v0, 0x7f070071
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/PanelView;->findViewById(I)Landroid/view/View;
 

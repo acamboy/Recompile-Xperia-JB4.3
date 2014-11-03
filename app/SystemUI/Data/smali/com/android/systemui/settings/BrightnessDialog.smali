@@ -292,7 +292,7 @@
     invoke-virtual {v1, v3}, Landroid/view/Window;->requestFeature(I)Z
 
     .line 93
-    const v4, 0x7f04000f
+    const v4, 0x7f04000e
 
     invoke-virtual {p0, v4}, Lcom/android/systemui/settings/BrightnessDialog;->setContentView(I)V
 
@@ -302,7 +302,7 @@
     if-eqz v4, :cond_1
 
     .line 96
-    const v4, 0x7f070067
+    const v4, 0x7f070074
 
     invoke-virtual {p0, v4}, Lcom/android/systemui/settings/BrightnessDialog;->findViewById(I)Landroid/view/View;
 
@@ -349,7 +349,7 @@
 
     move-result-object v3
 
-    const v0, 0x7f070065
+    const v0, 0x7f070072
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/settings/BrightnessDialog;->findViewById(I)Landroid/view/View;
 
@@ -357,7 +357,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    const v1, 0x7f070066
+    const v1, 0x7f070073
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/settings/BrightnessDialog;->findViewById(I)Landroid/view/View;
 

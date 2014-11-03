@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="carrier_invalid_sim_card">Scheda SIM non valida</string>
+    <string name="power_settings_instructions">"L'attivazione della modalità Standby estesa in Gestione accensione ottimizzerà la durata della batteria"</string>
+    <string name="battery_low_power_settings">Info batteria</string>
+    <string name="toast_message_not_allow_turn_on_hotspot">Hotspot Wi-Fi non disponibile in modalità aereo</string>
+    <string name="status_bar_toolsbar_settings_title">Seleziona impostazioni rapide</string>
+    <string name="status_bar_recent_failed_to_launch_app">"Impossibile avviare l'applicazione"</string>
+    <string name="toast_message_maximum_number_of_tools_reached">È stato selezionato il numero massimo di impostazioni rapide</string>
+    <string name="status_bar_settings_airplanemode">Modalità Aereo</string>
+    <string name="status_bar_settings_autorotate">Ruota aut. schermo</string>
+    <string name="status_bar_settings_gps">GPS</string>
+    <string name="status_bar_settings_settings">Collegamento a Imp.</string>
+    <string name="status_bar_settings_wifi">Wi-Fi</string>
+    <string name="status_bar_settings_bluetooth">Bluetooth</string>
+    <string name="status_bar_settings_mobile_data">Traffico dati</string>
+    <string name="status_bar_settings_brightness">Luminosità</string>
+    <string name="status_bar_settings_sound">Audio</string>
+    <string name="status_bar_settings_wifi_hotspot">Hotspot Wi-Fi</string>
+    <string name="status_bar_settings_nfc">NFC</string>
+    <string name="status_bar_settings_roaming">Roaming</string>
+    <string name="status_bar_settings_autosync">Sincron. autom. dati</string>
+    <string name="status_bar_airplanemode">Aereo</string>
+    <string name="status_bar_autorotate">Ruota autom.</string>
+    <string name="status_bar_gps">GPS</string>
+    <string name="status_bar_settings">Impostazioni</string>
+    <string name="status_bar_wifi">Wi-Fi</string>
+    <string name="status_bar_bluetooth">Bluetooth</string>
+    <string name="status_bar_mobile_data">Traffico dati</string>
+    <string name="status_bar_brightness">Luminosità</string>
+    <string name="status_bar_sound">Audio</string>
+    <string name="status_bar_wifi_hotspot">Hotspot</string>
+    <string name="status_bar_nfc">NFC</string>
+    <string name="status_bar_roaming">Roaming</string>
+    <string name="status_bar_autosync">Sincronizz. automatica</string>
+    <string name="accessibility_state_vibrate">Vibrazione</string>
+    <string name="quick_Settings">Impostazioni rapide</string>
+    <string name="quick_settings_description">"Seleziona il numero di impostazioni rapide nel pannello di notifica e modificane l'ordine"</string>
+    <string name="status_bar_autosync_dialog_enable_title">Attivare sincr. autom. dati?</string>
+    <string name="status_bar_autosync_dialog_enable_warning">"Tutte le modifiche che apporti ai tuoi account sul Web verranno automaticamente copiate sul telefono.
+
+Alcuni account potrebbero inoltre copiare automaticamente sul Web tutte le modifiche che apporti sul telefono.
+
+Per selezionare il tipo di informazioni da sincronizzare con ogni account, andare a Impostazioni > Account."</string>
+    <string name="status_bar_autosync_dialog_extended_enable_warning">"Qualsiasi modifica apportata ai propri account sul Web verrà copiata automaticamente nel dispositivo.
+
+Alcuni account, possono inoltre copiare automaticamente sul Web tutte le modifiche apportate nel dispositivo.
+
+Per selezionare il tipo di informazioni da sincronizzare con ogni account, andare a Impostazioni > Account.
+
+Possono essere addebitati dei costi per la trasmissione dei dati quando si aggiorna il dispositivo. È consigliabile un piano dati illimitato."</string>
+    <string name="status_bar_autosync_dialog_disable_title">Disattivare sincr. autom. dati?</string>
+    <string name="status_bar_autosync_dialog_disable_warning">"In questo modo limiterai l'utilizzo di dati e della batteria, ma dovrai sincronizzare ciascun account manualmente per raccogliere le informazioni recenti. Inoltre non riceverai notifiche quando si verificano gli aggiornamenti."</string>
+    <string name="new_sketch">Nuovo schizzo</string>
+    <string name="new_note">Nuova nota</string>
+    <string name="brightness_adapt_checkbox_information">Adatta alle condizioni di luminosità</string>
     <string name="app_label">UI sistema</string>
     <string name="status_bar_clear_all_button">Canc.</string>
     <string name="status_bar_do_not_disturb_button">Non disturbare</string>
@@ -107,6 +161,7 @@ Utilizza solo il caricatore in dotazione."</string>
     <string name="accessibility_data_connection_3g">3G</string>
     <string name="accessibility_data_connection_3.5g">3.5G</string>
     <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_h_plus">HSPAP</string>
     <string name="accessibility_data_connection_lte">LTE</string>
     <string name="accessibility_data_connection_cdma">CDMA</string>
     <string name="accessibility_data_connection_roaming">Roaming</string>
@@ -188,73 +243,20 @@ Se riattivi i dati, l'operatore potrebbe addebitarti un costo."</string>
     <string name="status_bar_help_text">"Puoi accedervi in qualsiasi momento scorrendo verso il basso.
 
 Fai scorrere di nuovo verso il basso per visualizzare i controlli del sistema."</string>
-    <string name="data_service_except_mms_warning_txt">Consentire il traffico di dati? Possono essere addebitati dei costi aggiuntivi in base ai termini di sottoscrizione alla rete. Per evitare costi aggiuntivi, disabilitare il traffico dati al termine.</string>
-    <string name="expanded_no_simcard">Nessuna scheda SIM</string>
-    <string name="accessibility_data_connection_h_plus">HSPAP</string>
-    <string name="expanded_airplane_no_service">Modalità aereo</string>
     <string name="unmount_strings_dialog_content_txt">Non rimuovere la scheda SD mentre è in corso la disconnessione</string>
     <string name="accessibility_desc_tab_quick_settings_edit">Modifica impostazioni rapide</string>
-    <string name="accessibility_state_vibrate">Vibrazione</string>
-    <string name="battery_low_power_settings">Info batteria</string>
-    <string name="brightness_adapt_checkbox_information">Adatta alle condizioni di luminosità</string>
-    <string name="carrier_invalid_sim_card">Scheda SIM non valida</string>
-    <string name="new_note">Nuova nota</string>
-    <string name="new_sketch">Nuovo schizzo</string>
-    <string name="power_settings_instructions">"L'attivazione della modalità Standby estesa in Gestione accensione ottimizzerà la durata della batteria"</string>
-    <string name="quick_Settings">Impostazioni rapide</string>
-    <string name="quick_settings_description">"Seleziona il numero di impostazioni rapide nel pannello di notifica e modificane l'ordine"</string>
+    <string name="description_direction_left_down">Scorri in diagonale in basso verso sinistra per %s.</string>
+    <string name="description_direction_left_up">Scorri in diagonale in alto verso sinistra per %s.</string>
+    <string name="description_direction_up_left">Scorri in diagonale in alto verso sinistra per %s.</string>
+    <string name="description_direction_up_right">Scorri in diagonale in alto verso destra per %s.</string>
+    <string name="description_target_sonyentrance">Novità</string>
     <string name="start_note_app">Avvia app note</string>
     <string name="start_sketch_app">Avvia app sketch</string>
-    <string name="status_bar_airplanemode">Aereo</string>
-    <string name="status_bar_autorotate">Ruota autom.</string>
-    <string name="status_bar_autosync">Sincronizz. automatica</string>
-    <string name="status_bar_autosync_dialog_disable_title">Disattivare sincr. autom. dati?</string>
-    <string name="status_bar_autosync_dialog_disable_warning">"In questo modo limiterai l'utilizzo di dati e della batteria, ma dovrai sincronizzare ciascun account manualmente per raccogliere le informazioni recenti. Inoltre non riceverai notifiche quando si verificano gli aggiornamenti."</string>
-    <string name="status_bar_autosync_dialog_enable_title">Attivare sincr. autom. dati?</string>
-    <string name="status_bar_autosync_dialog_enable_warning">"Tutte le modifiche che apporti ai tuoi account sul Web verranno automaticamente copiate sul telefono.
-
-Alcuni account potrebbero inoltre copiare automaticamente sul Web tutte le modifiche che apporti sul telefono.
-
-Per selezionare il tipo di informazioni da sincronizzare con ogni account, andare a Impostazioni > Account."</string>
-    <string name="status_bar_autosync_dialog_extended_enable_warning">"Qualsiasi modifica apportata ai propri account sul Web verrà copiata automaticamente nel dispositivo.
-
-Alcuni account, possono inoltre copiare automaticamente sul Web tutte le modifiche apportate nel dispositivo.
-
-Per selezionare il tipo di informazioni da sincronizzare con ogni account, andare a Impostazioni > Account.
-
-Possono essere addebitati dei costi per la trasmissione dei dati quando si aggiorna il dispositivo. È consigliabile un piano dati illimitato."</string>
-    <string name="status_bar_bluetooth">Bluetooth</string>
-    <string name="status_bar_brightness">Luminosità</string>
-    <string name="status_bar_gps">GPS</string>
     <string name="status_bar_mirroring">Mirroring</string>
-    <string name="status_bar_mobile_data">Traffico dati</string>
-    <string name="status_bar_nfc">NFC</string>
-    <string name="status_bar_recent_failed_to_launch_app">"Impossibile avviare l'applicazione"</string>
-    <string name="status_bar_roaming">Roaming</string>
-    <string name="status_bar_settings">Impostazioni</string>
-    <string name="status_bar_settings_airplanemode">Modalità Aereo</string>
-    <string name="status_bar_settings_autorotate">Ruota aut. schermo</string>
-    <string name="status_bar_settings_autosync">Sincron. autom. dati</string>
-    <string name="status_bar_settings_bluetooth">Bluetooth</string>
-    <string name="status_bar_settings_brightness">Luminosità</string>
-    <string name="status_bar_settings_gps">GPS</string>
     <string name="status_bar_settings_mirroring">Mirroring schermo</string>
-    <string name="status_bar_settings_mobile_data">Traffico dati</string>
-    <string name="status_bar_settings_nfc">NFC</string>
-    <string name="status_bar_settings_roaming">Roaming</string>
-    <string name="status_bar_settings_settings">Collegamento a Imp.</string>
-    <string name="status_bar_settings_sound">Audio</string>
-    <string name="status_bar_settings_wifi">Wi-Fi</string>
-    <string name="status_bar_settings_wifi_hotspot">Hotspot Wi-Fi</string>
-    <string name="status_bar_sound">Audio</string>
     <string name="status_bar_tab_notifications_title">Notifiche</string>
     <string name="status_bar_tab_quick_settings_edit">Modifica</string>
     <string name="status_bar_tab_quick_settings_title">Imp. rapide</string>
-    <string name="status_bar_toolsbar_settings_title">Seleziona impostazioni rapide</string>
-    <string name="status_bar_wifi">Wi-Fi</string>
-    <string name="status_bar_wifi_hotspot">Hotspot</string>
     <string name="to_charge_use_charger_txt">Per caricare il dispositivo, utilizza il caricatore Sony™</string>
-    <string name="toast_message_maximum_number_of_tools_reached">È stato selezionato il numero massimo di impostazioni rapide</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">Hotspot Wi-Fi non disponibile in modalità aereo</string>
     <string name="usb_connected_txt">USB connessa</string>
 </resources>

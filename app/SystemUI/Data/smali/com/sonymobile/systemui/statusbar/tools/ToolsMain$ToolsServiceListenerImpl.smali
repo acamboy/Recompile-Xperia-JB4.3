@@ -27,13 +27,13 @@
     .param p1, "button"    # Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     .prologue
-    .line 249
+    .line 653
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 250
+    .line 654
     iput-object p1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsMain$ToolsServiceListenerImpl;->mButton:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
-    .line 251
+    .line 655
     return-void
 .end method
 
@@ -44,12 +44,12 @@
     .param p1, "state"    # I
 
     .prologue
-    .line 266
+    .line 670
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsMain$ToolsServiceListenerImpl;->mButton:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     invoke-virtual {v0, p1}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->startAnimate(I)V
 
-    .line 267
+    .line 671
     return-void
 .end method
 
@@ -57,14 +57,14 @@
     .locals 2
 
     .prologue
-    .line 261
+    .line 665
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsMain$ToolsServiceListenerImpl;->mButton:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->stopAnimate(Z)V
 
-    .line 262
+    .line 666
     return-void
 .end method
 
@@ -73,18 +73,18 @@
     .param p1, "state"    # I
 
     .prologue
-    .line 255
+    .line 659
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsMain$ToolsServiceListenerImpl;->mButton:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->stopAnimate(Z)V
 
-    .line 256
+    .line 660
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsMain$ToolsServiceListenerImpl;->mButton:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     invoke-virtual {v0, p1}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->setState(I)V
 
-    .line 257
+    .line 661
     return-void
 .end method

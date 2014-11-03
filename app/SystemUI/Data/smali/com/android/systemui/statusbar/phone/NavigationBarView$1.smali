@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 262
+    .line 258
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$1;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,14 +44,14 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 265
+    .line 261
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 269
+    .line 265
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$1;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$1;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
@@ -60,7 +60,7 @@
 
     invoke-virtual {v0, v3, v1, v3, v3}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setLowProfile(ZZZZ)V
 
-    .line 272
+    .line 268
     :try_start_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$1;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
@@ -74,12 +74,12 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 276
+    .line 272
     :cond_0
     :goto_0
     return v3
 
-    .line 273
+    .line 269
     :catch_0
     move-exception v0
 

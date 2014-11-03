@@ -410,7 +410,7 @@
     if-nez v5, :cond_0
 
     .line 74
-    const v5, 0x7f0a0023
+    const v5, 0x7f0a0055
 
     new-array v6, v6, [Ljava/lang/Object;
 
@@ -498,7 +498,7 @@
     .line 91
     iget-object v5, p0, Lcom/android/systemui/usb/UsbConfirmActivity;->mAlwaysUse:Landroid/widget/CheckBox;
 
-    const v6, 0x7f0a0028
+    const v6, 0x7f0a005a
 
     invoke-virtual {v5, v6}, Landroid/widget/CheckBox;->setText(I)V
 
@@ -537,7 +537,7 @@
     .line 77
     .end local v2    # "inflater":Landroid/view/LayoutInflater;
     :cond_0
-    const v5, 0x7f0a0022
+    const v5, 0x7f0a0054
 
     new-array v6, v6, [Ljava/lang/Object;
 
@@ -565,7 +565,7 @@
     :cond_1
     iget-object v5, p0, Lcom/android/systemui/usb/UsbConfirmActivity;->mAlwaysUse:Landroid/widget/CheckBox;
 
-    const v6, 0x7f0a0027
+    const v6, 0x7f0a0059
 
     invoke-virtual {v5, v6}, Landroid/widget/CheckBox;->setText(I)V
 

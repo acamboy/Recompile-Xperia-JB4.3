@@ -79,7 +79,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mUpdater:Ljava/lang/Runnable;
 
-    .line 130
+    .line 129
     new-instance v0, Lcom/android/systemui/statusbar/policy/Clock$2;
 
     invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/policy/Clock$2;-><init>(Lcom/android/systemui/statusbar/policy/Clock;)V
@@ -185,18 +185,18 @@
     .locals 20
 
     .prologue
-    .line 158
+    .line 156
     invoke-virtual/range {p0 .. p0}, Lcom/android/systemui/statusbar/policy/Clock;->getContext()Landroid/content/Context;
 
     move-result-object v7
 
-    .line 159
+    .line 157
     .local v7, "context":Landroid/content/Context;
     invoke-static {v7}, Landroid/text/format/DateFormat;->is24HourFormat(Landroid/content/Context;)Z
 
     move-result v12
 
-    .line 160
+    .line 158
     .local v12, "is24":Z
     invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -216,21 +216,21 @@
 
     move-result-object v8
 
-    .line 162
+    .line 160
     .local v8, "d":Llibcore/icu/LocaleData;
     const v2, 0xef00
 
-    .line 163
+    .line 161
     .local v2, "MAGIC1":C
     const v3, 0xef01
 
-    .line 166
+    .line 164
     .local v3, "MAGIC2":C
     if-eqz v12, :cond_2
 
     iget-object v9, v8, Llibcore/icu/LocaleData;->timeFormat24:Ljava/lang/String;
 
-    .line 167
+    .line 165
     .local v9, "format":Ljava/lang/String;
     :goto_0
     move-object/from16 v0, p0
@@ -247,14 +247,14 @@
 
     if-nez v18, :cond_7
 
-    .line 174
+    .line 172
     const/4 v4, -0x1
 
-    .line 175
+    .line 173
     .local v4, "a":I
     const/4 v15, 0x0
 
-    .line 176
+    .line 174
     .local v15, "quoted":Z
     const/4 v11, 0x0
 
@@ -268,12 +268,12 @@
 
     if-ge v11, v0, :cond_1
 
-    .line 177
+    .line 175
     invoke-virtual {v9, v11}, Ljava/lang/String;->charAt(I)C
 
     move-result v6
 
-    .line 179
+    .line 177
     .local v6, "c":C
     const/16 v18, 0x27
 
@@ -281,12 +281,12 @@
 
     if-ne v6, v0, :cond_0
 
-    .line 180
+    .line 178
     if-nez v15, :cond_3
 
     const/4 v15, 0x1
 
-    .line 182
+    .line 180
     :cond_0
     :goto_2
     if-nez v15, :cond_4
@@ -297,18 +297,18 @@
 
     if-ne v6, v0, :cond_4
 
-    .line 183
+    .line 181
     move v4, v11
 
-    .line 188
+    .line 186
     .end local v6    # "c":C
     :cond_1
     if-ltz v4, :cond_6
 
-    .line 190
+    .line 188
     move v5, v4
 
-    .line 191
+    .line 189
     .local v5, "b":I
     :goto_3
     if-lez v4, :cond_5
@@ -327,12 +327,12 @@
 
     if-eqz v18, :cond_5
 
-    .line 192
+    .line 190
     add-int/lit8 v4, v4, -0x1
 
     goto :goto_3
 
-    .line 166
+    .line 164
     .end local v4    # "a":I
     .end local v5    # "b":I
     .end local v9    # "format":Ljava/lang/String;
@@ -343,7 +343,7 @@
 
     goto :goto_0
 
-    .line 180
+    .line 178
     .restart local v4    # "a":I
     .restart local v6    # "c":C
     .restart local v9    # "format":Ljava/lang/String;
@@ -354,13 +354,13 @@
 
     goto :goto_2
 
-    .line 176
+    .line 174
     :cond_4
     add-int/lit8 v11, v11, 0x1
 
     goto :goto_1
 
-    .line 194
+    .line 192
     .end local v6    # "c":C
     .restart local v5    # "b":I
     :cond_5
@@ -422,7 +422,7 @@
 
     move-result-object v9
 
-    .line 198
+    .line 196
     .end local v5    # "b":I
     :cond_6
     new-instance v17, Ljava/text/SimpleDateFormat;
@@ -438,12 +438,12 @@
 
     iput-object v0, v1, Lcom/android/systemui/statusbar/policy/Clock;->mClockFormat:Ljava/text/SimpleDateFormat;
 
-    .line 199
+    .line 197
     move-object/from16 v0, p0
 
     iput-object v9, v0, Lcom/android/systemui/statusbar/policy/Clock;->mClockFormatString:Ljava/lang/String;
 
-    .line 203
+    .line 201
     .end local v4    # "a":I
     .end local v11    # "i":I
     .end local v15    # "quoted":Z
@@ -462,7 +462,7 @@
 
     move-result-object v16
 
-    .line 206
+    .line 204
     .local v16, "result":Ljava/lang/String;
     const v18, 0xef00
 
@@ -474,7 +474,7 @@
 
     move-result v13
 
-    .line 207
+    .line 205
     .local v13, "magic1":I
     const v18, 0xef01
 
@@ -486,20 +486,20 @@
 
     move-result v14
 
-    .line 208
+    .line 206
     .local v14, "magic2":I
     if-ltz v13, :cond_8
 
     if-le v14, v13, :cond_8
 
-    .line 209
+    .line 207
     new-instance v10, Landroid/text/SpannableStringBuilder;
 
     move-object/from16 v0, v16
 
     invoke-direct {v10, v0}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 211
+    .line 209
     .local v10, "formatted":Landroid/text/SpannableStringBuilder;
     add-int/lit8 v18, v14, 0x1
 
@@ -507,12 +507,12 @@
 
     invoke-virtual {v10, v13, v0}, Landroid/text/SpannableStringBuilder;->delete(II)Landroid/text/SpannableStringBuilder;
 
-    .line 225
+    .line 223
     .end local v10    # "formatted":Landroid/text/SpannableStringBuilder;
     :goto_5
     return-object v10
 
-    .line 201
+    .line 199
     .end local v13    # "magic1":I
     .end local v14    # "magic2":I
     .end local v16    # "result":Ljava/lang/String;
@@ -533,7 +533,7 @@
     :cond_8
     move-object/from16 v10, v16
 
-    .line 225
+    .line 223
     goto :goto_5
 .end method
 
@@ -621,13 +621,9 @@
     iput-object v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mCalendar:Ljava/util/Calendar;
 
     .line 117
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mUpdateHandler:Landroid/os/Handler;
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/Clock;->updateClock()V
 
-    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/Clock;->mUpdater:Ljava/lang/Runnable;
-
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    .line 119
+    .line 118
     return-void
 .end method
 
@@ -635,15 +631,15 @@
     .locals 2
 
     .prologue
-    .line 123
+    .line 122
     invoke-super {p0}, Landroid/widget/TextView;->onDetachedFromWindow()V
 
-    .line 124
+    .line 123
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mAttached:Z
 
     if-eqz v0, :cond_0
 
-    .line 125
+    .line 124
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/Clock;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -652,12 +648,12 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 126
+    .line 125
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mAttached:Z
 
-    .line 128
+    .line 127
     :cond_0
     return-void
 .end method
@@ -666,7 +662,7 @@
     .locals 3
 
     .prologue
-    .line 153
+    .line 151
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mCalendar:Ljava/util/Calendar;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -675,13 +671,13 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/Calendar;->setTimeInMillis(J)V
 
-    .line 154
+    .line 152
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/Clock;->getSmallTime()Ljava/lang/CharSequence;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/Clock;->setText(Ljava/lang/CharSequence;)V
 
-    .line 155
+    .line 153
     return-void
 .end method

@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 32
+    .line 36
     invoke-direct {p0}, Lcom/android/systemui/statusbar/BaseStatusBar;-><init>()V
 
     return-void
@@ -24,7 +24,7 @@
     .param p4, "icon"    # Lcom/android/internal/statusbar/StatusBarIcon;
 
     .prologue
-    .line 36
+    .line 40
     return-void
 .end method
 
@@ -34,7 +34,7 @@
     .param p2, "notification"    # Landroid/service/notification/StatusBarNotification;
 
     .prologue
-    .line 49
+    .line 53
     return-void
 .end method
 
@@ -43,7 +43,7 @@
     .param p1, "flags"    # I
 
     .prologue
-    .line 69
+    .line 73
     return-void
 .end method
 
@@ -51,7 +51,7 @@
     .locals 0
 
     .prologue
-    .line 65
+    .line 69
     return-void
 .end method
 
@@ -59,7 +59,7 @@
     .locals 0
 
     .prologue
-    .line 147
+    .line 156
     return-void
 .end method
 
@@ -67,7 +67,7 @@
     .locals 0
 
     .prologue
-    .line 97
+    .line 106
     return-void
 .end method
 
@@ -76,7 +76,7 @@
     .param p1, "state"    # I
 
     .prologue
-    .line 61
+    .line 65
     return-void
 .end method
 
@@ -85,7 +85,7 @@
     .param p1, "layoutParams"    # Landroid/view/ViewGroup$LayoutParams;
 
     .prologue
-    .line 108
+    .line 117
     const/4 v0, 0x0
 
     return-object v0
@@ -95,7 +95,7 @@
     .locals 1
 
     .prologue
-    .line 142
+    .line 151
     const/4 v0, 0x0
 
     return-object v0
@@ -105,7 +105,7 @@
     .locals 0
 
     .prologue
-    .line 113
+    .line 122
     return-void
 .end method
 
@@ -114,7 +114,7 @@
     .param p1, "flag"    # I
 
     .prologue
-    .line 155
+    .line 164
     const/4 v0, 0x0
 
     return v0
@@ -125,7 +125,7 @@
     .param p1, "layoutDirection"    # I
 
     .prologue
-    .line 151
+    .line 160
     return-void
 .end method
 
@@ -136,7 +136,7 @@
     .param p3, "viewIndex"    # I
 
     .prologue
-    .line 45
+    .line 49
     return-void
 .end method
 
@@ -145,7 +145,7 @@
     .param p1, "key"    # Landroid/os/IBinder;
 
     .prologue
-    .line 57
+    .line 61
     return-void
 .end method
 
@@ -153,7 +153,7 @@
     .locals 0
 
     .prologue
-    .line 117
+    .line 126
     return-void
 .end method
 
@@ -163,7 +163,7 @@
     .param p2, "enabled"    # Z
 
     .prologue
-    .line 85
+    .line 94
     return-void
 .end method
 
@@ -174,7 +174,16 @@
     .param p3, "backDisposition"    # I
 
     .prologue
-    .line 81
+    .line 90
+    return-void
+.end method
+
+.method public setNavigationBarHide(I)V
+    .locals 0
+    .param p1, "isHide"    # I
+
+    .prologue
+    .line 77
     return-void
 .end method
 
@@ -183,7 +192,16 @@
     .param p1, "hints"    # I
 
     .prologue
-    .line 93
+    .line 102
+    return-void
+.end method
+
+.method public setSystemBarAlpha(I)V
+    .locals 0
+    .param p1, "color"    # I
+
+    .prologue
+    .line 76
     return-void
 .end method
 
@@ -193,7 +211,7 @@
     .param p2, "mask"    # I
 
     .prologue
-    .line 73
+    .line 82
     return-void
 .end method
 
@@ -201,7 +219,7 @@
     .locals 1
 
     .prologue
-    .line 138
+    .line 147
     const/4 v0, 0x1
 
     return v0
@@ -214,7 +232,7 @@
     .param p3, "firstTime"    # Z
 
     .prologue
-    .line 125
+    .line 134
     return-void
 .end method
 
@@ -222,7 +240,7 @@
     .locals 0
 
     .prologue
-    .line 89
+    .line 98
     return-void
 .end method
 
@@ -231,7 +249,7 @@
     .param p1, "visible"    # Z
 
     .prologue
-    .line 77
+    .line 86
     return-void
 .end method
 
@@ -240,7 +258,7 @@
     .param p1, "expandedPosition"    # I
 
     .prologue
-    .line 129
+    .line 138
     return-void
 .end method
 
@@ -253,7 +271,7 @@
     .param p5, "icon"    # Lcom/android/internal/statusbar/StatusBarIcon;
 
     .prologue
-    .line 41
+    .line 45
     return-void
 .end method
 
@@ -263,7 +281,7 @@
     .param p2, "notification"    # Landroid/service/notification/StatusBarNotification;
 
     .prologue
-    .line 53
+    .line 57
     return-void
 .end method
 
@@ -271,6 +289,6 @@
     .locals 0
 
     .prologue
-    .line 121
+    .line 130
     return-void
 .end method

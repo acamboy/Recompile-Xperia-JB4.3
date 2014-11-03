@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 216
+    .line 241
     iput-object p1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$4;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -40,13 +40,13 @@
     .locals 2
 
     .prologue
-    .line 220
+    .line 245
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$4;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->stopAnimate(Z)V
 
-    .line 221
+    .line 246
     return-void
 .end method

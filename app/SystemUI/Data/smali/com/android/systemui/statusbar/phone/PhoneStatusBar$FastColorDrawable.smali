@@ -24,17 +24,17 @@
     .param p1, "color"    # I
 
     .prologue
-    .line 3123
+    .line 3837
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
-    .line 3124
+    .line 3838
     const/high16 v0, -0x1000000
 
     or-int/2addr v0, p1
 
     iput v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$FastColorDrawable;->mColor:I
 
-    .line 3125
+    .line 3839
     return-void
 .end method
 
@@ -45,14 +45,14 @@
     .param p1, "canvas"    # Landroid/graphics/Canvas;
 
     .prologue
-    .line 3129
+    .line 3843
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$FastColorDrawable;->mColor:I
 
     sget-object v1, Landroid/graphics/PorterDuff$Mode;->SRC:Landroid/graphics/PorterDuff$Mode;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
 
-    .line 3130
+    .line 3844
     return-void
 .end method
 
@@ -60,7 +60,7 @@
     .locals 1
 
     .prologue
-    .line 3142
+    .line 3856
     const/4 v0, -0x1
 
     return v0
@@ -71,7 +71,7 @@
     .param p1, "alpha"    # I
 
     .prologue
-    .line 3134
+    .line 3848
     return-void
 .end method
 
@@ -83,7 +83,7 @@
     .param p4, "bottom"    # I
 
     .prologue
-    .line 3147
+    .line 3861
     return-void
 .end method
 
@@ -92,7 +92,7 @@
     .param p1, "bounds"    # Landroid/graphics/Rect;
 
     .prologue
-    .line 3151
+    .line 3865
     return-void
 .end method
 
@@ -101,6 +101,6 @@
     .param p1, "cf"    # Landroid/graphics/ColorFilter;
 
     .prologue
-    .line 3138
+    .line 3852
     return-void
 .end method

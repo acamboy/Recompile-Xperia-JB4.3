@@ -42,7 +42,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c003e
+    const v2, 0x7f0c0044
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -53,7 +53,7 @@
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 44
-    const v0, 0x7f020105
+    const v0, 0x7f02010d
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->setBackgroundResource(I)V
 
@@ -62,7 +62,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f040012
+    const v1, 0x7f040011
 
     const/4 v2, 0x0
 
@@ -77,7 +77,7 @@
     invoke-virtual {p0, v0, v1}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 50
-    const v0, 0x7f070069
+    const v0, 0x7f070076
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->findViewById(I)Landroid/view/View;
 

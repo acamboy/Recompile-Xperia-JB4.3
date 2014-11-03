@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 184
+    .line 206
     iput-object p1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 188
+    .line 210
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     # getter for: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->mAnimationFrames:Ljava/util/ArrayList;
@@ -65,12 +65,12 @@
 
     if-nez v0, :cond_1
 
-    .line 212
+    .line 237
     :cond_0
     :goto_0
     return-void
 
-    .line 192
+    .line 214
     :cond_1
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
@@ -83,13 +83,13 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 194
+    .line 216
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     # setter for: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->mCurrentAnimationImage:I
     invoke-static {v0, v2}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$202(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;I)I
 
-    .line 200
+    .line 222
     :goto_1
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
@@ -111,13 +111,13 @@
 
     if-lt v0, v1, :cond_3
 
-    .line 202
+    .line 224
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     # setter for: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->mCurrentAnimationImage:I
     invoke-static {v0, v2}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$202(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;I)I
 
-    .line 203
+    .line 225
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     # getter for: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->mStopAnimation:Z
@@ -127,16 +127,35 @@
 
     if-eqz v0, :cond_3
 
-    .line 204
+    .line 226
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->stopAnimate(Z)V
 
+    .line 227
+    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
+
+    # setter for: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->mStopAnimation:Z
+    invoke-static {v0, v2}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$302(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;Z)Z
+
+    .line 229
+    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
+
+    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
+
+    # getter for: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->mLabel:Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$400(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;)Landroid/widget/TextView;
+
+    move-result-object v1
+
+    # invokes: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->colorize(Landroid/widget/TextView;)V
+    invoke-static {v0, v1}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$500(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;Landroid/widget/TextView;)V
+
     goto :goto_0
 
-    .line 197
+    .line 219
     :cond_2
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
@@ -145,14 +164,14 @@
 
     goto :goto_1
 
-    .line 209
+    .line 234
     :cond_3
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     # getter for: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->mAnimationView:Landroid/widget/ImageView;
-    invoke-static {v0}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$400(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$600(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;)Landroid/widget/ImageView;
 
     move-result-object v2
 
@@ -201,20 +220,20 @@
     iget-boolean v0, v0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$ToolsBitmap;->colorize:Z
 
     # invokes: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->setImageBitmap(Landroid/widget/ImageView;Landroid/graphics/Bitmap;Z)V
-    invoke-static {v1, v2, v3, v0}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$500(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;Landroid/widget/ImageView;Landroid/graphics/Bitmap;Z)V
+    invoke-static {v1, v2, v3, v0}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$700(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;Landroid/widget/ImageView;Landroid/graphics/Bitmap;Z)V
 
-    .line 211
+    .line 236
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     # getter for: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->mAnimationHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$700(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$900(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$3;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     # getter for: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->mAnimationRunner:Ljava/lang/Runnable;
-    invoke-static {v1}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$600(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->access$800(Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;)Ljava/lang/Runnable;
 
     move-result-object v1
 
@@ -222,5 +241,5 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    goto :goto_0
+    goto/16 :goto_0
 .end method

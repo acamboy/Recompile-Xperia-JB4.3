@@ -58,7 +58,7 @@
 
     .line 54
     .local v1, "res":Landroid/content/res/Resources;
-    const v3, 0x7f080006
+    const v3, 0x7f080009
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -67,7 +67,7 @@
     iput v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mScrimColor:I
 
     .line 55
-    const v3, 0x7f0c003b
+    const v3, 0x7f0c0040
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -76,7 +76,7 @@
     iput v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mSettingsPanelDragzoneMin:F
 
     .line 57
-    const v3, 0x7f0c003a
+    const v3, 0x7f0c003f
 
     const/4 v4, 0x1
 
@@ -138,7 +138,7 @@
 
     move-result v0
 
-    const v1, 0x7f07004a
+    const v1, 0x7f070083
 
     if-ne v0, v1, :cond_1
 
@@ -166,7 +166,7 @@
 
     move-result v0
 
-    const v1, 0x7f070064
+    const v1, 0x7f070070
 
     if-ne v0, v1, :cond_0
 

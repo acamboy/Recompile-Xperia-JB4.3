@@ -276,7 +276,7 @@
 
     .line 76
     :cond_3
-    const v4, 0x7f0a0025
+    const v4, 0x7f0a0057
 
     invoke-virtual {p0, v4}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->getString(I)Ljava/lang/String;
 
@@ -286,7 +286,7 @@
 
     .line 78
     :cond_4
-    const v4, 0x7f0a0024
+    const v4, 0x7f0a0056
 
     const/4 v5, 0x1
 
@@ -305,7 +305,7 @@
     iput-object v4, v0, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
     .line 79
-    const v4, 0x7f0a0026
+    const v4, 0x7f0a0058
 
     invoke-virtual {p0, v4}, Lcom/android/systemui/usb/UsbAccessoryUriActivity;->getString(I)Ljava/lang/String;
 

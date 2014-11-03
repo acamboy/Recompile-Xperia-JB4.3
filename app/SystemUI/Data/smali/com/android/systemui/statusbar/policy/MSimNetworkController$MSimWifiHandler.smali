@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 590
+    .line 594
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimWifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;-><init>(Lcom/android/systemui/statusbar/policy/NetworkController;)V
@@ -38,20 +38,20 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 593
+    .line 597
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 602
+    .line 606
     invoke-super {p0, p1}, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->handleMessage(Landroid/os/Message;)V
 
-    .line 605
+    .line 609
     :cond_0
     :goto_0
     return-void
 
-    .line 595
+    .line 599
     :pswitch_0
     iget v0, p1, Landroid/os/Message;->arg1:I
 
@@ -61,14 +61,14 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 596
+    .line 600
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimWifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
     iput v1, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
-    .line 597
+    .line 601
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimWifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
     invoke-static {}, Landroid/telephony/MSimTelephonyManager;->getDefault()Landroid/telephony/MSimTelephonyManager;
@@ -83,7 +83,7 @@
 
     goto :goto_0
 
-    .line 593
+    .line 597
     nop
 
     :pswitch_data_0

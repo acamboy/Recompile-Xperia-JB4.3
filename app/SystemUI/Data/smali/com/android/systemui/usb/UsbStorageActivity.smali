@@ -181,7 +181,7 @@
     .locals 2
 
     .prologue
-    .line 283
+    .line 276
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mAsyncStorageHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/android/systemui/usb/UsbStorageActivity$9;
@@ -190,7 +190,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 289
+    .line 282
     return-void
 .end method
 
@@ -202,19 +202,19 @@
 
     const/4 v8, 0x1
 
-    .line 292
+    .line 285
     invoke-direct {p0}, Lcom/android/systemui/usb/UsbStorageActivity;->getMountService()Landroid/os/storage/IMountService;
 
     move-result-object v3
 
-    .line 293
+    .line 286
     .local v3, "ims":Landroid/os/storage/IMountService;
     if-nez v3, :cond_0
 
-    .line 295
+    .line 288
     invoke-direct {p0, v9}, Lcom/android/systemui/usb/UsbStorageActivity;->scheduleShowDialog(I)V
 
-    .line 297
+    .line 290
     :cond_0
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
@@ -224,18 +224,18 @@
 
     move-result-object v2
 
-    .line 298
+    .line 291
     .local v2, "extStoragePath":Ljava/lang/String;
     const/4 v5, 0x0
 
-    .line 300
+    .line 293
     .local v5, "showDialog":Z
     :try_start_0
     invoke-interface {v3, v2}, Landroid/os/storage/IMountService;->getStorageUsers(Ljava/lang/String;)[I
 
     move-result-object v6
 
-    .line 301
+    .line 294
     .local v6, "stUsers":[I
     if-eqz v6, :cond_2
 
@@ -245,23 +245,23 @@
 
     if-lez v7, :cond_2
 
-    .line 302
+    .line 295
     const/4 v5, 0x1
 
-    .line 315
+    .line 308
     .end local v6    # "stUsers":[I
     :cond_1
     :goto_0
     if-eqz v5, :cond_3
 
-    .line 317
+    .line 310
     invoke-direct {p0, v8}, Lcom/android/systemui/usb/UsbStorageActivity;->scheduleShowDialog(I)V
 
-    .line 322
+    .line 315
     :goto_1
     return-void
 
-    .line 305
+    .line 298
     .restart local v6    # "stUsers":[I
     :cond_2
     :try_start_1
@@ -273,13 +273,13 @@
 
     check-cast v0, Landroid/app/ActivityManager;
 
-    .line 306
+    .line 299
     .local v0, "am":Landroid/app/ActivityManager;
     invoke-virtual {v0}, Landroid/app/ActivityManager;->getRunningExternalApplications()Ljava/util/List;
 
     move-result-object v4
 
-    .line 307
+    .line 300
     .local v4, "infoList":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ApplicationInfo;>;"
     if-eqz v4, :cond_1
 
@@ -291,25 +291,25 @@
 
     if-lez v7, :cond_1
 
-    .line 308
+    .line 301
     const/4 v5, 0x1
 
     goto :goto_0
 
-    .line 311
+    .line 304
     .end local v0    # "am":Landroid/app/ActivityManager;
     .end local v4    # "infoList":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ApplicationInfo;>;"
     .end local v6    # "stUsers":[I
     :catch_0
     move-exception v1
 
-    .line 313
+    .line 306
     .local v1, "e":Landroid/os/RemoteException;
     invoke-direct {p0, v9}, Lcom/android/systemui/usb/UsbStorageActivity;->scheduleShowDialog(I)V
 
     goto :goto_0
 
-    .line 320
+    .line 313
     .end local v1    # "e":Landroid/os/RemoteException;
     :cond_3
     invoke-direct {p0, v8}, Lcom/android/systemui/usb/UsbStorageActivity;->switchUsbMassStorage(Z)V
@@ -441,21 +441,21 @@
     .line 155
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mIcon:Landroid/widget/ImageView;
 
-    const v1, 0x10808dd
+    const v1, 0x10808e1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 156
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mBanner:Landroid/widget/TextView;
 
-    const v1, 0x1040487
+    const v1, 0x1040484
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 157
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mMessage:Landroid/widget/TextView;
 
-    const v1, 0x1040488
+    const v1, 0x1040485
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -482,21 +482,21 @@
     .line 162
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mIcon:Landroid/widget/ImageView;
 
-    const v1, 0x10808dc
+    const v1, 0x10808e0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 163
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mBanner:Landroid/widget/TextView;
 
-    const v1, 0x104047f
+    const v1, 0x104047c
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 164
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mMessage:Landroid/widget/TextView;
 
-    const v1, 0x1040480
+    const v1, 0x104047d
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -509,25 +509,6 @@
 
     .prologue
     .line 251
-    invoke-static {}, Landroid/app/ActivityManager;->isUserAMonkey()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 252
-    const-string v0, "UsbStorageActivity"
-
-    const-string v1, "Monkey Running: Switching to UsbMassStorage disabled"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 280
-    :goto_0
-    return-void
-
-    .line 258
-    :cond_0
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mUIHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/android/systemui/usb/UsbStorageActivity$7;
@@ -536,7 +517,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 270
+    .line 263
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mAsyncStorageHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/android/systemui/usb/UsbStorageActivity$8;
@@ -545,7 +526,8 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    goto :goto_0
+    .line 273
+    return-void
 .end method
 
 
@@ -555,10 +537,10 @@
     .param p1, "dialog"    # Landroid/content/DialogInterface;
 
     .prologue
-    .line 335
+    .line 328
     invoke-virtual {p0}, Lcom/android/systemui/usb/UsbStorageActivity;->finish()V
 
-    .line 336
+    .line 329
     return-void
 .end method
 
@@ -567,26 +549,26 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 325
+    .line 318
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mMountButton:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_1
 
-    .line 327
+    .line 320
     invoke-direct {p0}, Lcom/android/systemui/usb/UsbStorageActivity;->checkStorageUsers()V
 
-    .line 332
+    .line 325
     :cond_0
     :goto_0
     return-void
 
-    .line 328
+    .line 321
     :cond_1
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mUnmountButton:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_0
 
-    .line 330
+    .line 323
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/android/systemui/usb/UsbStorageActivity;->switchUsbMassStorage(Z)V
@@ -777,7 +759,7 @@
     .param p2, "args"    # Landroid/os/Bundle;
 
     .prologue
-    const v3, 0x104048e
+    const v3, 0x104048b
 
     const/4 v0, 0x0
 
@@ -794,7 +776,7 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x104048b
+    const v2, 0x1040488
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -814,7 +796,7 @@
 
     move-result-object v0
 
-    const v1, 0x104048c
+    const v1, 0x1040489
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -836,7 +818,7 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x104048d
+    const v2, 0x104048a
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -846,7 +828,7 @@
 
     move-result-object v0
 
-    const v1, 0x1040482
+    const v1, 0x104047f
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 

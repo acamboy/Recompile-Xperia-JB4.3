@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 638
+    .line 741
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$9;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -49,13 +49,13 @@
     .param p9, "oldBottom"    # I
 
     .prologue
-    .line 642
+    .line 745
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$9;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->updateCarrierLabelVisibility(Z)V
 
-    .line 643
+    .line 746
     return-void
 .end method

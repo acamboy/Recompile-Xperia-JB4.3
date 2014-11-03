@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 150
+    .line 172
     iput-object p1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p2, "isFocused"    # Z
 
     .prologue
-    .line 154
+    .line 176
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     # getter for: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->mHighlight:Landroid/widget/ImageView;
@@ -52,10 +52,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 155
+    .line 177
     if-eqz p2, :cond_1
 
-    .line 156
+    .line 178
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 
     # getter for: Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;->mHighlight:Landroid/widget/ImageView;
@@ -67,12 +67,12 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 161
+    .line 183
     :cond_0
     :goto_0
     return-void
 
-    .line 158
+    .line 180
     :cond_1
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/ToolsButton;
 

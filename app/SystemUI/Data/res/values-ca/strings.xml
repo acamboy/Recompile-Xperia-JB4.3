@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_label">IU sistema</string>
+    <string name="carrier_invalid_sim_card">Targeta SIM no vàlida</string>
+    <string name="power_settings_instructions">"Activar el mode d'espera ampliat a la gestió de l'energia optimitzarà la durada de la bateria"</string>
+    <string name="battery_low_power_settings">Inform. de la bateria</string>
+    <string name="toast_message_not_allow_turn_on_hotspot">"El punt de connexió Wi-Fi no està disponible en mode d'avió"</string>
+    <string name="status_bar_toolsbar_settings_title">Selecciona paràmetres ràpids</string>
+    <string name="status_bar_recent_failed_to_launch_app">"No s'ha pogut iniciar l'aplicació"</string>
+    <string name="toast_message_maximum_number_of_tools_reached">"S'ha seleccionat el nombre màxim de configuracions ràpides"</string>
+    <string name="status_bar_settings_airplanemode">"Mode d'avió"</string>
+    <string name="status_bar_settings_autorotate">Gira pantalla autom.</string>
+    <string name="status_bar_settings_gps">GPS</string>
+    <string name="status_bar_settings_settings">Drecera a Paràmetres</string>
+    <string name="status_bar_settings_wifi">Wi-Fi</string>
+    <string name="status_bar_settings_bluetooth">Bluetooth</string>
+    <string name="status_bar_settings_mobile_data">Trànsit dades mòbils</string>
+    <string name="status_bar_settings_brightness">Brillantor</string>
+    <string name="status_bar_settings_sound">So</string>
+    <string name="status_bar_settings_wifi_hotspot">Punt connexió Wi-Fi</string>
+    <string name="status_bar_settings_nfc">NFC</string>
+    <string name="status_bar_settings_roaming">Itinerància</string>
+    <string name="status_bar_settings_autosync">Sinc. dades autom.</string>
+    <string name="status_bar_airplanemode">Avió</string>
+    <string name="status_bar_autorotate">Gira automàtic.</string>
+    <string name="status_bar_gps">GPS</string>
+    <string name="status_bar_settings">Paràmetres</string>
+    <string name="status_bar_wifi">Wi-Fi</string>
+    <string name="status_bar_bluetooth">Bluetooth</string>
+    <string name="status_bar_mobile_data">Dades mòbils</string>
+    <string name="status_bar_brightness">Brillantor</string>
+    <string name="status_bar_sound">So</string>
+    <string name="status_bar_wifi_hotspot">Punt de connexió</string>
+    <string name="status_bar_nfc">NFC</string>
+    <string name="status_bar_roaming">Itinerància</string>
+    <string name="status_bar_autosync">Sinc. automàtica</string>
+    <string name="accessibility_state_vibrate">Vibració</string>
+    <string name="quick_Settings">Configuracions ràpides</string>
+    <string name="quick_settings_description">"Seleccioneu el nombre de paràmetres ràpids que ha d'aparèixer al tauler de notificacions i editeu-ne l'ordre"</string>
+    <string name="status_bar_autosync_dialog_enable_title">Voleu activar la sincronització automàtica?</string>
+    <string name="status_bar_autosync_dialog_enable_warning">"Els canvis que feu als vostres comptes al web es copiaran automàticament al telèfon.
+
+És possible que alguns comptes també copiïn automàticament al web els canvis que feu al telèfon.
+
+Per triar els tipus d'informació que voleu que se sincronitzin en cada compte, aneu a Paràmetres > Comptes."</string>
+    <string name="status_bar_autosync_dialog_extended_enable_warning">"Qualsevol canvi que feu als comptes al web es copiarà automàticament al dispositiu.
+
+És possible que alguns comptes copiïn automàticament al web qualsevol canvi que feu al dispositiu.
+
+Per seleccionar quin tipus d'informació cal sincronitzar a cada compte, aneu a Paràmetres > Comptes.
+
+És possible que s'apliquin càrrecs de dades quan es facin actualitzacions del dispositiu. Es recomana contractar un pla de dades il·limitades."</string>
+    <string name="status_bar_autosync_dialog_disable_title">Voleu desactivar la sincronització automàtica?</string>
+    <string name="status_bar_autosync_dialog_disable_warning">"Es conservaran les dades i l'ús de bateria, però haureu de sincronitzar els comptes manualment per recopilar la informació recent i no rebreu notificacions quan hi hagi actualitzacions."</string>
+    <string name="new_sketch">Esbós nou</string>
+    <string name="new_note">Afegeix una nota</string>
+    <string name="brightness_adapt_checkbox_information">"Adapta la pantalla a les condicions d'il·luminació"</string>
+    <string name="app_label">IU sistema xperiaz2@xda</string>
     <string name="status_bar_clear_all_button">Esborra</string>
     <string name="status_bar_do_not_disturb_button">No molesteu</string>
     <string name="status_bar_please_disturb_button">Mostra les notificacions</string>
@@ -107,6 +161,7 @@ Utilitzeu només el carregador subministrat."</string>
     <string name="accessibility_data_connection_3g">3G</string>
     <string name="accessibility_data_connection_3.5g">3.5G</string>
     <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_h_plus">HSPAP</string>
     <string name="accessibility_data_connection_lte">LTE</string>
     <string name="accessibility_data_connection_cdma">CDMA</string>
     <string name="accessibility_data_connection_roaming">Itinerància</string>
@@ -188,73 +243,20 @@ Si heu reactivat les dades, és possible que l'operador us apliqui algun càrrec
     <string name="status_bar_help_text">"Accediu-hi en qualsevol moment fent lliscar el dit cap avall.
 
 Torneu a fer lliscar el dit cap avall per fer que es mostrin els controls del sistema."</string>
-    <string name="data_service_except_mms_warning_txt">"Voleu permetre el trànsit de dades? És possible que s'apliquin càrrecs addicionals en funció de la subscripció de xarxa. Per evitar càrrecs no desitjats, inhabiliteu el trànsit de dades quan acabeu."</string>
-    <string name="expanded_no_simcard">No hi ha cap targeta SIM.</string>
-    <string name="accessibility_data_connection_h_plus">HSPAP</string>
-    <string name="expanded_airplane_no_service">"Mode d'avió"</string>
     <string name="unmount_strings_dialog_content_txt">"No extragueu la targeta SD mentre s'està desconnectant"</string>
     <string name="accessibility_desc_tab_quick_settings_edit">Edita la configuració ràpida</string>
-    <string name="accessibility_state_vibrate">Vibració</string>
-    <string name="battery_low_power_settings">Inform. de la bateria</string>
-    <string name="brightness_adapt_checkbox_information">"Adapta la pantalla a les condicions d'il·luminació"</string>
-    <string name="carrier_invalid_sim_card">Targeta SIM no vàlida</string>
-    <string name="new_note">Afegeix una nota</string>
-    <string name="new_sketch">Esbós nou</string>
-    <string name="power_settings_instructions">"Activar el mode d'espera ampliat a la gestió de l'energia optimitzarà la durada de la bateria"</string>
-    <string name="quick_Settings">Configuracions ràpides</string>
-    <string name="quick_settings_description">"Seleccioneu el nombre de paràmetres ràpids que ha d'aparèixer al tauler de notificacions i editeu-ne l'ordre"</string>
+    <string name="description_direction_left_down">"Feu lliscar el dit en diagonal avall i a l'esquerra per %s."</string>
+    <string name="description_direction_left_up">"Feu lliscar el dit en diagonal amunt i a l'esquerra per %s."</string>
+    <string name="description_direction_up_left">"Feu lliscar el dit en diagonal amunt i a l'esquerra per %s."</string>
+    <string name="description_direction_up_right">Feu lliscar el dit en diagonal amunt i a la dreta per %s.</string>
+    <string name="description_target_sonyentrance">Novetats</string>
     <string name="start_note_app">"Inicia l'aplicació de notes"</string>
     <string name="start_sketch_app">"Inicia l'aplicació d'esbós"</string>
-    <string name="status_bar_airplanemode">Avió</string>
-    <string name="status_bar_autorotate">Gira automàtic.</string>
-    <string name="status_bar_autosync">Sinc. automàtica</string>
-    <string name="status_bar_autosync_dialog_disable_title">Voleu desactivar la sincronització automàtica?</string>
-    <string name="status_bar_autosync_dialog_disable_warning">"Es conservaran les dades i l'ús de bateria, però haureu de sincronitzar els comptes manualment per recopilar la informació recent i no rebreu notificacions quan hi hagi actualitzacions."</string>
-    <string name="status_bar_autosync_dialog_enable_title">Voleu activar la sincronització automàtica?</string>
-    <string name="status_bar_autosync_dialog_enable_warning">"Els canvis que feu als vostres comptes al web es copiaran automàticament al telèfon.
-
-És possible que alguns comptes també copiïn automàticament al web els canvis que feu al telèfon.
-
-Per triar els tipus d'informació que voleu que se sincronitzin en cada compte, aneu a Paràmetres > Comptes."</string>
-    <string name="status_bar_autosync_dialog_extended_enable_warning">"Qualsevol canvi que feu als comptes al web es copiarà automàticament al dispositiu.
-
-És possible que alguns comptes copiïn automàticament al web qualsevol canvi que feu al dispositiu.
-
-Per seleccionar quin tipus d'informació cal sincronitzar a cada compte, aneu a Paràmetres > Comptes.
-
-És possible que s'apliquin càrrecs de dades quan es facin actualitzacions del dispositiu. Es recomana contractar un pla de dades il·limitades."</string>
-    <string name="status_bar_bluetooth">Bluetooth</string>
-    <string name="status_bar_brightness">Brillantor</string>
-    <string name="status_bar_gps">GPS</string>
     <string name="status_bar_mirroring">Reflex</string>
-    <string name="status_bar_mobile_data">Dades mòbils</string>
-    <string name="status_bar_nfc">NFC</string>
-    <string name="status_bar_recent_failed_to_launch_app">"No s'ha pogut iniciar l'aplicació"</string>
-    <string name="status_bar_roaming">Itinerància</string>
-    <string name="status_bar_settings">Paràmetres</string>
-    <string name="status_bar_settings_airplanemode">"Mode d'avió"</string>
-    <string name="status_bar_settings_autorotate">Gira pantalla autom.</string>
-    <string name="status_bar_settings_autosync">Sinc. dades autom.</string>
-    <string name="status_bar_settings_bluetooth">Bluetooth</string>
-    <string name="status_bar_settings_brightness">Brillantor</string>
-    <string name="status_bar_settings_gps">GPS</string>
     <string name="status_bar_settings_mirroring">Reflex de pantalla</string>
-    <string name="status_bar_settings_mobile_data">Trànsit dades mòbils</string>
-    <string name="status_bar_settings_nfc">NFC</string>
-    <string name="status_bar_settings_roaming">Itinerància</string>
-    <string name="status_bar_settings_settings">Drecera a Paràmetres</string>
-    <string name="status_bar_settings_sound">So</string>
-    <string name="status_bar_settings_wifi">Wi-Fi</string>
-    <string name="status_bar_settings_wifi_hotspot">Punt connexió Wi-Fi</string>
-    <string name="status_bar_sound">So</string>
     <string name="status_bar_tab_notifications_title">Notificacions</string>
     <string name="status_bar_tab_quick_settings_edit">Edita</string>
     <string name="status_bar_tab_quick_settings_title">Config. ràpida</string>
-    <string name="status_bar_toolsbar_settings_title">Selecciona paràmetres ràpids</string>
-    <string name="status_bar_wifi">Wi-Fi</string>
-    <string name="status_bar_wifi_hotspot">Punt de connexió</string>
     <string name="to_charge_use_charger_txt">Per carregar el dispositiu, feu servir el carregador Sony™</string>
-    <string name="toast_message_maximum_number_of_tools_reached">"S'ha seleccionat el nombre màxim de configuracions ràpides"</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">"El punt de connexió Wi-Fi no està disponible en mode d'avió"</string>
     <string name="usb_connected_txt">USB connectat</string>
 </resources>

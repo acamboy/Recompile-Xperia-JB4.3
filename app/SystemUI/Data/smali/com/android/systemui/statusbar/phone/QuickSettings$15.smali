@@ -65,7 +65,7 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f0a0065
+    const v1, 0x7f0a0097
 
     :goto_0
     invoke-virtual {v2, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -83,7 +83,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0088
+    const v3, 0x7f0a00bb
 
     const/4 v4, 0x1
 
@@ -112,7 +112,7 @@
     .line 534
     .end local v0    # "airplaneState":Ljava/lang/String;
     :cond_0
-    const v1, 0x7f0a0066
+    const v1, 0x7f0a0098
 
     goto :goto_0
 .end method

@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 123
+    .line 128
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$1;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p2, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 126
+    .line 131
     const/4 v0, 0x1
 
     return v0

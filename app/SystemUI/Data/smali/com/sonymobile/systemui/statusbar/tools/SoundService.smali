@@ -38,44 +38,48 @@
     .param p1, "state"    # I
 
     .prologue
-    const/4 v1, 0x1
-
-    .line 91
-    if-ne p1, v1, :cond_0
-
-    .line 92
-    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/SoundService;->mAudioManager:Landroid/media/AudioManager;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setRingerMode(I)V
-
-    .line 98
-    :goto_0
-    return-void
-
-    .line 93
-    :cond_0
-    const/4 v0, 0x3
-
-    if-ne p1, v0, :cond_1
+    .line 86
+    packed-switch p1, :pswitch_data_0
 
     .line 94
-    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/SoundService;->mAudioManager:Landroid/media/AudioManager;
-
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setRingerMode(I)V
-
-    goto :goto_0
-
-    .line 96
-    :cond_1
+    :pswitch_0
     iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/SoundService;->mAudioManager:Landroid/media/AudioManager;
 
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setRingerMode(I)V
 
+    .line 97
+    :goto_0
+    return-void
+
+    .line 88
+    :pswitch_1
+    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/SoundService;->mAudioManager:Landroid/media/AudioManager;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setRingerMode(I)V
+
     goto :goto_0
+
+    .line 91
+    :pswitch_2
+    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/SoundService;->mAudioManager:Landroid/media/AudioManager;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setRingerMode(I)V
+
+    goto :goto_0
+
+    .line 86
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_1
+        :pswitch_0
+        :pswitch_2
+    .end packed-switch
 .end method
 
 .method protected notifyChanged(I)V
@@ -86,15 +90,15 @@
     .line 67
     packed-switch p1, :pswitch_data_0
 
-    .line 81
+    .line 78
     const/4 v0, -0x1
 
-    .line 86
+    .line 81
     .local v0, "state":I
     :goto_0
     invoke-virtual {p0, v0}, Lcom/sonymobile/systemui/statusbar/tools/SoundService;->notifyStateChanged(I)V
 
-    .line 87
+    .line 82
     return-void
 
     .line 69
@@ -106,21 +110,21 @@
     .restart local v0    # "state":I
     goto :goto_0
 
-    .line 73
+    .line 72
     .end local v0    # "state":I
     :pswitch_1
     const/4 v0, 0x1
 
-    .line 74
+    .line 73
     .restart local v0    # "state":I
     goto :goto_0
 
-    .line 77
+    .line 75
     .end local v0    # "state":I
     :pswitch_2
     const/4 v0, 0x3
 
-    .line 78
+    .line 76
     .restart local v0    # "state":I
     goto :goto_0
 
@@ -202,5 +206,36 @@
 
     .line 53
     :cond_2
+    return-void
+.end method
+
+.method public stop()V
+    .locals 2
+
+    .prologue
+    .line 57
+    iget-boolean v0, p0, Lcom/sonymobile/systemui/statusbar/tools/SoundService;->mReceiverRegistered:Z
+
+    if-eqz v0, :cond_0
+
+    .line 58
+    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsService;->mContext:Landroid/content/Context;
+
+    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/SoundService;->mReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    .line 59
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/sonymobile/systemui/statusbar/tools/SoundService;->mReceiverRegistered:Z
+
+    .line 61
+    :cond_0
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/SoundService;->mAudioManager:Landroid/media/AudioManager;
+
+    .line 62
     return-void
 .end method

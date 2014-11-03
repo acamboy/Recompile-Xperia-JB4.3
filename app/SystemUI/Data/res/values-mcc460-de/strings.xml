@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="toast_message_not_allow_turn_on_hotspot">WLAN-Hotspots sind im Flugmodus nicht verfügbar.</string>
+    <string name="status_bar_settings_wifi">WLAN</string>
+    <string name="status_bar_settings_wifi_hotspot">WLAN-Hotspot</string>
+    <string name="status_bar_wifi">WLAN</string>
     <string name="status_bar_settings_wifi_button">WLAN</string>
     <string name="accessibility_wifi_off">WLAN: aus</string>
     <string name="accessibility_no_wifi">WLAN getrennt</string>
@@ -13,8 +17,4 @@
     <string name="quick_settings_wifi_label">WLAN</string>
     <string name="quick_settings_wifi_off_label">WLAN aus</string>
     <string name="quick_settings_wifi_display_label">WLAN-Anzeige</string>
-    <string name="status_bar_settings_wifi">WLAN</string>
-    <string name="status_bar_settings_wifi_hotspot">WLAN-Hotspot</string>
-    <string name="status_bar_wifi">WLAN</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">WLAN-Hotspots sind im Flugmodus nicht verfügbar.</string>
 </resources>

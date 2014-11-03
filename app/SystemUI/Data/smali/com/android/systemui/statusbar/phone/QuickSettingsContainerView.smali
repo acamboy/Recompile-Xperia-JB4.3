@@ -714,7 +714,7 @@
 
     .line 56
     .local v0, "r":Landroid/content/res/Resources;
-    const v1, 0x7f0c003f
+    const v1, 0x7f0c0046
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 

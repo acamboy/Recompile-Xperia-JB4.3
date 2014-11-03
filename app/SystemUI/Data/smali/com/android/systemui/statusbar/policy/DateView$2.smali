@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 58
+    .line 56
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/DateView$2;->this$0:Lcom/android/systemui/statusbar/policy/DateView;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -39,12 +39,12 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 61
+    .line 59
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 62
+    .line 60
     .local v0, "action":Ljava/lang/String;
     const-string v1, "android.intent.action.TIME_TICK"
 
@@ -78,7 +78,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 66
+    .line 64
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/DateView$2;->this$0:Lcom/android/systemui/statusbar/policy/DateView;
 
@@ -96,7 +96,7 @@
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 69
+    .line 66
     :cond_1
     return-void
 .end method

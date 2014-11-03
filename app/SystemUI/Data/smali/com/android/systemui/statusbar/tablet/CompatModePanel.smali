@@ -304,7 +304,7 @@
 
     .prologue
     .line 56
-    const v0, 0x7f0700ab
+    const v0, 0x7f0700c7
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->findViewById(I)Landroid/view/View;
 
@@ -315,7 +315,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->mOnButton:Landroid/widget/RadioButton;
 
     .line 57
-    const v0, 0x7f0700aa
+    const v0, 0x7f0700c6
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/CompatModePanel;->findViewById(I)Landroid/view/View;
 

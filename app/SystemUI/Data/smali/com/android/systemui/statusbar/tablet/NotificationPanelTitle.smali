@@ -85,7 +85,7 @@
     .line 50
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanelTitle;->buttons:Ljava/util/ArrayList;
 
-    const v1, 0x7f07007d
+    const v1, 0x7f070092
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/NotificationPanelTitle;->findViewById(I)Landroid/view/View;
 
@@ -98,7 +98,7 @@
     .line 51
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanelTitle;->buttons:Ljava/util/ArrayList;
 
-    const v1, 0x7f07007e
+    const v1, 0x7f070093
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/NotificationPanelTitle;->findViewById(I)Landroid/view/View;
 

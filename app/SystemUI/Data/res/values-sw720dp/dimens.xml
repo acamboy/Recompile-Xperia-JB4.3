@@ -8,13 +8,15 @@
     <dimen name="status_bar_recents_app_description_text_size">18.0dip</dimen>
     <dimen name="status_bar_recents_text_fading_edge_length">20.0dip</dimen>
     <dimen name="status_bar_recents_scroll_fading_edge_length">10.0dip</dimen>
-    <dimen name="status_bar_recents_thumbnail_left_margin">28.0dip</dimen>
+    <dimen name="status_bar_recents_thumbnail_left_margin">0.0dip</dimen>
     <dimen name="status_bar_recents_text_description_padding">8.0dip</dimen>
     <dimen name="status_bar_recents_app_label_width">97.0dip</dimen>
     <dimen name="status_bar_recents_app_label_left_margin">16.0dip</dimen>
     <dimen name="status_bar_recents_app_icon_left_margin">0.0dip</dimen>
-    <dimen name="status_bar_recents_app_icon_top_margin">8.0dip</dimen>
+    <dimen name="status_bar_recents_app_icon_top_margin">0.0dip</dimen>
     <dimen name="status_bar_icon_padding">1.0dip</dimen>
+    <dimen name="task_killer_button_layout_padding_top">35.0dip</dimen>
+    <dimen name="task_killer_button_layout_padding_end">10.0dip</dimen>
     <dimen name="notification_panel_width">512.0dip</dimen>
     <dimen name="system_bar_icon_drawing_size">24.0dip</dimen>
     <item type="dimen" name="system_bar_icon_drawing_alpha">100.0%</item>

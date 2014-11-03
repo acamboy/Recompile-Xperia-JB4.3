@@ -62,19 +62,19 @@
 
     const/4 v3, 0x0
 
-    .line 378
+    .line 377
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 379
+    .line 378
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
-    .line 380
+    .line 379
     .local v9, "r":Landroid/content/res/Resources;
     iput-object p1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mContext:Landroid/content/Context;
 
-    .line 381
+    .line 380
     const-string v0, "layout_inflater"
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -83,7 +83,7 @@
 
     check-cast v8, Landroid/view/LayoutInflater;
 
-    .line 385
+    .line 384
     .local v8, "layoutInflater":Landroid/view/LayoutInflater;
     new-instance v0, Landroid/graphics/Matrix;
 
@@ -91,7 +91,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplayMatrix:Landroid/graphics/Matrix;
 
-    .line 386
+    .line 385
     const v0, 0x7f040004
 
     const/4 v2, 0x0
@@ -102,7 +102,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
-    .line 387
+    .line 386
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
     const v2, 0x7f070012
@@ -115,7 +115,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mBackgroundView:Landroid/widget/ImageView;
 
-    .line 388
+    .line 387
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
     const v2, 0x7f070013
@@ -128,7 +128,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotView:Landroid/widget/ImageView;
 
-    .line 389
+    .line 388
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
     const v2, 0x7f070014
@@ -141,14 +141,14 @@
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotFlash:Landroid/widget/ImageView;
 
-    .line 390
+    .line 389
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setFocusable(Z)V
 
-    .line 391
+    .line 390
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
     new-instance v2, Lcom/android/systemui/screenshot/GlobalScreenshot$1;
@@ -157,7 +157,7 @@
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 400
+    .line 399
     new-instance v0, Landroid/view/WindowManager$LayoutParams;
 
     const/16 v5, 0x7df
@@ -174,14 +174,14 @@
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mWindowLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
-    .line 408
+    .line 407
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mWindowLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
     const-string v1, "ScreenshotAnimation"
 
     invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 409
+    .line 408
     const-string v0, "window"
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -192,7 +192,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mWindowManager:Landroid/view/WindowManager;
 
-    .line 410
+    .line 409
     const-string v0, "notification"
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -203,7 +203,7 @@
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mNotificationManager:Landroid/app/NotificationManager;
 
-    .line 412
+    .line 411
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mWindowManager:Landroid/view/WindowManager;
 
     invoke-interface {v0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
@@ -212,21 +212,21 @@
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplay:Landroid/view/Display;
 
-    .line 413
+    .line 412
     new-instance v0, Landroid/util/DisplayMetrics;
 
     invoke-direct {v0}, Landroid/util/DisplayMetrics;-><init>()V
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
-    .line 414
+    .line 413
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplay:Landroid/view/Display;
 
     iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     invoke-virtual {v0, v1}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
 
-    .line 417
+    .line 416
     const v0, 0x1050006
 
     invoke-virtual {v9, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -235,7 +235,7 @@
 
     iput v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mNotificationIconSize:I
 
-    .line 421
+    .line 420
     const v0, 0x7f0c002b
 
     invoke-virtual {v9, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -246,7 +246,7 @@
 
     iput v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mBgPadding:F
 
-    .line 422
+    .line 421
     iget v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mBgPadding:F
 
     iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplayMetrics:Landroid/util/DisplayMetrics;
@@ -259,19 +259,19 @@
 
     iput v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mBgPaddingScale:F
 
-    .line 425
+    .line 424
     new-instance v0, Landroid/media/MediaActionSound;
 
     invoke-direct {v0}, Landroid/media/MediaActionSound;-><init>()V
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mCameraSound:Landroid/media/MediaActionSound;
 
-    .line 426
+    .line 425
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mCameraSound:Landroid/media/MediaActionSound;
 
     invoke-virtual {v0, v3}, Landroid/media/MediaActionSound;->load(I)V
 
-    .line 427
+    .line 426
     return-void
 .end method
 
@@ -281,7 +281,7 @@
     .param p1, "x1"    # Ljava/lang/Runnable;
 
     .prologue
-    .line 333
+    .line 332
     invoke-direct {p0, p1}, Lcom/android/systemui/screenshot/GlobalScreenshot;->saveScreenshotInWorkerThread(Ljava/lang/Runnable;)V
 
     return-void
@@ -292,7 +292,7 @@
     .param p0, "x0"    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     .prologue
-    .line 333
+    .line 332
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
     return-object v0
@@ -303,7 +303,7 @@
     .param p0, "x0"    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     .prologue
-    .line 333
+    .line 332
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mWindowManager:Landroid/view/WindowManager;
 
     return-object v0
@@ -315,7 +315,7 @@
     .param p1, "x1"    # Landroid/graphics/Bitmap;
 
     .prologue
-    .line 333
+    .line 332
     iput-object p1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmap:Landroid/graphics/Bitmap;
 
     return-object p1
@@ -326,7 +326,7 @@
     .param p0, "x0"    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     .prologue
-    .line 333
+    .line 332
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotView:Landroid/widget/ImageView;
 
     return-object v0
@@ -337,7 +337,7 @@
     .param p0, "x0"    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     .prologue
-    .line 333
+    .line 332
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mCameraSound:Landroid/media/MediaActionSound;
 
     return-object v0
@@ -348,7 +348,7 @@
     .param p0, "x0"    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     .prologue
-    .line 333
+    .line 332
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotAnimation:Landroid/animation/AnimatorSet;
 
     return-object v0
@@ -359,7 +359,7 @@
     .param p0, "x0"    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     .prologue
-    .line 333
+    .line 332
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mBackgroundView:Landroid/widget/ImageView;
 
     return-object v0
@@ -370,7 +370,7 @@
     .param p0, "x0"    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     .prologue
-    .line 333
+    .line 332
     iget v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mBgPaddingScale:F
 
     return v0
@@ -381,7 +381,7 @@
     .param p0, "x0"    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     .prologue
-    .line 333
+    .line 332
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotFlash:Landroid/widget/ImageView;
 
     return-object v0
@@ -391,26 +391,26 @@
     .locals 7
 
     .prologue
-    .line 558
+    .line 557
     const v3, 0x3e9aca6b
 
-    .line 560
+    .line 559
     .local v3, "flashPeakDurationPct":F
     const v2, 0x3f1aca6b
 
-    .line 561
+    .line 560
     .local v2, "flashDurationPct":F
     new-instance v1, Lcom/android/systemui/screenshot/GlobalScreenshot$4;
 
     invoke-direct {v1, p0}, Lcom/android/systemui/screenshot/GlobalScreenshot$4;-><init>(Lcom/android/systemui/screenshot/GlobalScreenshot;)V
 
-    .line 571
+    .line 570
     .local v1, "flashAlphaInterpolator":Landroid/view/animation/Interpolator;
     new-instance v4, Lcom/android/systemui/screenshot/GlobalScreenshot$5;
 
     invoke-direct {v4, p0}, Lcom/android/systemui/screenshot/GlobalScreenshot$5;-><init>(Lcom/android/systemui/screenshot/GlobalScreenshot;)V
 
-    .line 581
+    .line 580
     .local v4, "scaleInterpolator":Landroid/view/animation/Interpolator;
     const/4 v5, 0x2
 
@@ -422,30 +422,30 @@
 
     move-result-object v0
 
-    .line 582
+    .line 581
     .local v0, "anim":Landroid/animation/ValueAnimator;
     const-wide/16 v5, 0x1ae
 
     invoke-virtual {v0, v5, v6}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 583
+    .line 582
     new-instance v5, Lcom/android/systemui/screenshot/GlobalScreenshot$6;
 
     invoke-direct {v5, p0}, Lcom/android/systemui/screenshot/GlobalScreenshot$6;-><init>(Lcom/android/systemui/screenshot/GlobalScreenshot;)V
 
     invoke-virtual {v0, v5}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 602
+    .line 601
     new-instance v5, Lcom/android/systemui/screenshot/GlobalScreenshot$7;
 
     invoke-direct {v5, p0, v4, v1}, Lcom/android/systemui/screenshot/GlobalScreenshot$7;-><init>(Lcom/android/systemui/screenshot/GlobalScreenshot;Landroid/view/animation/Interpolator;Landroid/view/animation/Interpolator;)V
 
     invoke-virtual {v0, v5}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 616
+    .line 615
     return-object v0
 
-    .line 581
+    .line 580
     :array_0
     .array-data 4
         0x0
@@ -465,7 +465,7 @@
 
     const/high16 v9, 0x40000000
 
-    .line 620
+    .line 619
     const/4 v7, 0x2
 
     new-array v7, v7, [F
@@ -476,52 +476,52 @@
 
     move-result-object v0
 
-    .line 621
+    .line 620
     .local v0, "anim":Landroid/animation/ValueAnimator;
     const-wide/16 v7, 0x1f4
 
     invoke-virtual {v0, v7, v8}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
 
-    .line 622
+    .line 621
     new-instance v7, Lcom/android/systemui/screenshot/GlobalScreenshot$8;
 
     invoke-direct {v7, p0}, Lcom/android/systemui/screenshot/GlobalScreenshot$8;-><init>(Lcom/android/systemui/screenshot/GlobalScreenshot;)V
 
     invoke-virtual {v0, v7}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 631
+    .line 630
     if-eqz p3, :cond_0
 
     if-nez p4, :cond_1
 
-    .line 633
+    .line 632
     :cond_0
     const-wide/16 v7, 0x140
 
     invoke-virtual {v0, v7, v8}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 634
+    .line 633
     new-instance v7, Lcom/android/systemui/screenshot/GlobalScreenshot$9;
 
     invoke-direct {v7, p0}, Lcom/android/systemui/screenshot/GlobalScreenshot$9;-><init>(Lcom/android/systemui/screenshot/GlobalScreenshot;)V
 
     invoke-virtual {v0, v7}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 687
+    .line 686
     :goto_0
     return-object v0
 
-    .line 648
+    .line 647
     :cond_1
     const v5, 0x3f5c4771
 
-    .line 650
+    .line 649
     .local v5, "scaleDurationPct":F
     new-instance v6, Lcom/android/systemui/screenshot/GlobalScreenshot$10;
 
     invoke-direct {v6, p0}, Lcom/android/systemui/screenshot/GlobalScreenshot$10;-><init>(Lcom/android/systemui/screenshot/GlobalScreenshot;)V
 
-    .line 662
+    .line 661
     .local v6, "scaleInterpolator":Landroid/view/animation/Interpolator;
     int-to-float v7, p1
 
@@ -533,7 +533,7 @@
 
     div-float v3, v7, v9
 
-    .line 663
+    .line 662
     .local v3, "halfScreenWidth":F
     int-to-float v7, p2
 
@@ -545,11 +545,11 @@
 
     div-float v2, v7, v9
 
-    .line 664
+    .line 663
     .local v2, "halfScreenHeight":F
     const/4 v4, 0x0
 
-    .line 665
+    .line 664
     .local v4, "offsetPct":F
     new-instance v1, Landroid/graphics/PointF;
 
@@ -567,13 +567,13 @@
 
     invoke-direct {v1, v7, v8}, Landroid/graphics/PointF;-><init>(FF)V
 
-    .line 670
+    .line 669
     .local v1, "finalPos":Landroid/graphics/PointF;
     const-wide/16 v7, 0x1ae
 
     invoke-virtual {v0, v7, v8}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 671
+    .line 670
     new-instance v7, Lcom/android/systemui/screenshot/GlobalScreenshot$11;
 
     invoke-direct {v7, p0, v6, v1}, Lcom/android/systemui/screenshot/GlobalScreenshot$11;-><init>(Lcom/android/systemui/screenshot/GlobalScreenshot;Landroid/view/animation/Interpolator;Landroid/graphics/PointF;)V
@@ -582,7 +582,7 @@
 
     goto :goto_0
 
-    .line 620
+    .line 619
     :array_0
     .array-data 4
         0x0
@@ -595,34 +595,34 @@
     .param p1, "value"    # I
 
     .prologue
-    .line 449
+    .line 448
     packed-switch p1, :pswitch_data_0
 
-    .line 457
+    .line 456
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 451
+    .line 450
     :pswitch_0
     const/high16 v0, 0x43870000
 
     goto :goto_0
 
-    .line 453
+    .line 452
     :pswitch_1
     const/high16 v0, 0x43340000
 
     goto :goto_0
 
-    .line 455
+    .line 454
     :pswitch_2
     const/high16 v0, 0x42b40000
 
     goto :goto_0
 
-    .line 449
+    .line 448
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -637,16 +637,16 @@
     .param p1, "nManager"    # Landroid/app/NotificationManager;
 
     .prologue
-    const v6, 0x7f0a0036
+    const v6, 0x7f0a0068
 
-    const v5, 0x7f0a0035
+    const v5, 0x7f0a0067
 
-    .line 691
+    .line 690
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    .line 694
+    .line 693
     .local v2, "r":Landroid/content/res/Resources;
     new-instance v3, Landroid/app/Notification$Builder;
 
@@ -676,7 +676,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f02011f
+    const v4, 0x7f020123
 
     invoke-virtual {v3, v4}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -696,7 +696,7 @@
 
     move-result-object v0
 
-    .line 701
+    .line 700
     .local v0, "b":Landroid/app/Notification$Builder;
     new-instance v3, Landroid/app/Notification$BigTextStyle;
 
@@ -714,13 +714,13 @@
 
     move-result-object v1
 
-    .line 705
+    .line 704
     .local v1, "n":Landroid/app/Notification;
     const/16 v3, 0x315
 
     invoke-virtual {p1, v3, v1}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    .line 706
+    .line 705
     return-void
 .end method
 
@@ -731,41 +731,41 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 433
+    .line 432
     new-instance v0, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;
 
     invoke-direct {v0}, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;-><init>()V
 
-    .line 434
+    .line 433
     .local v0, "data":Lcom/android/systemui/screenshot/SaveImageInBackgroundData;
     iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mContext:Landroid/content/Context;
 
     iput-object v1, v0, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->context:Landroid/content/Context;
 
-    .line 435
+    .line 434
     iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmap:Landroid/graphics/Bitmap;
 
     iput-object v1, v0, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->image:Landroid/graphics/Bitmap;
 
-    .line 436
+    .line 435
     iget v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mNotificationIconSize:I
 
     iput v1, v0, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->iconSize:I
 
-    .line 437
+    .line 436
     iput-object p1, v0, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->finisher:Ljava/lang/Runnable;
 
-    .line 438
+    .line 437
     iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mSaveInBgTask:Landroid/os/AsyncTask;
 
     if-eqz v1, :cond_0
 
-    .line 439
+    .line 438
     iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mSaveInBgTask:Landroid/os/AsyncTask;
 
     invoke-virtual {v1, v5}, Landroid/os/AsyncTask;->cancel(Z)Z
 
-    .line 441
+    .line 440
     :cond_0
     new-instance v1, Lcom/android/systemui/screenshot/SaveImageInBackgroundTask;
 
@@ -789,7 +789,7 @@
 
     iput-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mSaveInBgTask:Landroid/os/AsyncTask;
 
-    .line 443
+    .line 442
     return-void
 .end method
 
@@ -802,34 +802,34 @@
     .param p5, "navBarVisible"    # Z
 
     .prologue
-    .line 518
+    .line 517
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotView:Landroid/widget/ImageView;
 
     iget-object v3, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmap:Landroid/graphics/Bitmap;
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 519
+    .line 518
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->requestFocus()Z
 
-    .line 522
+    .line 521
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotAnimation:Landroid/animation/AnimatorSet;
 
     if-eqz v2, :cond_0
 
-    .line 523
+    .line 522
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotAnimation:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v2}, Landroid/animation/AnimatorSet;->end()V
 
-    .line 524
+    .line 523
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotAnimation:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v2}, Landroid/animation/AnimatorSet;->removeAllListeners()V
 
-    .line 527
+    .line 526
     :cond_0
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mWindowManager:Landroid/view/WindowManager;
 
@@ -839,18 +839,18 @@
 
     invoke-interface {v2, v3, v4}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 528
+    .line 527
     invoke-direct {p0}, Lcom/android/systemui/screenshot/GlobalScreenshot;->createScreenshotDropInAnimation()Landroid/animation/ValueAnimator;
 
     move-result-object v0
 
-    .line 529
+    .line 528
     .local v0, "screenshotDropInAnim":Landroid/animation/ValueAnimator;
     invoke-direct {p0, p2, p3, p4, p5}, Lcom/android/systemui/screenshot/GlobalScreenshot;->createScreenshotDropOutAnimation(IIZZ)Landroid/animation/ValueAnimator;
 
     move-result-object v1
 
-    .line 531
+    .line 530
     .local v1, "screenshotFadeOutAnim":Landroid/animation/ValueAnimator;
     new-instance v2, Landroid/animation/AnimatorSet;
 
@@ -858,7 +858,7 @@
 
     iput-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotAnimation:Landroid/animation/AnimatorSet;
 
-    .line 532
+    .line 531
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotAnimation:Landroid/animation/AnimatorSet;
 
     const/4 v3, 0x2
@@ -875,7 +875,7 @@
 
     invoke-virtual {v2, v3}, Landroid/animation/AnimatorSet;->playSequentially([Landroid/animation/Animator;)V
 
-    .line 533
+    .line 532
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotAnimation:Landroid/animation/AnimatorSet;
 
     new-instance v3, Lcom/android/systemui/screenshot/GlobalScreenshot$2;
@@ -884,7 +884,7 @@
 
     invoke-virtual {v2, v3}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 545
+    .line 544
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
     new-instance v3, Lcom/android/systemui/screenshot/GlobalScreenshot$3;
@@ -893,7 +893,7 @@
 
     invoke-virtual {v2, v3}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    .line 556
+    .line 555
     return-void
 .end method
 
@@ -906,14 +906,14 @@
     .param p3, "navBarVisible"    # Z
 
     .prologue
-    .line 466
+    .line 465
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplay:Landroid/view/Display;
 
     iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     invoke-virtual {v0, v1}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
 
-    .line 467
+    .line 466
     const/4 v0, 0x2
 
     new-array v8, v0, [F
@@ -938,7 +938,7 @@
 
     aput v1, v8, v0
 
-    .line 468
+    .line 467
     .local v8, "dims":[F
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplay:Landroid/view/Display;
 
@@ -950,7 +950,7 @@
 
     move-result v7
 
-    .line 469
+    .line 468
     .local v7, "degrees":F
     const/4 v0, 0x0
 
@@ -960,29 +960,29 @@
 
     const/4 v9, 0x1
 
-    .line 470
+    .line 469
     .local v9, "requiresRotation":Z
     :goto_0
     if-eqz v9, :cond_0
 
-    .line 472
+    .line 471
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplayMatrix:Landroid/graphics/Matrix;
 
     invoke-virtual {v0}, Landroid/graphics/Matrix;->reset()V
 
-    .line 473
+    .line 472
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplayMatrix:Landroid/graphics/Matrix;
 
     neg-float v1, v7
 
     invoke-virtual {v0, v1}, Landroid/graphics/Matrix;->preRotate(F)Z
 
-    .line 474
+    .line 473
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplayMatrix:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, v8}, Landroid/graphics/Matrix;->mapPoints([F)V
 
-    .line 475
+    .line 474
     const/4 v0, 0x0
 
     const/4 v1, 0x0
@@ -995,7 +995,7 @@
 
     aput v1, v8, v0
 
-    .line 476
+    .line 475
     const/4 v0, 0x1
 
     const/4 v1, 0x1
@@ -1008,7 +1008,7 @@
 
     aput v1, v8, v0
 
-    .line 480
+    .line 479
     :cond_0
     const/4 v0, 0x0
 
@@ -1028,38 +1028,38 @@
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmap:Landroid/graphics/Bitmap;
 
-    .line 481
+    .line 480
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmap:Landroid/graphics/Bitmap;
 
     if-nez v0, :cond_2
 
-    .line 482
+    .line 481
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mNotificationManager:Landroid/app/NotificationManager;
 
     invoke-static {v0, v1}, Lcom/android/systemui/screenshot/GlobalScreenshot;->notifyScreenshotError(Landroid/content/Context;Landroid/app/NotificationManager;)V
 
-    .line 483
+    .line 482
     invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
-    .line 509
+    .line 508
     :goto_1
     return-void
 
-    .line 469
+    .line 468
     .end local v9    # "requiresRotation":Z
     :cond_1
     const/4 v9, 0x0
 
     goto :goto_0
 
-    .line 487
+    .line 486
     .restart local v9    # "requiresRotation":Z
     :cond_2
     if-eqz v9, :cond_3
 
-    .line 489
+    .line 488
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
@@ -1074,13 +1074,13 @@
 
     move-result-object v10
 
-    .line 491
+    .line 490
     .local v10, "ss":Landroid/graphics/Bitmap;
     new-instance v6, Landroid/graphics/Canvas;
 
     invoke-direct {v6, v10}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 492
+    .line 491
     .local v6, "c":Landroid/graphics/Canvas;
     invoke-virtual {v10}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -1100,10 +1100,10 @@
 
     invoke-virtual {v6, v0, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 493
+    .line 492
     invoke-virtual {v6, v7}, Landroid/graphics/Canvas;->rotate(F)V
 
-    .line 494
+    .line 493
     const/4 v0, 0x0
 
     aget v0, v8, v0
@@ -1126,7 +1126,7 @@
 
     invoke-virtual {v6, v0, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 495
+    .line 494
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmap:Landroid/graphics/Bitmap;
 
     const/4 v1, 0x0
@@ -1137,20 +1137,20 @@
 
     invoke-virtual {v6, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 496
+    .line 495
     const/4 v0, 0x0
 
     invoke-virtual {v6, v0}, Landroid/graphics/Canvas;->setBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 498
+    .line 497
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmap:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 499
+    .line 498
     iput-object v10, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmap:Landroid/graphics/Bitmap;
 
-    .line 503
+    .line 502
     .end local v6    # "c":Landroid/graphics/Canvas;
     .end local v10    # "ss":Landroid/graphics/Bitmap;
     :cond_3
@@ -1160,12 +1160,12 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Bitmap;->setHasAlpha(Z)V
 
-    .line 504
+    .line 503
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmap:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->prepareToDraw()V
 
-    .line 507
+    .line 506
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     iget v2, v0, Landroid/util/DisplayMetrics;->widthPixels:I

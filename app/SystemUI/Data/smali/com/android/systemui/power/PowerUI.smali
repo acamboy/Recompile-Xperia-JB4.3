@@ -499,7 +499,7 @@
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     .line 280
-    const v2, 0x7f0a0012
+    const v2, 0x7f0a0044
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -618,7 +618,7 @@
     .line 193
     iget-object v5, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0a0011
+    const v6, 0x7f0a0043
 
     new-array v7, v10, [Ljava/lang/Object;
 
@@ -696,7 +696,7 @@
     invoke-virtual {v0, v10}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     .line 206
-    const v5, 0x7f0a000f
+    const v5, 0x7f0a0041
 
     invoke-virtual {v0, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -740,7 +740,7 @@
     if-eqz v5, :cond_2
 
     .line 217
-    const v5, 0x7f0a00c3
+    const v5, 0x7f0a0006
 
     new-instance v6, Lcom/android/systemui/power/PowerUI$2;
 
@@ -815,7 +815,7 @@
 
     move-result-object v1
 
-    const v2, 0x10e001c
+    const v2, 0x10e001d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -834,7 +834,7 @@
 
     move-result-object v3
 
-    const v4, 0x10e001b
+    const v4, 0x10e001c
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -853,7 +853,7 @@
 
     move-result-object v3
 
-    const v4, 0x10e0019
+    const v4, 0x10e001a
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getInteger(I)I
 

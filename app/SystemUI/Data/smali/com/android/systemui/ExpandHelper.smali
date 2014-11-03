@@ -181,7 +181,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c0041
+    const v3, 0x7f0c0048
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -211,7 +211,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c0042
+    const v3, 0x7f0c0049
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -969,7 +969,7 @@
 
     .line 572
     .local v0, "g":Landroid/view/ViewGroup;
-    const v1, 0x7f070082
+    const v1, 0x7f070099
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -978,7 +978,7 @@
     iput-object v1, p0, Lcom/android/systemui/ExpandHelper;->mCurrViewTopGlow:Landroid/view/View;
 
     .line 573
-    const v1, 0x7f070086
+    const v1, 0x7f07009d
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

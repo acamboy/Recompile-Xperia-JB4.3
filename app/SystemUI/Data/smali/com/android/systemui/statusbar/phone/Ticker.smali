@@ -110,7 +110,7 @@
     iput v4, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mIconScale:F
 
     .line 183
-    const v4, 0x7f070047
+    const v4, 0x7f070057
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -119,7 +119,7 @@
     iput-object v4, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mTickerView:Landroid/view/View;
 
     .line 185
-    const v4, 0x7f070048
+    const v4, 0x7f070058
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -162,7 +162,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/ImageSwitcher;->setScaleY(F)V
 
     .line 193
-    const v4, 0x7f070049
+    const v4, 0x7f070059
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

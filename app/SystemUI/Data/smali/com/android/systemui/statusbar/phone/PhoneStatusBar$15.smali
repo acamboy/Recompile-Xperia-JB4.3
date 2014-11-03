@@ -1,11 +1,14 @@
 .class Lcom/android/systemui/statusbar/phone/PhoneStatusBar$15;
-.super Landroid/animation/AnimatorListenerAdapter;
+.super Ljava/lang/Object;
 .source "PhoneStatusBar.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->setAreThereNotifications()V
+    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->makeStatusBarView()Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,80 +26,36 @@
     .locals 0
 
     .prologue
-    .line 1320
+    .line 925
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$15;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 2
-    .param p1, "animation"    # Landroid/animation/Animator;
+.method public onClick(Landroid/view/View;)V
+    .locals 3
+    .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 1323
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$15;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+    .line 928
+    new-instance v0, Landroid/content/Intent;
 
-    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mClearButton:Landroid/view/View;
+    const-string v1, "com.sonymobile.notes.NEW_NOTE"
 
-    invoke-virtual {v0}, Landroid/view/View;->getAlpha()F
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    move-result v0
+    .line 929
+    .local v0, "intent":Landroid/content/Intent;
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$15;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    const/4 v1, 0x0
+    const/4 v2, 0x1
 
-    cmpg-float v0, v0, v1
+    invoke-virtual {v1, v0, v2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->startActivityDismissingKeyguard(Landroid/content/Intent;Z)V
 
-    if-gtz v0, :cond_0
-
-    .line 1324
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$15;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mClearButton:Landroid/view/View;
-
-    const/4 v1, 0x4
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 1326
-    :cond_0
-    return-void
-.end method
-
-.method public onAnimationStart(Landroid/animation/Animator;)V
-    .locals 2
-    .param p1, "animation"    # Landroid/animation/Animator;
-
-    .prologue
-    .line 1330
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$15;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mClearButton:Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->getAlpha()F
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    cmpg-float v0, v0, v1
-
-    if-gtz v0, :cond_0
-
-    .line 1331
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$15;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mClearButton:Landroid/view/View;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 1333
-    :cond_0
+    .line 930
     return-void
 .end method

@@ -1,14 +1,11 @@
 .class Lcom/android/systemui/statusbar/phone/PhoneStatusBar$26;
-.super Ljava/lang/Object;
+.super Landroid/animation/AnimatorListenerAdapter;
 .source "PhoneStatusBar.java"
-
-# interfaces
-.implements Landroid/view/animation/Animation$AnimationListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->setVisibilityWhenDone(Landroid/animation/Animator;Landroid/view/View;I)Landroid/animation/Animator;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,53 +17,42 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
+.field final synthetic val$v:Landroid/view/View;
+
+.field final synthetic val$vis:I
+
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)V
+.method constructor <init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Landroid/view/View;I)V
     .locals 0
 
     .prologue
-    .line 2578
+    .line 1960
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$26;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$26;->val$v:Landroid/view/View;
+
+    iput p3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$26;->val$vis:I
+
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/view/animation/Animation;)V
+.method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1, "animation"    # Landroid/view/animation/Animation;
+    .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 2580
-    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$26;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+    .line 1963
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$26;->val$v:Landroid/view/View;
 
-    const/4 v1, 0x0
+    iget v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$26;->val$vis:I
 
-    # setter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mTicking:Z
-    invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$1602(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Z)Z
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 2581
-    return-void
-.end method
-
-.method public onAnimationRepeat(Landroid/view/animation/Animation;)V
-    .locals 0
-    .param p1, "animation"    # Landroid/view/animation/Animation;
-
-    .prologue
-    .line 2583
-    return-void
-.end method
-
-.method public onAnimationStart(Landroid/view/animation/Animation;)V
-    .locals 0
-    .param p1, "animation"    # Landroid/view/animation/Animation;
-
-    .prologue
-    .line 2585
+    .line 1964
     return-void
 .end method

@@ -294,7 +294,7 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
     .line 71
-    const v1, 0x7f0700a0
+    const v1, 0x7f0700bc
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/TabletStatusBarView;->findViewById(I)Landroid/view/View;
 
@@ -305,7 +305,7 @@
     if-nez v0, :cond_0
 
     .line 73
-    const v1, 0x7f070053
+    const v1, 0x7f07005f
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/TabletStatusBarView;->findViewById(I)Landroid/view/View;
 

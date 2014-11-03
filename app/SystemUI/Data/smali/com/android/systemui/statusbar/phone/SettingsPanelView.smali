@@ -54,7 +54,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0082
+    const v2, 0x7f0a00b5
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -247,7 +247,7 @@
 
     .line 63
     .local v0, "resources":Landroid/content/res/Resources;
-    const v1, 0x7f020187
+    const v1, 0x7f0201d7
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -256,7 +256,7 @@
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mHandleBar:Landroid/graphics/drawable/Drawable;
 
     .line 64
-    const v1, 0x7f0c0033
+    const v1, 0x7f0c0035
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -265,7 +265,7 @@
     iput v1, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mHandleBarHeight:I
 
     .line 65
-    const v1, 0x7f07004b
+    const v1, 0x7f070071
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->findViewById(I)Landroid/view/View;
 

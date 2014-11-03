@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 317
+    .line 373
     iput-object p1, p0, Lcom/android/systemui/recent/RecentTasksLoader$2;->this$0:Lcom/android/systemui/recent/RecentTasksLoader;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -37,14 +37,14 @@
     .locals 4
 
     .prologue
-    .line 319
+    .line 375
     iget-object v1, p0, Lcom/android/systemui/recent/RecentTasksLoader$2;->this$0:Lcom/android/systemui/recent/RecentTasksLoader;
 
     invoke-virtual {v1}, Lcom/android/systemui/recent/RecentTasksLoader;->loadFirstTask()Lcom/android/systemui/recent/TaskDescription;
 
     move-result-object v0
 
-    .line 320
+    .line 376
     .local v0, "first":Lcom/android/systemui/recent/TaskDescription;
     iget-object v1, p0, Lcom/android/systemui/recent/RecentTasksLoader$2;->this$0:Lcom/android/systemui/recent/RecentTasksLoader;
 
@@ -55,7 +55,7 @@
 
     monitor-enter v2
 
-    .line 321
+    .line 377
     :try_start_0
     iget-object v1, p0, Lcom/android/systemui/recent/RecentTasksLoader$2;->this$0:Lcom/android/systemui/recent/RecentTasksLoader;
 
@@ -63,13 +63,13 @@
 
     if-eqz v1, :cond_0
 
-    .line 322
+    .line 378
     iget-object v1, p0, Lcom/android/systemui/recent/RecentTasksLoader$2;->this$0:Lcom/android/systemui/recent/RecentTasksLoader;
 
     # invokes: Lcom/android/systemui/recent/RecentTasksLoader;->clearFirstTask()V
     invoke-static {v1}, Lcom/android/systemui/recent/RecentTasksLoader;->access$100(Lcom/android/systemui/recent/RecentTasksLoader;)V
 
-    .line 327
+    .line 383
     :goto_0
     iget-object v1, p0, Lcom/android/systemui/recent/RecentTasksLoader$2;->this$0:Lcom/android/systemui/recent/RecentTasksLoader;
 
@@ -77,20 +77,20 @@
 
     iput-boolean v3, v1, Lcom/android/systemui/recent/RecentTasksLoader;->mPreloadingFirstTask:Z
 
-    .line 328
+    .line 384
     monitor-exit v2
 
-    .line 329
+    .line 385
     return-void
 
-    .line 324
+    .line 380
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/recent/RecentTasksLoader$2;->this$0:Lcom/android/systemui/recent/RecentTasksLoader;
 
     # setter for: Lcom/android/systemui/recent/RecentTasksLoader;->mFirstTask:Lcom/android/systemui/recent/TaskDescription;
     invoke-static {v1, v0}, Lcom/android/systemui/recent/RecentTasksLoader;->access$202(Lcom/android/systemui/recent/RecentTasksLoader;Lcom/android/systemui/recent/TaskDescription;)Lcom/android/systemui/recent/TaskDescription;
 
-    .line 325
+    .line 381
     iget-object v1, p0, Lcom/android/systemui/recent/RecentTasksLoader$2;->this$0:Lcom/android/systemui/recent/RecentTasksLoader;
 
     const/4 v3, 0x1
@@ -100,7 +100,7 @@
 
     goto :goto_0
 
-    .line 328
+    .line 384
     :catchall_0
     move-exception v1
 

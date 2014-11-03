@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="carrier_invalid_sim_card">Tarxeta SIM non válida</string>
+    <string name="power_settings_instructions">Se se habilita o modo de espera ampliado na Xestión de enerxía, optimizarase a vida da batería</string>
+    <string name="battery_low_power_settings">Informac. batería</string>
+    <string name="toast_message_not_allow_turn_on_hotspot">Punto de conexión Wi-Fi non dispoñible en modo avión</string>
+    <string name="status_bar_toolsbar_settings_title">Seleccionar axustes rápidos</string>
+    <string name="status_bar_recent_failed_to_launch_app">A aplicación non se puido iniciar</string>
+    <string name="toast_message_maximum_number_of_tools_reached">Seleccionouse o número máximo de axustes rápidos</string>
+    <string name="status_bar_settings_airplanemode">Modo avión</string>
+    <string name="status_bar_settings_autorotate">Xirar pantalla autom.</string>
+    <string name="status_bar_settings_gps">GPS</string>
+    <string name="status_bar_settings_settings">Atallo a Axustes</string>
+    <string name="status_bar_settings_wifi">Wi-Fi</string>
+    <string name="status_bar_settings_bluetooth">Bluetooth</string>
+    <string name="status_bar_settings_mobile_data">Tráf. datos móbiles</string>
+    <string name="status_bar_settings_brightness">Brillo</string>
+    <string name="status_bar_settings_sound">Son</string>
+    <string name="status_bar_settings_wifi_hotspot">Pto. conexión Wi-Fi</string>
+    <string name="status_bar_settings_nfc">NFC</string>
+    <string name="status_bar_settings_roaming">Itinerancia</string>
+    <string name="status_bar_settings_autosync">Autosincr. de datos</string>
+    <string name="status_bar_airplanemode">Avión</string>
+    <string name="status_bar_autorotate">Rotación automática</string>
+    <string name="status_bar_gps">GPS</string>
+    <string name="status_bar_settings">Axustes</string>
+    <string name="status_bar_wifi">Wi-Fi</string>
+    <string name="status_bar_bluetooth">Bluetooth</string>
+    <string name="status_bar_mobile_data">Datos móbiles</string>
+    <string name="status_bar_brightness">Brillo</string>
+    <string name="status_bar_sound">Son</string>
+    <string name="status_bar_wifi_hotspot">Punto de conexión</string>
+    <string name="status_bar_nfc">NFC</string>
+    <string name="status_bar_roaming">Itinerancia</string>
+    <string name="status_bar_autosync">Sincroniz. autom.</string>
+    <string name="accessibility_state_vibrate">Vibración</string>
+    <string name="quick_Settings">Axustes rápidos</string>
+    <string name="quick_settings_description">Seleccione o número de axustes rápidos no panel de notificacións e edite a orde</string>
+    <string name="status_bar_autosync_dialog_enable_title">Activar a sincronización automática de datos?</string>
+    <string name="status_bar_autosync_dialog_enable_warning">"Os cambios que faga nas súas contas na web copiaranse automaticamente no teléfono.
+
+Algunhas contas tamén poden copiar automaticamente os cambios que faga no teléfono na web.
+
+Para elixir os tipos de información que desexa sincronizar en cada conta, vaia a Axustes > Contas."</string>
+    <string name="status_bar_autosync_dialog_extended_enable_warning">"Os cambios que faga nas súas contas na Web copiaranse automaticamente no dispositivo.
+
+Algunhas contas tamén poden copiar automaticamente na Web os cambios que faga no dispositivo.
+
+Para elixir os tipos de información que desexa sincronizar en cada conta, vaia a Axustes > Contas.
+
+Poden aplicarse custos pola transmisión de datos ao efectuar actualizacións no dispositivo. Recoméndase o uso dun plan de datos ilimitado."</string>
+    <string name="status_bar_autosync_dialog_disable_title">Desac. sinc. aut. dat.?</string>
+    <string name="status_bar_autosync_dialog_disable_warning">Con este axuste conservarase o uso de datos e batería, pero terá que sincronizar cada conta manualmente para recompilar a información recente. Ademais, non recibirá notificacións cando se produzan actualizacións.</string>
+    <string name="new_sketch">Novo bosquexo</string>
+    <string name="new_note">Nova nota</string>
+    <string name="brightness_adapt_checkbox_information">Adaptar ás condicións de iluminación</string>
     <string name="app_label">IU do sist.</string>
     <string name="status_bar_clear_all_button">Borrar</string>
     <string name="status_bar_do_not_disturb_button">Non molestar</string>
@@ -107,6 +161,7 @@ Use só o cargador subministrado."</string>
     <string name="accessibility_data_connection_3g">3G</string>
     <string name="accessibility_data_connection_3.5g">3,5G</string>
     <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_h_plus">HSPAP</string>
     <string name="accessibility_data_connection_lte">LTE</string>
     <string name="accessibility_data_connection_cdma">CDMA</string>
     <string name="accessibility_data_connection_roaming">Mobilidade</string>
@@ -188,70 +243,20 @@ Se volve activar os datos, o seu operador pode aplicarlle un cargo."</string>
     <string name="status_bar_help_text">"Acceda a elas en calquera momento desprazándose cara a abaixo.
 
 Volva desprazarse cara a abaixo para ver os controis do sistema."</string>
-    <string name="accessibility_data_connection_h_plus">HSPAP</string>
     <string name="unmount_strings_dialog_content_txt">Non extraia a tarxeta SD durante a desconexión</string>
     <string name="accessibility_desc_tab_quick_settings_edit">Editar axustes rápidos</string>
-    <string name="accessibility_state_vibrate">Vibración</string>
-    <string name="battery_low_power_settings">Informac. batería</string>
-    <string name="brightness_adapt_checkbox_information">Adaptar ás condicións de iluminación</string>
-    <string name="carrier_invalid_sim_card">Tarxeta SIM non válida</string>
-    <string name="new_note">Nova nota</string>
-    <string name="new_sketch">Novo bosquexo</string>
-    <string name="power_settings_instructions">Se se habilita o modo de espera ampliado na Xestión de enerxía, optimizarase a vida da batería</string>
-    <string name="quick_Settings">Axustes rápidos</string>
-    <string name="quick_settings_description">Seleccione o número de axustes rápidos no panel de notificacións e edite a orde</string>
+    <string name="description_direction_left_down">Pase o dedo diagonalmente cara abaixo á esquerda para %s.</string>
+    <string name="description_direction_left_up">Pase o dedo diagonalmente cara arriba á esquerda para %s.</string>
+    <string name="description_direction_up_left">Pase o dedo diagonalmente cara arriba á esquerda para %s.</string>
+    <string name="description_direction_up_right">Pase o dedo diagonalmente cara arriba á dereita para %s.</string>
+    <string name="description_target_sonyentrance">Novidades</string>
     <string name="start_note_app">Iniciar aplicación de notas</string>
     <string name="start_sketch_app">Iniciar a aplicación de bosquexo</string>
-    <string name="status_bar_airplanemode">Avión</string>
-    <string name="status_bar_autorotate">Rotación automática</string>
-    <string name="status_bar_autosync">Sincroniz. autom.</string>
-    <string name="status_bar_autosync_dialog_disable_title">Desac. sinc. aut. dat.?</string>
-    <string name="status_bar_autosync_dialog_disable_warning">Con este axuste conservarase o uso de datos e batería, pero terá que sincronizar cada conta manualmente para recompilar a información recente. Ademais, non recibirá notificacións cando se produzan actualizacións.</string>
-    <string name="status_bar_autosync_dialog_enable_title">Activar a sincronización automática de datos?</string>
-    <string name="status_bar_autosync_dialog_enable_warning">"Os cambios que faga nas súas contas na web copiaranse automaticamente no teléfono.
-
-Algunhas contas tamén poden copiar automaticamente os cambios que faga no teléfono na web.
-
-Para elixir os tipos de información que desexa sincronizar en cada conta, vaia a Axustes > Contas."</string>
-    <string name="status_bar_autosync_dialog_extended_enable_warning">"Os cambios que faga nas súas contas na Web copiaranse automaticamente no dispositivo.
-
-Algunhas contas tamén poden copiar automaticamente na Web os cambios que faga no dispositivo.
-
-Para elixir os tipos de información que desexa sincronizar en cada conta, vaia a Axustes > Contas.
-
-Poden aplicarse custos pola transmisión de datos ao efectuar actualizacións no dispositivo. Recoméndase o uso dun plan de datos ilimitado."</string>
-    <string name="status_bar_bluetooth">Bluetooth</string>
-    <string name="status_bar_brightness">Brillo</string>
-    <string name="status_bar_gps">GPS</string>
     <string name="status_bar_mirroring">Duplicación</string>
-    <string name="status_bar_mobile_data">Datos móbiles</string>
-    <string name="status_bar_nfc">NFC</string>
-    <string name="status_bar_recent_failed_to_launch_app">A aplicación non se puido iniciar</string>
-    <string name="status_bar_roaming">Itinerancia</string>
-    <string name="status_bar_settings">Axustes</string>
-    <string name="status_bar_settings_airplanemode">Modo avión</string>
-    <string name="status_bar_settings_autorotate">Xirar pantalla autom.</string>
-    <string name="status_bar_settings_autosync">Autosincr. de datos</string>
-    <string name="status_bar_settings_bluetooth">Bluetooth</string>
-    <string name="status_bar_settings_brightness">Brillo</string>
-    <string name="status_bar_settings_gps">GPS</string>
     <string name="status_bar_settings_mirroring">Duplicación de pantalla</string>
-    <string name="status_bar_settings_mobile_data">Tráf. datos móbiles</string>
-    <string name="status_bar_settings_nfc">NFC</string>
-    <string name="status_bar_settings_roaming">Itinerancia</string>
-    <string name="status_bar_settings_settings">Atallo a Axustes</string>
-    <string name="status_bar_settings_sound">Son</string>
-    <string name="status_bar_settings_wifi">Wi-Fi</string>
-    <string name="status_bar_settings_wifi_hotspot">Pto. conexión Wi-Fi</string>
-    <string name="status_bar_sound">Son</string>
     <string name="status_bar_tab_notifications_title">Notificacións</string>
     <string name="status_bar_tab_quick_settings_edit">Editar</string>
     <string name="status_bar_tab_quick_settings_title">Axust. rápidos</string>
-    <string name="status_bar_toolsbar_settings_title">Seleccionar axustes rápidos</string>
-    <string name="status_bar_wifi">Wi-Fi</string>
-    <string name="status_bar_wifi_hotspot">Punto de conexión</string>
     <string name="to_charge_use_charger_txt">Use o seu cargador Sony™ para cargar o dispositivo</string>
-    <string name="toast_message_maximum_number_of_tools_reached">Seleccionouse o número máximo de axustes rápidos</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">Punto de conexión Wi-Fi non dispoñible en modo avión</string>
     <string name="usb_connected_txt">USB conectado</string>
 </resources>

@@ -27,15 +27,15 @@
     .param p2, "colorize"    # Z
 
     .prologue
-    .line 34
+    .line 36
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 35
+    .line 37
     iput p1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$ToolsIcon;->id:I
 
-    .line 36
+    .line 38
     iput-boolean p2, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsButton$ToolsIcon;->colorize:Z
 
-    .line 37
+    .line 39
     return-void
 .end method

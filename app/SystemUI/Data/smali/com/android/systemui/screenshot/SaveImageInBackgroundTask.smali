@@ -328,7 +328,7 @@
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v15, 0x7f0a0030
+    const v15, 0x7f0a0062
 
     invoke-virtual {v11, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -357,7 +357,7 @@
 
     move-result-object v13
 
-    const v14, 0x7f0a0031
+    const v14, 0x7f0a0063
 
     invoke-virtual {v11, v14}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -367,7 +367,7 @@
 
     move-result-object v13
 
-    const v14, 0x7f0a0032
+    const v14, 0x7f0a0064
 
     invoke-virtual {v11, v14}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -377,7 +377,7 @@
 
     move-result-object v13
 
-    const v14, 0x7f02011e
+    const v14, 0x7f020122
 
     invoke-virtual {v13, v14}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -600,7 +600,7 @@
 
     const/16 v16, 0x0
 
-    .line 287
+    .line 286
     :goto_0
     return-object v16
 
@@ -725,12 +725,12 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 275
+    .line 274
     .end local v5    # "file":Ljava/io/File;
     :catch_0
     move-exception v4
 
-    .line 278
+    .line 277
     .local v4, "e":Ljava/lang/Exception;
     const/16 v16, 0x0
 
@@ -738,7 +738,7 @@
 
     invoke-virtual/range {v16 .. v16}, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->clearImage()V
 
-    .line 279
+    .line 278
     const/16 v16, 0x0
 
     aget-object v16, p1, v16
@@ -751,15 +751,15 @@
 
     iput v0, v1, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->result:I
 
-    .line 283
+    .line 282
     .end local v4    # "e":Ljava/lang/Exception;
     :goto_1
     if-eqz v6, :cond_2
 
-    .line 284
+    .line 283
     invoke-virtual {v6}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 287
+    .line 286
     :cond_2
     const/16 v16, 0x0
 
@@ -1055,7 +1055,7 @@
 
     const v17, 0x7f02001c
 
-    const v18, 0x10404f1
+    const v18, 0x10404ef
 
     move/from16 v0, v18
 
@@ -1077,7 +1077,7 @@
 
     invoke-virtual/range {v16 .. v19}, Landroid/app/Notification$Builder;->addAction(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
 
-    .line 272
+    .line 271
     const/16 v16, 0x0
 
     aget-object v16, p1, v16
@@ -1086,7 +1086,7 @@
 
     iput-object v14, v0, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->imageUri:Landroid/net/Uri;
 
-    .line 273
+    .line 272
     const/16 v16, 0x0
 
     aget-object v16, p1, v16
@@ -1099,7 +1099,7 @@
 
     iput-object v0, v1, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->image:Landroid/graphics/Bitmap;
 
-    .line 274
+    .line 273
     const/16 v16, 0x0
 
     aget-object v16, p1, v16
@@ -1140,53 +1140,53 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 292
+    .line 291
     invoke-virtual {p0}, Lcom/android/systemui/screenshot/SaveImageInBackgroundTask;->isCancelled()Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 293
+    .line 292
     iget-object v3, p1, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->finisher:Ljava/lang/Runnable;
 
     invoke-interface {v3}, Ljava/lang/Runnable;->run()V
 
-    .line 294
+    .line 293
     invoke-virtual {p1}, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->clearImage()V
 
-    .line 295
+    .line 294
     invoke-virtual {p1}, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->clearContext()V
 
-    .line 324
+    .line 323
     :goto_0
     return-void
 
-    .line 299
+    .line 298
     :cond_0
     iget v3, p1, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->result:I
 
     if-lez v3, :cond_1
 
-    .line 301
+    .line 300
     iget-object v3, p1, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->context:Landroid/content/Context;
 
     iget-object v4, p0, Lcom/android/systemui/screenshot/SaveImageInBackgroundTask;->mNotificationManager:Landroid/app/NotificationManager;
 
     invoke-static {v3, v4}, Lcom/android/systemui/screenshot/GlobalScreenshot;->notifyScreenshotError(Landroid/content/Context;Landroid/app/NotificationManager;)V
 
-    .line 322
+    .line 321
     :goto_1
     iget-object v3, p1, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->finisher:Ljava/lang/Runnable;
 
     invoke-interface {v3}, Ljava/lang/Runnable;->run()V
 
-    .line 323
+    .line 322
     invoke-virtual {p1}, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->clearContext()V
 
     goto :goto_0
 
-    .line 304
+    .line 303
     :cond_1
     iget-object v3, p1, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->context:Landroid/content/Context;
 
@@ -1194,7 +1194,7 @@
 
     move-result-object v2
 
-    .line 307
+    .line 306
     .local v2, "r":Landroid/content/res/Resources;
     new-instance v0, Landroid/content/Intent;
 
@@ -1202,7 +1202,7 @@
 
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 308
+    .line 307
     .local v0, "launchIntent":Landroid/content/Intent;
     iget-object v3, p1, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->imageUri:Landroid/net/Uri;
 
@@ -1210,15 +1210,15 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 309
+    .line 308
     const/high16 v3, 0x10000000
 
     invoke-virtual {v0, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 311
+    .line 310
     iget-object v3, p0, Lcom/android/systemui/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
 
-    const v4, 0x7f0a0033
+    const v4, 0x7f0a0065
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1228,7 +1228,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0034
+    const v4, 0x7f0a0066
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1260,14 +1260,14 @@
 
     invoke-virtual {v3, v4}, Landroid/app/Notification$Builder;->setAutoCancel(Z)Landroid/app/Notification$Builder;
 
-    .line 318
+    .line 317
     iget-object v3, p0, Lcom/android/systemui/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
 
     invoke-virtual {v3}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
 
     move-result-object v1
 
-    .line 319
+    .line 318
     .local v1, "n":Landroid/app/Notification;
     iget v3, v1, Landroid/app/Notification;->flags:I
 
@@ -1275,7 +1275,7 @@
 
     iput v3, v1, Landroid/app/Notification;->flags:I
 
-    .line 320
+    .line 319
     iget-object v3, p0, Lcom/android/systemui/screenshot/SaveImageInBackgroundTask;->mNotificationManager:Landroid/app/NotificationManager;
 
     iget v4, p0, Lcom/android/systemui/screenshot/SaveImageInBackgroundTask;->mNotificationId:I

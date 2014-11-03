@@ -16,4 +16,5 @@
     <integer name="blinds_pop_duration_ms">10</integer>
     <integer name="notification_panel_layout_gravity">0x37</integer>
     <integer name="settings_panel_layout_gravity">0x37</integer>
+    <integer name="config_operatorNameMaxLength">11</integer>
 </resources>

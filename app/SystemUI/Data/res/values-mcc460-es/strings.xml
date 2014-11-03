@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="toast_message_not_allow_turn_on_hotspot">La zona activa de WLAN no está disponible en el modo de avión</string>
+    <string name="status_bar_settings_wifi">WLAN</string>
+    <string name="status_bar_settings_wifi_hotspot">Zona activa de WLAN</string>
+    <string name="status_bar_wifi">WLAN</string>
     <string name="status_bar_settings_wifi_button">WLAN</string>
     <string name="accessibility_wifi_off">WLAN desactivado.</string>
     <string name="accessibility_no_wifi">WLAN desconectado.</string>
@@ -13,8 +17,4 @@
     <string name="quick_settings_wifi_label">WLAN</string>
     <string name="quick_settings_wifi_off_label">WLAN desactivado</string>
     <string name="quick_settings_wifi_display_label">Pantalla WLAN</string>
-    <string name="status_bar_settings_wifi">WLAN</string>
-    <string name="status_bar_settings_wifi_hotspot">Zona activa de WLAN</string>
-    <string name="status_bar_wifi">WLAN</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">La zona activa de WLAN no está disponible en el modo de avión</string>
 </resources>

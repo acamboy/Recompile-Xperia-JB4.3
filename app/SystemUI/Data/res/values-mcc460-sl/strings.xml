@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="toast_message_not_allow_turn_on_hotspot">Vroča točka za WLAN ni na voljo v načinu za letenje</string>
+    <string name="status_bar_settings_wifi">WLAN</string>
+    <string name="status_bar_settings_wifi_hotspot">Vroča točka za WLAN</string>
+    <string name="status_bar_wifi">WLAN</string>
     <string name="status_bar_settings_wifi_button">WLAN</string>
     <string name="accessibility_wifi_off">WLAN je izklopljen.</string>
     <string name="accessibility_no_wifi">Povezava WLAN je prekinjena.</string>
@@ -13,8 +17,4 @@
     <string name="quick_settings_wifi_label">WLAN</string>
     <string name="quick_settings_wifi_off_label">WLAN je izklopljen</string>
     <string name="quick_settings_wifi_display_label">Zaslon WLAN</string>
-    <string name="status_bar_settings_wifi">WLAN</string>
-    <string name="status_bar_settings_wifi_hotspot">Vroča točka za WLAN</string>
-    <string name="status_bar_wifi">WLAN</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">Vroča točka za WLAN ni na voljo v načinu za letenje</string>
 </resources>

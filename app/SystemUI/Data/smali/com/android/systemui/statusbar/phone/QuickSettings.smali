@@ -190,7 +190,7 @@
 
     .line 141
     .local v7, "r":Landroid/content/res/Resources;
-    const v0, 0x7f020103
+    const v0, 0x7f02010b
 
     invoke-virtual {v7, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -201,7 +201,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettings;->mBatteryLevels:Landroid/graphics/drawable/LevelListDrawable;
 
     .line 142
-    const v0, 0x7f020104
+    const v0, 0x7f02010c
 
     invoke-virtual {v7, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -547,7 +547,7 @@
     if-eqz v6, :cond_0
 
     .line 435
-    const v6, 0x7f040010
+    const v6, 0x7f04000f
 
     const/4 v7, 0x0
 
@@ -559,7 +559,7 @@
 
     .line 437
     .local v4, "rssiTile":Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;
-    const v6, 0x7f040016
+    const v6, 0x7f040015
 
     invoke-virtual {v4, v6, p2}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->setContent(ILandroid/view/LayoutInflater;)V
 
@@ -750,7 +750,7 @@
 
     .line 603
     .local v0, "alarmTile":Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;
-    const v5, 0x7f020035
+    const v5, 0x7f02003b
 
     invoke-virtual {v0, v5}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->setImageResource(I)V
 
@@ -782,12 +782,12 @@
 
     .line 629
     .local v2, "locationTile":Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;
-    const v5, 0x7f020057
+    const v5, 0x7f02005d
 
     invoke-virtual {v2, v5}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->setImageResource(I)V
 
     .line 630
-    const v5, 0x7f0a00aa
+    const v5, 0x7f0a00dd
 
     invoke-virtual {v2, v5}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->setTextResource(I)V
 
@@ -823,7 +823,7 @@
 
     .line 645
     .local v4, "wifiDisplayTile":Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;
-    const v5, 0x7f020058
+    const v5, 0x7f02005e
 
     invoke-virtual {v4, v5}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->setImageResource(I)V
 
@@ -922,7 +922,7 @@
 
     .prologue
     .line 297
-    const v3, 0x7f040010
+    const v3, 0x7f04000f
 
     const/4 v4, 0x0
 
@@ -934,7 +934,7 @@
 
     .line 299
     .local v2, "userTile":Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;
-    const v3, 0x7f040018
+    const v3, 0x7f040017
 
     invoke-virtual {v2, v3, p2}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->setContent(ILandroid/view/LayoutInflater;)V
 
@@ -971,7 +971,7 @@
 
     .line 337
     .local v0, "brightnessTile":Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;
-    const v3, 0x7f020050
+    const v3, 0x7f020056
 
     invoke-virtual {v0, v3}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->setImageResource(I)V
 
@@ -1008,7 +1008,7 @@
 
     .line 372
     .local v1, "settingsTile":Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;
-    const v3, 0x7f02005b
+    const v3, 0x7f020061
 
     invoke-virtual {v1, v3}, Lcom/android/systemui/statusbar/phone/QuickSettingsBasicTile;->setImageResource(I)V
 

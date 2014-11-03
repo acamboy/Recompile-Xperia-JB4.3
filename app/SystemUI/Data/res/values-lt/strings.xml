@@ -2,6 +2,60 @@
 <resources>
     <string name="status_bar_date_formatter">"%2$s
 %1$s"</string>
+    <string name="carrier_invalid_sim_card">Netinkama SIM kortelė</string>
+    <string name="power_settings_instructions">Aktyvinus išplėstinį energijos valdymo režimą, optimizuojamas akumuliatoriaus veikimas</string>
+    <string name="battery_low_power_settings">Akumuliatoriaus info.</string>
+    <string name="toast_message_not_allow_turn_on_hotspot">„Wi-Fi“ prieigos taškas nepasiekiamas skrydžio režimu</string>
+    <string name="status_bar_toolsbar_settings_title">Pasirinkite sparčiuosius nustatymus</string>
+    <string name="status_bar_recent_failed_to_launch_app">Nepavyko paleisti programos</string>
+    <string name="toast_message_maximum_number_of_tools_reached">Pasirinktas maksimalus sparčiųjų nustatymų skaičius</string>
+    <string name="status_bar_settings_airplanemode">Skrydžio režimas</string>
+    <string name="status_bar_settings_autorotate">Aut. pasukti ekraną</string>
+    <string name="status_bar_settings_gps">GPS</string>
+    <string name="status_bar_settings_settings">Nustatymų nuoroda</string>
+    <string name="status_bar_settings_wifi">Wi-Fi</string>
+    <string name="status_bar_settings_bluetooth">Bluetooth</string>
+    <string name="status_bar_settings_mobile_data">Mob. duom. srautas</string>
+    <string name="status_bar_settings_brightness">Ryškumas</string>
+    <string name="status_bar_settings_sound">Garsas</string>
+    <string name="status_bar_settings_wifi_hotspot">„Wi-Fi“ prieigos taškas</string>
+    <string name="status_bar_settings_nfc">Artimojo lauko ryšys</string>
+    <string name="status_bar_settings_roaming">Tarptinklinis ryšys</string>
+    <string name="status_bar_settings_autosync">Aut. sinchr. duomenis</string>
+    <string name="status_bar_airplanemode">Skrydis</string>
+    <string name="status_bar_autorotate">Automatinis pasukimas</string>
+    <string name="status_bar_gps">GPS</string>
+    <string name="status_bar_settings">Nustatymai</string>
+    <string name="status_bar_wifi">Wi-Fi</string>
+    <string name="status_bar_bluetooth">Bluetooth</string>
+    <string name="status_bar_mobile_data">Mobilieji duomenys</string>
+    <string name="status_bar_brightness">Ryškumas</string>
+    <string name="status_bar_sound">Garsas</string>
+    <string name="status_bar_wifi_hotspot">Prieigos taškas</string>
+    <string name="status_bar_nfc">NFC</string>
+    <string name="status_bar_roaming">Tarptinklinis ryšys</string>
+    <string name="status_bar_autosync">Automatinis sinchroniz.</string>
+    <string name="accessibility_state_vibrate">Vibruoti</string>
+    <string name="quick_Settings">Spartieji nustatymai</string>
+    <string name="quick_settings_description">Pranešimų srityje pasirinkite sparčiųjų nustatymų numerius ir redaguokite jų tvarką</string>
+    <string name="status_bar_autosync_dialog_enable_title">Ar įjungti automatinį duomenų sinchronizavimą?</string>
+    <string name="status_bar_autosync_dialog_enable_warning">"Visi internete atlikti paskyrų pakeitimai bus automatiškai nukopijuoti į prietaisą.
+
+Kai kurios paskyros taip pat gali automatiškai nukopijuoti prietaise atliktus pakeitimus į internetą.
+
+Norėdami pasirinkti su kiekviena paskyra sinchronizuojamos informacijos tipą, eikite į „Nustatymai“ > „Paskyros“."</string>
+    <string name="status_bar_autosync_dialog_extended_enable_warning">"Visi internete atlikti paskyrų pakeitimai bus automatiškai nukopijuoti į prietaisą.
+
+Kai kurios paskyros taip pat gali automatiškai nukopijuoti prietaise atliktus pakeitimus į internetą.
+
+Norėdami pasirinkti su kiekviena paskyra sinchronizuojamos informacijos tipą, eikite į „Nustatymai“ > „Paskyros“.
+
+Atnaujinant prietaisą gali būti taikomi duomenų perdavimo mokesčiai. Rekomenduojama naudoti neribotų duomenų planą."</string>
+    <string name="status_bar_autosync_dialog_disable_title">Ar išjungti automatinį duomenų sinchronizavimą?</string>
+    <string name="status_bar_autosync_dialog_disable_warning">Tai atlikus bus saikingai naudojami duomenys ir akumuliatoriaus energija, tačiau, jei norėsite surinkti naujausią informaciją, turėsite sinchronizuoti kiekvieną paskyrą neautomatiškai. Be to, negausite pranešimų, kai atsiras naujinių.</string>
+    <string name="new_sketch">Naujas eskizas</string>
+    <string name="new_note">Nauja pastaba</string>
+    <string name="brightness_adapt_checkbox_information">Pritaikyti pagal apšvietimo sąlygas</string>
     <string name="app_label">Sistemos NS</string>
     <string name="status_bar_clear_all_button">Išvalyti</string>
     <string name="status_bar_do_not_disturb_button">Netrukdyti</string>
@@ -109,6 +163,7 @@ Naudokite tik pateiktą įkroviklį."</string>
     <string name="accessibility_data_connection_3g">3G</string>
     <string name="accessibility_data_connection_3.5g">3.5G</string>
     <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_h_plus">HSPAP</string>
     <string name="accessibility_data_connection_lte">LTE</string>
     <string name="accessibility_data_connection_cdma">CDMA</string>
     <string name="accessibility_data_connection_roaming">Tarptinklinis ryšys</string>
@@ -190,73 +245,20 @@ Jei iš naujo aktyvinsite duomenis, galite būti apmokestinti operatoriaus."</st
     <string name="status_bar_help_text">"Perbraukę žemyn bet kuriuo metu juos pasieksite.
 
 Jei norite naudoti sistemos valdiklius, perbraukite žemyn dar kartą."</string>
-    <string name="data_service_except_mms_warning_txt">Leisti duomenų srautą? Atsižvelgiant į tinklo prenumeratos sąlygas, gali būti taikomi papildomi mokesčiai. Kad išvengtumėte papildomų mokesčių, baigę išjunkite duomenų srautą.</string>
-    <string name="expanded_no_simcard">Nėra SIM kortelės</string>
-    <string name="accessibility_data_connection_h_plus">HSPAP</string>
-    <string name="expanded_airplane_no_service">Lėktuvo režimas</string>
     <string name="unmount_strings_dialog_content_txt">Neišimkite SD kortelės, kol ji neatjungta</string>
     <string name="accessibility_desc_tab_quick_settings_edit">Redaguoti sparčiuosius nustatymus</string>
-    <string name="accessibility_state_vibrate">Vibruoti</string>
-    <string name="battery_low_power_settings">Akumuliatoriaus info.</string>
-    <string name="brightness_adapt_checkbox_information">Pritaikyti pagal apšvietimo sąlygas</string>
-    <string name="carrier_invalid_sim_card">Netinkama SIM kortelė</string>
-    <string name="new_note">Nauja pastaba</string>
-    <string name="new_sketch">Naujas eskizas</string>
-    <string name="power_settings_instructions">Aktyvinus išplėstinį energijos valdymo režimą, optimizuojamas akumuliatoriaus veikimas</string>
-    <string name="quick_Settings">Spartieji nustatymai</string>
-    <string name="quick_settings_description">Pranešimų srityje pasirinkite sparčiųjų nustatymų numerius ir redaguokite jų tvarką</string>
+    <string name="description_direction_left_down">Braukite įstrižai į apačią kairėn, kad pasiektumėte %s.</string>
+    <string name="description_direction_left_up">Braukite įstrižai į viršų kairėn, kad pasiektumėte %s.</string>
+    <string name="description_direction_up_left">Braukite įstrižai į viršų kairėn, kad pasiektumėte %s.</string>
+    <string name="description_direction_up_right">Braukite įstrižai į viršų dešinėn, kad pasiektumėte %s.</string>
+    <string name="description_target_sonyentrance">"What's New"</string>
     <string name="start_note_app">Paleisti pastabų programą</string>
     <string name="start_sketch_app">Paleisti eskizų programą</string>
-    <string name="status_bar_airplanemode">Skrydis</string>
-    <string name="status_bar_autorotate">Automatinis pasukimas</string>
-    <string name="status_bar_autosync">Automatinis sinchroniz.</string>
-    <string name="status_bar_autosync_dialog_disable_title">Ar išjungti automatinį duomenų sinchronizavimą?</string>
-    <string name="status_bar_autosync_dialog_disable_warning">Tai atlikus bus saikingai naudojami duomenys ir akumuliatoriaus energija, tačiau, jei norėsite surinkti naujausią informaciją, turėsite sinchronizuoti kiekvieną paskyrą neautomatiškai. Be to, negausite pranešimų, kai atsiras naujinių.</string>
-    <string name="status_bar_autosync_dialog_enable_title">Ar įjungti automatinį duomenų sinchronizavimą?</string>
-    <string name="status_bar_autosync_dialog_enable_warning">"Visi internete atlikti paskyrų pakeitimai bus automatiškai nukopijuoti į prietaisą.
-
-Kai kurios paskyros taip pat gali automatiškai nukopijuoti prietaise atliktus pakeitimus į internetą.
-
-Norėdami pasirinkti su kiekviena paskyra sinchronizuojamos informacijos tipą, eikite į „Nustatymai“ > „Paskyros“."</string>
-    <string name="status_bar_autosync_dialog_extended_enable_warning">"Visi internete atlikti paskyrų pakeitimai bus automatiškai nukopijuoti į prietaisą.
-
-Kai kurios paskyros taip pat gali automatiškai nukopijuoti prietaise atliktus pakeitimus į internetą.
-
-Norėdami pasirinkti su kiekviena paskyra sinchronizuojamos informacijos tipą, eikite į „Nustatymai“ > „Paskyros“.
-
-Atnaujinant prietaisą gali būti taikomi duomenų perdavimo mokesčiai. Rekomenduojama naudoti neribotų duomenų planą."</string>
-    <string name="status_bar_bluetooth">Bluetooth</string>
-    <string name="status_bar_brightness">Ryškumas</string>
-    <string name="status_bar_gps">GPS</string>
     <string name="status_bar_mirroring">Atvaizdavimas</string>
-    <string name="status_bar_mobile_data">Mobilieji duomenys</string>
-    <string name="status_bar_nfc">NFC</string>
-    <string name="status_bar_recent_failed_to_launch_app">Nepavyko paleisti programos</string>
-    <string name="status_bar_roaming">Tarptinklinis ryšys</string>
-    <string name="status_bar_settings">Nustatymai</string>
-    <string name="status_bar_settings_airplanemode">Skrydžio režimas</string>
-    <string name="status_bar_settings_autorotate">Aut. pasukti ekraną</string>
-    <string name="status_bar_settings_autosync">Aut. sinchr. duomenis</string>
-    <string name="status_bar_settings_bluetooth">Bluetooth</string>
-    <string name="status_bar_settings_brightness">Ryškumas</string>
-    <string name="status_bar_settings_gps">GPS</string>
     <string name="status_bar_settings_mirroring">Ekrano atvaizdavimas</string>
-    <string name="status_bar_settings_mobile_data">Mob. duom. srautas</string>
-    <string name="status_bar_settings_nfc">Artimojo lauko ryšys</string>
-    <string name="status_bar_settings_roaming">Tarptinklinis ryšys</string>
-    <string name="status_bar_settings_settings">Nustatymų nuoroda</string>
-    <string name="status_bar_settings_sound">Garsas</string>
-    <string name="status_bar_settings_wifi">Wi-Fi</string>
-    <string name="status_bar_settings_wifi_hotspot">„Wi-Fi“ prieigos taškas</string>
-    <string name="status_bar_sound">Garsas</string>
     <string name="status_bar_tab_notifications_title">Pranešimai</string>
     <string name="status_bar_tab_quick_settings_edit">Redaguoti</string>
     <string name="status_bar_tab_quick_settings_title">Spart. nustat.</string>
-    <string name="status_bar_toolsbar_settings_title">Pasirinkite sparčiuosius nustatymus</string>
-    <string name="status_bar_wifi">Wi-Fi</string>
-    <string name="status_bar_wifi_hotspot">Prieigos taškas</string>
     <string name="to_charge_use_charger_txt">Norėdami įkrauti prietaisą, naudokite „Sony™“ įkroviklį</string>
-    <string name="toast_message_maximum_number_of_tools_reached">Pasirinktas maksimalus sparčiųjų nustatymų skaičius</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">„Wi-Fi“ prieigos taškas nepasiekiamas skrydžio režimu</string>
     <string name="usb_connected_txt">USB prijungta</string>
 </resources>

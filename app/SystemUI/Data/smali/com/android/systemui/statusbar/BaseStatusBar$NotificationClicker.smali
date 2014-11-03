@@ -38,24 +38,24 @@
     .param p5, "id"    # I
 
     .prologue
-    .line 844
+    .line 843
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 845
+    .line 844
     iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;->mIntent:Landroid/app/PendingIntent;
 
-    .line 846
+    .line 845
     iput-object p3, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;->mPkg:Ljava/lang/String;
 
-    .line 847
+    .line 846
     iput-object p4, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;->mTag:Ljava/lang/String;
 
-    .line 848
+    .line 847
     iput p5, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;->mId:I
 
-    .line 849
+    .line 848
     return-void
 .end method
 
@@ -70,7 +70,7 @@
 
     const/4 v10, 0x0
 
-    .line 857
+    .line 856
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
@@ -78,7 +78,7 @@
 
     invoke-interface {v4}, Landroid/app/IActivityManager;->resumeAppSwitches()V
 
-    .line 860
+    .line 859
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
     move-result-object v4
@@ -87,27 +87,27 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 864
+    .line 863
     :goto_0
     iget-object v4, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;->mIntent:Landroid/app/PendingIntent;
 
     if-eqz v4, :cond_0
 
-    .line 865
+    .line 864
     const/4 v4, 0x2
 
     new-array v3, v4, [I
 
-    .line 866
+    .line 865
     .local v3, "pos":[I
     invoke-virtual {p1, v3}, Landroid/view/View;->getLocationOnScreen([I)V
 
-    .line 867
+    .line 866
     new-instance v2, Landroid/content/Intent;
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    .line 868
+    .line 867
     .local v2, "overlay":Landroid/content/Intent;
     new-instance v4, Landroid/graphics/Rect;
 
@@ -135,7 +135,7 @@
 
     invoke-virtual {v2, v4}, Landroid/content/Intent;->setSourceBounds(Landroid/graphics/Rect;)V
 
-    .line 871
+    .line 870
     :try_start_1
     iget-object v4, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;->mIntent:Landroid/app/PendingIntent;
 
@@ -149,7 +149,7 @@
     :try_end_1
     .catch Landroid/app/PendingIntent$CanceledException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 877
+    .line 876
     :goto_1
     iget-object v4, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -163,7 +163,7 @@
 
     check-cast v1, Landroid/app/KeyguardManager;
 
-    .line 879
+    .line 878
     .local v1, "kgm":Landroid/app/KeyguardManager;
     if-eqz v1, :cond_0
 
@@ -171,7 +171,7 @@
 
     invoke-virtual {v1, v4}, Landroid/app/KeyguardManager;->exitKeyguardSecurely(Landroid/app/KeyguardManager$OnKeyguardExitResult;)V
 
-    .line 883
+    .line 882
     .end local v1    # "kgm":Landroid/app/KeyguardManager;
     .end local v2    # "overlay":Landroid/content/Intent;
     .end local v3    # "pos":[I
@@ -191,27 +191,27 @@
     :try_end_2
     .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 889
+    .line 888
     :goto_2
     iget-object v4, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v4, v10}, Lcom/android/systemui/statusbar/BaseStatusBar;->animateCollapsePanels(I)V
 
-    .line 890
+    .line 889
     iget-object v4, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v4, v10}, Lcom/android/systemui/statusbar/BaseStatusBar;->visibilityChanged(Z)V
 
-    .line 894
+    .line 893
     return-void
 
-    .line 872
+    .line 871
     .restart local v2    # "overlay":Landroid/content/Intent;
     .restart local v3    # "pos":[I
     :catch_0
     move-exception v0
 
-    .line 874
+    .line 873
     .local v0, "e":Landroid/app/PendingIntent$CanceledException;
     const-string v4, "StatusBar"
 
@@ -237,7 +237,7 @@
 
     goto :goto_1
 
-    .line 884
+    .line 883
     .end local v0    # "e":Landroid/app/PendingIntent$CanceledException;
     .end local v2    # "overlay":Landroid/content/Intent;
     .end local v3    # "pos":[I
@@ -246,7 +246,7 @@
 
     goto :goto_2
 
-    .line 861
+    .line 860
     :catch_2
     move-exception v4
 

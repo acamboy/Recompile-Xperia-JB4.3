@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 270
+    .line 263
     iput-object p1, p0, Lcom/android/systemui/usb/UsbStorageActivity$8;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     iput-boolean p2, p0, Lcom/android/systemui/usb/UsbStorageActivity$8;->val$on:Z
@@ -44,12 +44,12 @@
     .locals 1
 
     .prologue
-    .line 273
+    .line 266
     iget-boolean v0, p0, Lcom/android/systemui/usb/UsbStorageActivity$8;->val$on:Z
 
     if-eqz v0, :cond_0
 
-    .line 274
+    .line 267
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity$8;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     # getter for: Lcom/android/systemui/usb/UsbStorageActivity;->mStorageManager:Landroid/os/storage/StorageManager;
@@ -59,11 +59,11 @@
 
     invoke-virtual {v0}, Landroid/os/storage/StorageManager;->enableUsbMassStorage()V
 
-    .line 278
+    .line 271
     :goto_0
     return-void
 
-    .line 276
+    .line 269
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity$8;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 

@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 235
+    .line 264
     iput-object p1, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -37,7 +37,7 @@
     .param p2, "x1"    # Lcom/android/systemui/statusbar/CommandQueue$1;
 
     .prologue
-    .line 235
+    .line 264
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/CommandQueue$H;-><init>(Lcom/android/systemui/statusbar/CommandQueue;)V
 
     return-void
@@ -54,23 +54,23 @@
 
     const/4 v1, 0x0
 
-    .line 237
+    .line 266
     iget v8, p1, Landroid/os/Message;->what:I
 
     const/high16 v9, -0x10000
 
     and-int v7, v8, v9
 
-    .line 238
+    .line 267
     .local v7, "what":I
     sparse-switch v7, :sswitch_data_0
 
-    .line 316
+    .line 353
     :cond_0
     :goto_0
     return-void
 
-    .line 240
+    .line 269
     :sswitch_0
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -78,7 +78,7 @@
 
     and-int v2, v0, v1
 
-    .line 241
+    .line 270
     .local v2, "index":I
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
@@ -91,7 +91,7 @@
 
     move-result v3
 
-    .line 242
+    .line 271
     .local v3, "viewIndex":I
     iget v0, p1, Landroid/os/Message;->arg1:I
 
@@ -99,13 +99,13 @@
 
     goto :goto_0
 
-    .line 244
+    .line 273
     :pswitch_0
     iget-object v5, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v5, Lcom/android/internal/statusbar/StatusBarIcon;
 
-    .line 245
+    .line 274
     .local v5, "icon":Lcom/android/internal/statusbar/StatusBarIcon;
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
@@ -118,11 +118,11 @@
 
     move-result-object v4
 
-    .line 246
+    .line 275
     .local v4, "old":Lcom/android/internal/statusbar/StatusBarIcon;
     if-nez v4, :cond_1
 
-    .line 247
+    .line 276
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
@@ -132,7 +132,7 @@
 
     invoke-virtual {v0, v2, v5}, Lcom/android/internal/statusbar/StatusBarIconList;->setIcon(ILcom/android/internal/statusbar/StatusBarIcon;)V
 
-    .line 248
+    .line 277
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
@@ -155,7 +155,7 @@
 
     goto :goto_0
 
-    .line 250
+    .line 279
     :cond_1
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
@@ -166,7 +166,7 @@
 
     invoke-virtual {v0, v2, v5}, Lcom/android/internal/statusbar/StatusBarIconList;->setIcon(ILcom/android/internal/statusbar/StatusBarIcon;)V
 
-    .line 251
+    .line 280
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
@@ -189,7 +189,7 @@
 
     goto :goto_0
 
-    .line 257
+    .line 286
     .end local v4    # "old":Lcom/android/internal/statusbar/StatusBarIcon;
     .end local v5    # "icon":Lcom/android/internal/statusbar/StatusBarIcon;
     :pswitch_1
@@ -206,7 +206,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 258
+    .line 287
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
@@ -216,7 +216,7 @@
 
     invoke-virtual {v0, v2}, Lcom/android/internal/statusbar/StatusBarIconList;->removeIcon(I)V
 
-    .line 259
+    .line 288
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
@@ -239,7 +239,7 @@
 
     goto/16 :goto_0
 
-    .line 266
+    .line 295
     .end local v2    # "index":I
     .end local v3    # "viewIndex":I
     :sswitch_1
@@ -247,7 +247,7 @@
 
     check-cast v6, Lcom/android/systemui/statusbar/CommandQueue$NotificationQueueEntry;
 
-    .line 267
+    .line 296
     .local v6, "ne":Lcom/android/systemui/statusbar/CommandQueue$NotificationQueueEntry;
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
@@ -264,14 +264,14 @@
 
     goto/16 :goto_0
 
-    .line 271
+    .line 300
     .end local v6    # "ne":Lcom/android/systemui/statusbar/CommandQueue$NotificationQueueEntry;
     :sswitch_2
     iget-object v6, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v6, Lcom/android/systemui/statusbar/CommandQueue$NotificationQueueEntry;
 
-    .line 272
+    .line 301
     .restart local v6    # "ne":Lcom/android/systemui/statusbar/CommandQueue$NotificationQueueEntry;
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
@@ -288,7 +288,7 @@
 
     goto/16 :goto_0
 
-    .line 276
+    .line 305
     .end local v6    # "ne":Lcom/android/systemui/statusbar/CommandQueue$NotificationQueueEntry;
     :sswitch_3
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
@@ -306,7 +306,7 @@
 
     goto/16 :goto_0
 
-    .line 280
+    .line 309
     :sswitch_4
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
@@ -321,7 +321,7 @@
 
     goto/16 :goto_0
 
-    .line 283
+    .line 312
     :sswitch_5
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
@@ -334,7 +334,7 @@
 
     goto/16 :goto_0
 
-    .line 286
+    .line 315
     :sswitch_6
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
@@ -347,7 +347,7 @@
 
     goto/16 :goto_0
 
-    .line 289
+    .line 318
     :sswitch_7
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
@@ -360,8 +360,38 @@
 
     goto/16 :goto_0
 
-    .line 292
+    .line 322
     :sswitch_8
+    iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
+
+    # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
+    invoke-static {v0}, Lcom/android/systemui/statusbar/CommandQueue;->access$300(Lcom/android/systemui/statusbar/CommandQueue;)Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
+
+    move-result-object v0
+
+    iget v1, p1, Landroid/os/Message;->arg1:I
+
+    invoke-interface {v0, v1}, Lcom/android/systemui/statusbar/CommandQueue$Callbacks;->setSystemBarAlpha(I)V
+
+    goto/16 :goto_0
+
+    .line 325
+    :sswitch_9
+    iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
+
+    # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
+    invoke-static {v0}, Lcom/android/systemui/statusbar/CommandQueue;->access$300(Lcom/android/systemui/statusbar/CommandQueue;)Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
+
+    move-result-object v0
+
+    iget v1, p1, Landroid/os/Message;->arg1:I
+
+    invoke-interface {v0, v1}, Lcom/android/systemui/statusbar/CommandQueue$Callbacks;->setNavigationBarHide(I)V
+
+    goto/16 :goto_0
+
+    .line 329
+    :sswitch_a
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
@@ -377,8 +407,8 @@
 
     goto/16 :goto_0
 
-    .line 295
-    :sswitch_9
+    .line 332
+    :sswitch_b
     iget-object v8, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
@@ -400,8 +430,8 @@
 
     goto :goto_1
 
-    .line 298
-    :sswitch_a
+    .line 335
+    :sswitch_c
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
@@ -421,8 +451,8 @@
 
     goto/16 :goto_0
 
-    .line 301
-    :sswitch_b
+    .line 338
+    :sswitch_d
     iget-object v8, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
@@ -456,8 +486,8 @@
 
     goto :goto_3
 
-    .line 304
-    :sswitch_c
+    .line 341
+    :sswitch_e
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
@@ -469,8 +499,8 @@
 
     goto/16 :goto_0
 
-    .line 307
-    :sswitch_d
+    .line 344
+    :sswitch_f
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
@@ -482,8 +512,8 @@
 
     goto/16 :goto_0
 
-    .line 310
-    :sswitch_e
+    .line 347
+    :sswitch_10
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
@@ -495,8 +525,8 @@
 
     goto/16 :goto_0
 
-    .line 313
-    :sswitch_f
+    .line 350
+    :sswitch_11
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue$H;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     # getter for: Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
@@ -510,7 +540,7 @@
 
     goto/16 :goto_0
 
-    .line 238
+    .line 267
     nop
 
     :sswitch_data_0
@@ -523,17 +553,19 @@
         0x60000 -> :sswitch_5
         0x70000 -> :sswitch_6
         0x80000 -> :sswitch_7
-        0x90000 -> :sswitch_8
-        0xa0000 -> :sswitch_9
-        0xb0000 -> :sswitch_a
-        0xc0000 -> :sswitch_b
-        0xd0000 -> :sswitch_c
-        0xe0000 -> :sswitch_d
-        0xf0000 -> :sswitch_e
-        0x100000 -> :sswitch_f
+        0x90000 -> :sswitch_a
+        0xa0000 -> :sswitch_b
+        0xb0000 -> :sswitch_c
+        0xc0000 -> :sswitch_d
+        0xd0000 -> :sswitch_e
+        0xe0000 -> :sswitch_f
+        0xf0000 -> :sswitch_10
+        0x100000 -> :sswitch_11
+        0x110000 -> :sswitch_8
+        0x120000 -> :sswitch_9
     .end sparse-switch
 
-    .line 242
+    .line 271
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

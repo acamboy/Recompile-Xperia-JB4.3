@@ -39,26 +39,26 @@
     packed-switch v0, :pswitch_data_0
 
     .line 95
-    const v0, 0x7f0a008e
+    const v0, 0x7f0a00c1
 
     :goto_0
     return v0
 
     .line 89
     :pswitch_0
-    const v0, 0x7f0a008b
+    const v0, 0x7f0a00be
 
     goto :goto_0
 
     .line 91
     :pswitch_1
-    const v0, 0x7f0a008c
+    const v0, 0x7f0a00bf
 
     goto :goto_0
 
     .line 93
     :pswitch_2
-    const v0, 0x7f0a008d
+    const v0, 0x7f0a00c0
 
     goto :goto_0
 
@@ -153,7 +153,7 @@
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 55
-    const v3, 0x7f0a008f
+    const v3, 0x7f0a00c2
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -165,7 +165,7 @@
     invoke-virtual {v0, v3, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 58
-    const v3, 0x7f0a0090
+    const v3, 0x7f0a00c3
 
     new-instance v4, Lcom/android/systemui/net/NetworkOverLimitActivity$1;
 

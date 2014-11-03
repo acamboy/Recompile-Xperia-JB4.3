@@ -32,7 +32,7 @@
 
     iput-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 45
+    .line 52
     return-void
 .end method
 
@@ -43,28 +43,41 @@
     .param p1, "state"    # I
 
     .prologue
-    .line 81
-    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;
+    .line 88
+    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;
 
-    .line 82
-    .local v0, "btAdapter":Landroid/bluetooth/BluetoothAdapter;
-    if-eqz v0, :cond_0
-
-    .line 83
-    const/4 v1, 0x2
-
-    if-ne p1, v1, :cond_1
-
-    .line 84
-    invoke-virtual {v0}, Landroid/bluetooth/BluetoothAdapter;->enable()Z
+    if-nez v1, :cond_0
 
     .line 89
+    invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;
+
+    .line 92
     :cond_0
+    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;
+
+    .line 93
+    .local v0, "btAdapter":Landroid/bluetooth/BluetoothAdapter;
+    if-eqz v0, :cond_1
+
+    .line 94
+    const/4 v1, 0x2
+
+    if-ne p1, v1, :cond_2
+
+    .line 95
+    invoke-virtual {v0}, Landroid/bluetooth/BluetoothAdapter;->enable()Z
+
+    .line 100
+    :cond_1
     :goto_0
     return-void
 
-    .line 86
-    :cond_1
+    .line 97
+    :cond_2
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothAdapter;->disable()Z
 
     goto :goto_0
@@ -76,53 +89,53 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 49
+    .line 56
     iget-boolean v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mIsRegistered:Z
 
     if-nez v1, :cond_0
 
-    .line 50
+    .line 57
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 51
+    .line 58
     .local v0, "bluetoothFilter":Landroid/content/IntentFilter;
     const-string v1, "android.bluetooth.adapter.action.STATE_CHANGED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 52
+    .line 59
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsService;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 53
+    .line 60
     iput-boolean v3, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mIsRegistered:Z
 
-    .line 55
+    .line 62
     .end local v0    # "bluetoothFilter":Landroid/content/IntentFilter;
     :cond_0
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;
 
     if-nez v1, :cond_1
 
-    .line 56
+    .line 63
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;
 
-    .line 59
+    .line 66
     :cond_1
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;
 
     if-eqz v1, :cond_3
 
-    .line 60
+    .line 67
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;
 
     invoke-virtual {v1}, Landroid/bluetooth/BluetoothAdapter;->isEnabled()Z
@@ -131,26 +144,57 @@
 
     if-eqz v1, :cond_2
 
-    .line 61
+    .line 68
     const/4 v1, 0x2
 
     invoke-virtual {p0, v1}, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->notifyStateChanged(I)V
 
-    .line 68
+    .line 75
     :goto_0
     return-void
 
-    .line 63
+    .line 70
     :cond_2
     invoke-virtual {p0, v3}, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->notifyStateChanged(I)V
 
     goto :goto_0
 
-    .line 66
+    .line 73
     :cond_3
     const/4 v1, -0x1
 
     invoke-virtual {p0, v1}, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->notifyStateChanged(I)V
 
     goto :goto_0
+.end method
+
+.method public stop()V
+    .locals 2
+
+    .prologue
+    .line 79
+    iget-boolean v0, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mIsRegistered:Z
+
+    if-eqz v0, :cond_0
+
+    .line 80
+    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsService;->mContext:Landroid/content/Context;
+
+    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    .line 81
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mIsRegistered:Z
+
+    .line 83
+    :cond_0
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;
+
+    .line 84
+    return-void
 .end method

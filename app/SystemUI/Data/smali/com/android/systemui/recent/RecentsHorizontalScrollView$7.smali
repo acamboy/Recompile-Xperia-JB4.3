@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 349
+    .line 484
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$7;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -37,13 +37,13 @@
     .locals 1
 
     .prologue
-    .line 351
+    .line 486
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$7;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     # invokes: Lcom/android/systemui/recent/RecentsHorizontalScrollView;->update()V
     invoke-static {v0}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->access$300(Lcom/android/systemui/recent/RecentsHorizontalScrollView;)V
 
-    .line 352
+    .line 487
     return-void
 .end method
 
@@ -51,12 +51,12 @@
     .locals 1
 
     .prologue
-    .line 355
+    .line 490
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$7;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     # invokes: Lcom/android/systemui/recent/RecentsHorizontalScrollView;->update()V
     invoke-static {v0}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->access$300(Lcom/android/systemui/recent/RecentsHorizontalScrollView;)V
 
-    .line 356
+    .line 491
     return-void
 .end method

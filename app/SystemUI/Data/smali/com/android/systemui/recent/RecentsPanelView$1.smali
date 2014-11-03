@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 810
+    .line 839
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsPanelView$1;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     iput-object p2, p0, Lcom/android/systemui/recent/RecentsPanelView$1;->val$selectedView:Landroid/view/View;
@@ -47,16 +47,16 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 812
+    .line 841
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v3
 
-    const v4, 0x7f0700e7
+    const v4, 0x7f070103
 
     if-ne v3, v4, :cond_1
 
-    .line 813
+    .line 842
     iget-object v2, p0, Lcom/android/systemui/recent/RecentsPanelView$1;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     # getter for: Lcom/android/systemui/recent/RecentsPanelView;->mRecentsContainer:Landroid/view/ViewGroup;
@@ -68,24 +68,24 @@
 
     invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->removeViewInLayout(Landroid/view/View;)V
 
-    .line 826
+    .line 855
     :goto_0
     const/4 v2, 0x1
 
     :cond_0
     return v2
 
-    .line 814
+    .line 843
     :cond_1
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v3
 
-    const v4, 0x7f0700e8
+    const v4, 0x7f070104
 
     if-ne v3, v4, :cond_0
 
-    .line 815
+    .line 844
     iget-object v3, p0, Lcom/android/systemui/recent/RecentsPanelView$1;->val$selectedView:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getTag()Ljava/lang/Object;
@@ -94,14 +94,14 @@
 
     check-cast v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
 
-    .line 816
+    .line 845
     .local v1, "viewHolder":Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
     if-eqz v1, :cond_2
 
-    .line 817
+    .line 846
     iget-object v0, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->taskDescription:Lcom/android/systemui/recent/TaskDescription;
 
-    .line 818
+    .line 847
     .local v0, "ad":Lcom/android/systemui/recent/TaskDescription;
     iget-object v3, p0, Lcom/android/systemui/recent/RecentsPanelView$1;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
@@ -110,14 +110,14 @@
     # invokes: Lcom/android/systemui/recent/RecentsPanelView;->startApplicationDetailsActivity(Ljava/lang/String;)V
     invoke-static {v3, v4}, Lcom/android/systemui/recent/RecentsPanelView;->access$1000(Lcom/android/systemui/recent/RecentsPanelView;Ljava/lang/String;)V
 
-    .line 819
+    .line 848
     iget-object v3, p0, Lcom/android/systemui/recent/RecentsPanelView$1;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     invoke-virtual {v3, v2}, Lcom/android/systemui/recent/RecentsPanelView;->show(Z)V
 
     goto :goto_0
 
-    .line 821
+    .line 850
     .end local v0    # "ad":Lcom/android/systemui/recent/TaskDescription;
     :cond_2
     new-instance v2, Ljava/lang/IllegalStateException;

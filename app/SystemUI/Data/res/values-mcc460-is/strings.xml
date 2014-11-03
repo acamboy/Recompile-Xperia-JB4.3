@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="toast_message_not_allow_turn_on_hotspot">"Heitur reitur WLAN nets er ekki tiltækur í flugstillingu "</string>
+    <string name="status_bar_settings_wifi">WLAN-kerfi</string>
+    <string name="status_bar_settings_wifi_hotspot">Heitur WLAN reitur</string>
+    <string name="status_bar_wifi">WLAN-kerfi</string>
     <string name="status_bar_settings_wifi_button">WLAN</string>
     <string name="accessibility_wifi_off">Slökkt á WLAN.</string>
     <string name="accessibility_no_wifi">WLAN aftengt.</string>
@@ -13,8 +17,4 @@
     <string name="quick_settings_wifi_label">WLAN</string>
     <string name="quick_settings_wifi_off_label">Slökkt á WLAN</string>
     <string name="quick_settings_wifi_display_label">WLAN skjár</string>
-    <string name="status_bar_settings_wifi">WLAN-kerfi</string>
-    <string name="status_bar_settings_wifi_hotspot">Heitur WLAN reitur</string>
-    <string name="status_bar_wifi">WLAN-kerfi</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">"Heitur reitur WLAN nets er ekki tiltækur í flugstillingu "</string>
 </resources>

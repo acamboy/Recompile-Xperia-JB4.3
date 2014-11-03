@@ -172,7 +172,7 @@ If you re-enable data, you may be charged by the operator."</string>
     <string name="quick_settings_location_label">Location in use</string>
     <string name="quick_settings_media_device_label">Media device</string>
     <string name="quick_settings_rssi_label">RSSI</string>
-    <string name="quick_settings_rssi_emergency_only">Emergency calls only</string>
+    <string name="quick_settings_rssi_emergency_only">Emergency Calls Only</string>
     <string name="quick_settings_settings_label">Settings</string>
     <string name="quick_settings_time_label">Time</string>
     <string name="quick_settings_user_label">Me</string>
@@ -188,6 +188,4 @@ If you re-enable data, you may be charged by the operator."</string>
     <string name="status_bar_help_text">"Access them at any time by swiping down.
 
 Swipe down again for system controls."</string>
-    <string name="expanded_no_simcard">No SIM card</string>
-    <string name="expanded_airplane_no_service">Aeroplane mode</string>
 </resources>

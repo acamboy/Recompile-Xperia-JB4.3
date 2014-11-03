@@ -79,7 +79,7 @@
     .line 48
     const-string v0, "android.intent.extra.shortcut.NAME"
 
-    const v2, 0x7f0a009e
+    const v2, 0x7f0a00d1
 
     invoke-virtual {p0, v2}, Lcom/android/systemui/Somnambulator;->getString(I)Ljava/lang/String;
 

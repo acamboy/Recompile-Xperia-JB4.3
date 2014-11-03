@@ -143,7 +143,7 @@
 
     .line 81
     .local v16, "iconId":I
-    const v19, 0x7f0a0094
+    const v19, 0x7f0a00c7
 
     .line 82
     .local v19, "textResId":I
@@ -371,11 +371,11 @@
     .end local v19    # "textResId":I
     .end local v20    # "visible":Z
     :cond_2
-    const v16, 0x7f020157
+    const v16, 0x7f020162
 
     .line 90
     .restart local v16    # "iconId":I
-    const v19, 0x7f0a0093
+    const v19, 0x7f0a00c6
 
     .line 91
     .restart local v19    # "textResId":I

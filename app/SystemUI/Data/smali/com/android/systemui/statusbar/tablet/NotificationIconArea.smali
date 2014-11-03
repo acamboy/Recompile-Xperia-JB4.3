@@ -26,7 +26,7 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 41
-    const v0, 0x7f0700bc
+    const v0, 0x7f0700d8
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/NotificationIconArea;->findViewById(I)Landroid/view/View;
 

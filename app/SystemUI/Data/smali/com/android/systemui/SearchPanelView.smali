@@ -711,7 +711,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 174
-    const v0, 0x7f070096
+    const v0, 0x7f0700b2
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/SearchPanelView;->findViewById(I)Landroid/view/View;
 
@@ -720,7 +720,7 @@
     iput-object v0, p0, Lcom/android/systemui/SearchPanelView;->mSearchTargetsContainer:Landroid/view/View;
 
     .line 175
-    const v0, 0x7f0700cd
+    const v0, 0x7f0700e9
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/SearchPanelView;->findViewById(I)Landroid/view/View;
 
@@ -731,7 +731,7 @@
     iput-object v0, p0, Lcom/android/systemui/SearchPanelView;->mStatusBarTouchProxy:Lcom/android/systemui/recent/StatusBarTouchProxy;
 
     .line 177
-    const v0, 0x7f070098
+    const v0, 0x7f0700b4
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/SearchPanelView;->findViewById(I)Landroid/view/View;
 

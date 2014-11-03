@@ -177,8 +177,8 @@
     .line 97
     :sswitch_data_0
     .sparse-switch
-        0x7f0700d2 -> :sswitch_0
-        0x7f0700de -> :sswitch_1
+        0x7f0700ee -> :sswitch_0
+        0x7f0700fa -> :sswitch_1
     .end sparse-switch
 .end method
 
@@ -224,7 +224,7 @@
     .local v0, "context":Landroid/content/Context;
     new-instance v2, Lcom/android/systemui/statusbar/policy/AirplaneModeController;
 
-    const v1, 0x7f0700d1
+    const v1, 0x7f0700ed
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/SettingsView;->findViewById(I)Landroid/view/View;
 
@@ -237,7 +237,7 @@
     iput-object v2, p0, Lcom/android/systemui/statusbar/tablet/SettingsView;->mAirplane:Lcom/android/systemui/statusbar/policy/AirplaneModeController;
 
     .line 66
-    const v1, 0x7f0700d2
+    const v1, 0x7f0700ee
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/SettingsView;->findViewById(I)Landroid/view/View;
 
@@ -246,7 +246,7 @@
     invoke-virtual {v1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 68
-    const v1, 0x7f0700d5
+    const v1, 0x7f0700f1
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/SettingsView;->findViewById(I)Landroid/view/View;
 
@@ -255,7 +255,7 @@
     iput-object v1, p0, Lcom/android/systemui/statusbar/tablet/SettingsView;->mRotationLockContainer:Landroid/view/View;
 
     .line 69
-    const v1, 0x7f0700d9
+    const v1, 0x7f0700f5
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/SettingsView;->findViewById(I)Landroid/view/View;
 
@@ -266,7 +266,7 @@
     .line 70
     new-instance v2, Lcom/android/systemui/statusbar/policy/AutoRotateController;
 
-    const v1, 0x7f0700d8
+    const v1, 0x7f0700f4
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/SettingsView;->findViewById(I)Landroid/view/View;
 
@@ -285,7 +285,7 @@
     .line 80
     new-instance v3, Lcom/android/systemui/settings/BrightnessController;
 
-    const v1, 0x7f070065
+    const v1, 0x7f070072
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/SettingsView;->findViewById(I)Landroid/view/View;
 
@@ -293,7 +293,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    const v2, 0x7f0700da
+    const v2, 0x7f0700f6
 
     invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/tablet/SettingsView;->findViewById(I)Landroid/view/View;
 
@@ -308,7 +308,7 @@
     .line 83
     new-instance v2, Lcom/android/systemui/statusbar/policy/DoNotDisturbController;
 
-    const v1, 0x7f0700dd
+    const v1, 0x7f0700f9
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/SettingsView;->findViewById(I)Landroid/view/View;
 
@@ -321,7 +321,7 @@
     iput-object v2, p0, Lcom/android/systemui/statusbar/tablet/SettingsView;->mDoNotDisturb:Lcom/android/systemui/statusbar/policy/DoNotDisturbController;
 
     .line 85
-    const v1, 0x7f0700de
+    const v1, 0x7f0700fa
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/tablet/SettingsView;->findViewById(I)Landroid/view/View;
 

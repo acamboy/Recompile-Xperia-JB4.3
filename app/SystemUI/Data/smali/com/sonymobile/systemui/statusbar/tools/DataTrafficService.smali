@@ -171,52 +171,6 @@
     return-object v0
 .end method
 
-.method private multiSimGetMobileData(I)Z
-    .locals 4
-    .param p1, "sub"    # I
-
-    .prologue
-    const/4 v0, 0x0
-
-    .line 130
-    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsService;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "mobile_data"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2, v0}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const/4 v0, 0x1
-
-    .line 132
-    .local v0, "enabled":Z
-    :cond_0
-    return v0
-.end method
-
 
 # virtual methods
 .method public changeTo(I)V
@@ -249,25 +203,38 @@
 .end method
 
 .method protected getState()I
-    .locals 1
+    .locals 2
 
     .prologue
+    .line 122
+    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/DataTrafficService;->mConnectivityManager:Landroid/net/ConnectivityManager;
+
     .line 123
-    const/4 v0, 0x0
+    .local v0, "connManager":Landroid/net/ConnectivityManager;
+    if-eqz v0, :cond_1
 
-    invoke-direct {p0, v0}, Lcom/sonymobile/systemui/statusbar/tools/DataTrafficService;->multiSimGetMobileData(I)Z
+    .line 124
+    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getMobileDataEnabled()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    const/4 v0, 0x2
+    const/4 v1, 0x2
 
+    .line 126
     :goto_0
-    return v0
+    return v1
 
+    .line 124
     :cond_0
-    const/4 v0, 0x1
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    .line 126
+    :cond_1
+    const/4 v1, -0x1
 
     goto :goto_0
 .end method
@@ -338,5 +305,38 @@
     invoke-virtual {p0, v1}, Lcom/sonymobile/systemui/statusbar/tools/DataTrafficService;->notifyStateChanged(I)V
 
     .line 102
+    return-void
+.end method
+
+.method public stop()V
+    .locals 2
+
+    .prologue
+    .line 106
+    iget-boolean v0, p0, Lcom/sonymobile/systemui/statusbar/tools/DataTrafficService;->mReceiverRegistered:Z
+
+    if-eqz v0, :cond_0
+
+    .line 107
+    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/ToolsService;->mContext:Landroid/content/Context;
+
+    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/DataTrafficService;->mReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    .line 109
+    :cond_0
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/DataTrafficService;->mConnectivityManager:Landroid/net/ConnectivityManager;
+
+    .line 110
+    iget-object v0, p0, Lcom/sonymobile/systemui/statusbar/tools/DataTrafficService;->mHandler:Landroid/os/Handler;
+
+    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/DataTrafficService;->mPollRunnable:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 111
     return-void
 .end method

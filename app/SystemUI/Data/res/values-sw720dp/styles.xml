@@ -5,6 +5,10 @@
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
+    <style name="StatusBarNotificationText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff999999</item>
+    </style>
     <style name="SystemBarNotificationText">
         <item name="android:textSize">20.0dip</item>
         <item name="android:textColor">@android:color/white</item>

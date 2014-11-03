@@ -140,6 +140,7 @@
         <item name="android:shadowRadius">2.0</item>
         <item name="android:lineSpacingMultiplier">1.1</item>
     </style>
+    <style name="ToolsbarSettings" parent="@android:style/Theme.DeviceDefault.Light" />
     <style name="ClearAllButtonStyle" parent="@android:style/Widget.DeviceDefault.Button">
         <item name="android:background">@android:drawable/semc_btn_default_holo_dark_unthemed</item>
     </style>

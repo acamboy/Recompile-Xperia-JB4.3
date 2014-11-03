@@ -51,7 +51,13 @@
 .method public abstract setImeWindowStatus(Landroid/os/IBinder;II)V
 .end method
 
+.method public abstract setNavigationBarHide(I)V
+.end method
+
 .method public abstract setNavigationIconHints(I)V
+.end method
+
+.method public abstract setSystemBarAlpha(I)V
 .end method
 
 .method public abstract setSystemUiVisibility(II)V

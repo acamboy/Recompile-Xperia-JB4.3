@@ -101,3 +101,6 @@
 
 .method abstract start()V
 .end method
+
+.method abstract stop()V
+.end method

@@ -70,7 +70,7 @@
     .param p2, "listener"    # Landroid/view/View$OnClickListener;
 
     .prologue
-    const v5, 0x7f0200f1
+    const v5, 0x7f0200f7
 
     const/4 v6, 0x0
 

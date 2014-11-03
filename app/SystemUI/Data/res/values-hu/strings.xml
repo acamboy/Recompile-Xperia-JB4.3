@@ -2,6 +2,60 @@
 <resources>
     <string name="status_bar_date_formatter">"%2$s
 %1$s"</string>
+    <string name="carrier_invalid_sim_card">Érvénytelen SIM kártya</string>
+    <string name="power_settings_instructions">Az akkumulátor üzemideje optimalizálható a Hosszabbított készenléti mód engedélyezésével az Energiagazdálkodás pontban</string>
+    <string name="battery_low_power_settings">Akku adatai</string>
+    <string name="toast_message_not_allow_turn_on_hotspot">Repülőgépes módban nem érhető el Wi-Fi csatlakozási pont</string>
+    <string name="status_bar_toolsbar_settings_title">Gyors beállítások kiválasztása</string>
+    <string name="status_bar_recent_failed_to_launch_app">Nem sikerült az alkalmazás indítása</string>
+    <string name="toast_message_maximum_number_of_tools_reached">Maximális számú gyors beállítás van kiválasztva</string>
+    <string name="status_bar_settings_airplanemode">Repülőgépes mód</string>
+    <string name="status_bar_settings_autorotate">Képernyő aut. forgat.</string>
+    <string name="status_bar_settings_gps">GPS</string>
+    <string name="status_bar_settings_settings">Beállítások par.ikonja</string>
+    <string name="status_bar_settings_wifi">Wi-Fi</string>
+    <string name="status_bar_settings_bluetooth">Bluetooth</string>
+    <string name="status_bar_settings_mobile_data">Mobil adatforgalom</string>
+    <string name="status_bar_settings_brightness">Fényerő</string>
+    <string name="status_bar_settings_sound">Hang</string>
+    <string name="status_bar_settings_wifi_hotspot">Wi-Fi csatl. pont</string>
+    <string name="status_bar_settings_nfc">NFC</string>
+    <string name="status_bar_settings_roaming">Barangolás</string>
+    <string name="status_bar_settings_autosync">Adatok aut. szinkroniz.</string>
+    <string name="status_bar_airplanemode">Repülőgépes</string>
+    <string name="status_bar_autorotate">Automatikus forgatás</string>
+    <string name="status_bar_gps">GPS</string>
+    <string name="status_bar_settings">Beállítások</string>
+    <string name="status_bar_wifi">Wi-Fi</string>
+    <string name="status_bar_bluetooth">Bluetooth</string>
+    <string name="status_bar_mobile_data">Mobilhálózati adatok</string>
+    <string name="status_bar_brightness">Fényerő</string>
+    <string name="status_bar_sound">Hang</string>
+    <string name="status_bar_wifi_hotspot">Csatlakozási pont</string>
+    <string name="status_bar_nfc">NFC</string>
+    <string name="status_bar_roaming">Barangolás</string>
+    <string name="status_bar_autosync">Aut. szinkronizáló</string>
+    <string name="accessibility_state_vibrate">Rezgő</string>
+    <string name="quick_Settings">Gyors beállítások</string>
+    <string name="quick_settings_description">Gyorsbeállítások számának kiválasztása az értesítési panelen és a sorrendjük módosítása</string>
+    <string name="status_bar_autosync_dialog_enable_title">Bekapcsolja az automatikus szinkronizálást?</string>
+    <string name="status_bar_autosync_dialog_enable_warning">"Az interneten végrehajtott fiókmódosítások automatikusan megjelennek a telefonján is.
+
+Egyes fiókok szintén automatikusan az internetre másolhatják a telefonon végzett módosításokat.
+
+Az egyes fiókokhoz szinkronizálandó adattípusok kiválasztásához lépjen a Beállítások > Fiókok lehetőségre."</string>
+    <string name="status_bar_autosync_dialog_extended_enable_warning">"Az interneten végrehajtott fiókmódosítások automatikusan megjelennek a készülékén is.
+
+Egyes fiókok szintén automatikusan az internetre másolhatják a készüléken végzett módosításokat.
+
+Az egyes fiókokban szinkronizálandó adattípusok kiválasztásához lépjen a Beállítások > Fiókok pontra.
+
+Adatátviteli költségek merülhetnek fel, amikor készülékén frissítések történnek. Korlátlan adatátvitelt lehetővé tevő díjcsomag ajánlott."</string>
+    <string name="status_bar_autosync_dialog_disable_title">Kikapcsolja az automatikus szinkronizálást?</string>
+    <string name="status_bar_autosync_dialog_disable_warning">Ez mérsékelni fogja az adat- és akkumulátorhasználatot, de minden fiókot manuálisan kell majd szinkronizálnia a legfrissebb információk begyűjtéséhez. Továbbá nem fog értesítéseket kapni a frissítésekről.</string>
+    <string name="new_sketch">Új rajz</string>
+    <string name="new_note">Új megjegyzés</string>
+    <string name="brightness_adapt_checkbox_information">Automatikus fényerősség</string>
     <string name="app_label">Rendszer UI</string>
     <string name="status_bar_clear_all_button">Törlés</string>
     <string name="status_bar_do_not_disturb_button">Ne zavarjanak</string>
@@ -109,6 +163,7 @@ Használja a kapott töltőt."</string>
     <string name="accessibility_data_connection_3g">3G</string>
     <string name="accessibility_data_connection_3.5g">3.5G</string>
     <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_h_plus">HSPAP</string>
     <string name="accessibility_data_connection_lte">LTE</string>
     <string name="accessibility_data_connection_cdma">CDMA</string>
     <string name="accessibility_data_connection_roaming">Barangolás</string>
@@ -190,73 +245,20 @@ Ha újra engedélyezi az adatforgalmat, szolgáltatója díjat számolhat fel."<
     <string name="status_bar_help_text">"Bármikor elérheti őket, ha gyorsan lefelé csúsztatja az ujját.
 
 A rendszerbeállítások eléréséhez csúsztassa lefelé az ujját ismét."</string>
-    <string name="data_service_except_mms_warning_txt">Engedélyezi az adatforgalmat? A hálózati előfizetésétől függően ez további díjak felszámításával járhat. A további költségek elkerülése érdekében a befejezéskor tiltsa le az adatforgalmat.</string>
-    <string name="expanded_no_simcard">Nincs SIM kártya.</string>
-    <string name="accessibility_data_connection_h_plus">HSPAP</string>
-    <string name="expanded_airplane_no_service">Repülőgép üzemmód</string>
     <string name="unmount_strings_dialog_content_txt">Ne távolítsa el az SD kártyát a leválasztás során</string>
     <string name="accessibility_desc_tab_quick_settings_edit">Gyorsbeállítások módosítása</string>
-    <string name="accessibility_state_vibrate">Rezgő</string>
-    <string name="battery_low_power_settings">Akku adatai</string>
-    <string name="brightness_adapt_checkbox_information">Automatikus fényerősség</string>
-    <string name="carrier_invalid_sim_card">Érvénytelen SIM kártya</string>
-    <string name="new_note">Új megjegyzés</string>
-    <string name="new_sketch">Új rajz</string>
-    <string name="power_settings_instructions">Az akkumulátor üzemideje optimalizálható a Hosszabbított készenléti mód engedélyezésével az Energiagazdálkodás pontban</string>
-    <string name="quick_Settings">Gyors beállítások</string>
-    <string name="quick_settings_description">Gyorsbeállítások számának kiválasztása az értesítési panelen és a sorrendjük módosítása</string>
+    <string name="description_direction_left_down">Csúsztatás balra átlósan lefelé a(z) %s eléréséhez.</string>
+    <string name="description_direction_left_up">Csúsztatás balra átlósan felfelé a(z) %s eléréséhez.</string>
+    <string name="description_direction_up_left">Csúsztatás balra átlósan felfelé a(z) %s eléréséhez.</string>
+    <string name="description_direction_up_right">Csúsztatás jobbra átlósan felfelé a(z) %s eléréséhez.</string>
+    <string name="description_target_sonyentrance">Újdonságok</string>
     <string name="start_note_app">A Megjegyzés alkalmazás indítása</string>
     <string name="start_sketch_app">A Rajz alkalmazás indítása</string>
-    <string name="status_bar_airplanemode">Repülőgépes</string>
-    <string name="status_bar_autorotate">Automatikus forgatás</string>
-    <string name="status_bar_autosync">Aut. szinkronizáló</string>
-    <string name="status_bar_autosync_dialog_disable_title">Kikapcsolja az automatikus szinkronizálást?</string>
-    <string name="status_bar_autosync_dialog_disable_warning">Ez mérsékelni fogja az adat- és akkumulátorhasználatot, de minden fiókot manuálisan kell majd szinkronizálnia a legfrissebb információk begyűjtéséhez. Továbbá nem fog értesítéseket kapni a frissítésekről.</string>
-    <string name="status_bar_autosync_dialog_enable_title">Bekapcsolja az automatikus szinkronizálást?</string>
-    <string name="status_bar_autosync_dialog_enable_warning">"Az interneten végrehajtott fiókmódosítások automatikusan megjelennek a telefonján is.
-
-Egyes fiókok szintén automatikusan az internetre másolhatják a telefonon végzett módosításokat.
-
-Az egyes fiókokhoz szinkronizálandó adattípusok kiválasztásához lépjen a Beállítások > Fiókok lehetőségre."</string>
-    <string name="status_bar_autosync_dialog_extended_enable_warning">"Az interneten végrehajtott fiókmódosítások automatikusan megjelennek a készülékén is.
-
-Egyes fiókok szintén automatikusan az internetre másolhatják a készüléken végzett módosításokat.
-
-Az egyes fiókokban szinkronizálandó adattípusok kiválasztásához lépjen a Beállítások > Fiókok pontra.
-
-Adatátviteli költségek merülhetnek fel, amikor készülékén frissítések történnek. Korlátlan adatátvitelt lehetővé tevő díjcsomag ajánlott."</string>
-    <string name="status_bar_bluetooth">Bluetooth</string>
-    <string name="status_bar_brightness">Fényerő</string>
-    <string name="status_bar_gps">GPS</string>
     <string name="status_bar_mirroring">Tükrözés</string>
-    <string name="status_bar_mobile_data">Mobilhálózati adatok</string>
-    <string name="status_bar_nfc">NFC</string>
-    <string name="status_bar_recent_failed_to_launch_app">Nem sikerült az alkalmazás indítása</string>
-    <string name="status_bar_roaming">Barangolás</string>
-    <string name="status_bar_settings">Beállítások</string>
-    <string name="status_bar_settings_airplanemode">Repülőgépes mód</string>
-    <string name="status_bar_settings_autorotate">Képernyő aut. forgat.</string>
-    <string name="status_bar_settings_autosync">Adatok aut. szinkroniz.</string>
-    <string name="status_bar_settings_bluetooth">Bluetooth</string>
-    <string name="status_bar_settings_brightness">Fényerő</string>
-    <string name="status_bar_settings_gps">GPS</string>
     <string name="status_bar_settings_mirroring">Képernyőtükrözés</string>
-    <string name="status_bar_settings_mobile_data">Mobil adatforgalom</string>
-    <string name="status_bar_settings_nfc">NFC</string>
-    <string name="status_bar_settings_roaming">Barangolás</string>
-    <string name="status_bar_settings_settings">Beállítások par.ikonja</string>
-    <string name="status_bar_settings_sound">Hang</string>
-    <string name="status_bar_settings_wifi">Wi-Fi</string>
-    <string name="status_bar_settings_wifi_hotspot">Wi-Fi csatl. pont</string>
-    <string name="status_bar_sound">Hang</string>
     <string name="status_bar_tab_notifications_title">Értesítések</string>
     <string name="status_bar_tab_quick_settings_edit">Módosítás</string>
     <string name="status_bar_tab_quick_settings_title">Gyorsbeállítás</string>
-    <string name="status_bar_toolsbar_settings_title">Gyors beállítások kiválasztása</string>
-    <string name="status_bar_wifi">Wi-Fi</string>
-    <string name="status_bar_wifi_hotspot">Csatlakozási pont</string>
     <string name="to_charge_use_charger_txt">Az eszköz töltéséhez használja a Sony™ töltőt</string>
-    <string name="toast_message_maximum_number_of_tools_reached">Maximális számú gyors beállítás van kiválasztva</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">Repülőgépes módban nem érhető el Wi-Fi csatlakozási pont</string>
     <string name="usb_connected_txt">USB csatlakoztatva</string>
 </resources>

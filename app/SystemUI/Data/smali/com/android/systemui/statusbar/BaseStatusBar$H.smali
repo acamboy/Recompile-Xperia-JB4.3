@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 681
+    .line 680
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -40,17 +40,17 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 684
+    .line 683
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 714
+    .line 713
     :cond_0
     :goto_0
     return-void
 
-    .line 687
+    .line 686
     :pswitch_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -58,7 +58,7 @@
 
     goto :goto_0
 
-    .line 691
+    .line 690
     :pswitch_1
     new-instance v0, Landroid/content/Intent;
 
@@ -66,13 +66,13 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 692
+    .line 691
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "com.android.systemui"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 693
+    .line 692
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
@@ -87,7 +87,7 @@
 
     goto :goto_0
 
-    .line 696
+    .line 695
     .end local v0    # "intent":Landroid/content/Intent;
     :pswitch_2
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
@@ -96,7 +96,7 @@
 
     goto :goto_0
 
-    .line 699
+    .line 698
     :pswitch_3
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -104,7 +104,7 @@
 
     goto :goto_0
 
-    .line 703
+    .line 702
     :pswitch_4
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -122,7 +122,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 704
+    .line 703
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mSearchPanelView:Lcom/android/systemui/SearchPanelView;
@@ -131,7 +131,7 @@
 
     goto :goto_0
 
-    .line 709
+    .line 708
     :pswitch_5
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -149,7 +149,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 710
+    .line 709
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$H;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mSearchPanelView:Lcom/android/systemui/SearchPanelView;
@@ -160,7 +160,7 @@
 
     goto :goto_0
 
-    .line 684
+    .line 683
     :pswitch_data_0
     .packed-switch 0x3fc
         :pswitch_0

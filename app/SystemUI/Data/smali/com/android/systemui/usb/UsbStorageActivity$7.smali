@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 258
+    .line 251
     iput-object p1, p0, Lcom/android/systemui/usb/UsbStorageActivity$7;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .prologue
     const/16 v1, 0x8
 
-    .line 261
+    .line 254
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity$7;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     # getter for: Lcom/android/systemui/usb/UsbStorageActivity;->mUnmountButton:Landroid/widget/Button;
@@ -52,7 +52,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 262
+    .line 255
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity$7;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     # getter for: Lcom/android/systemui/usb/UsbStorageActivity;->mMountButton:Landroid/widget/Button;
@@ -62,7 +62,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
-    .line 264
+    .line 257
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity$7;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     # getter for: Lcom/android/systemui/usb/UsbStorageActivity;->mProgressBar:Landroid/widget/ProgressBar;
@@ -74,6 +74,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
-    .line 266
+    .line 259
     return-void
 .end method

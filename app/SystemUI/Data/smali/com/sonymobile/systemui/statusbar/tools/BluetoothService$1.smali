@@ -67,16 +67,9 @@
 
     .line 33
     .local v0, "state":I
-    const/16 v1, 0xc
+    packed-switch v0, :pswitch_data_0
 
-    if-ne v0, v1, :cond_1
-
-    .line 34
-    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;
-
-    invoke-virtual {v1, v4}, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->notifyStateChanged(I)V
-
-    .line 43
+    .line 50
     .end local v0    # "state":I
     :cond_0
     :goto_0
@@ -84,41 +77,45 @@
 
     .line 35
     .restart local v0    # "state":I
-    :cond_1
-    const/16 v1, 0xa
+    :pswitch_0
+    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;
 
-    if-ne v0, v1, :cond_2
+    invoke-virtual {v1, v4}, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->notifyStateChanged(I)V
 
-    .line 36
+    goto :goto_0
+
+    .line 38
+    :pswitch_1
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;
 
     invoke-virtual {v1, v3}, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->notifyStateChanged(I)V
 
     goto :goto_0
 
-    .line 37
-    :cond_2
-    const/16 v1, 0xb
-
-    if-ne v0, v1, :cond_3
-
-    .line 38
+    .line 41
+    :pswitch_2
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;
 
     invoke-virtual {v1, v4}, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->notifyStateChanging(I)V
 
     goto :goto_0
 
-    .line 39
-    :cond_3
-    const/16 v1, 0xd
-
-    if-ne v0, v1, :cond_0
-
-    .line 40
+    .line 44
+    :pswitch_3
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;
 
     invoke-virtual {v1, v3}, Lcom/sonymobile/systemui/statusbar/tools/BluetoothService;->notifyStateChanging(I)V
 
     goto :goto_0
+
+    .line 33
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0xa
+        :pswitch_1
+        :pswitch_2
+        :pswitch_0
+        :pswitch_3
+    .end packed-switch
 .end method

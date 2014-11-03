@@ -97,7 +97,7 @@
     if-gtz v7, :cond_0
 
     .line 172
-    const v4, 0x7f0200f3
+    const v4, 0x7f0200f9
 
     .line 174
     :cond_0
@@ -216,7 +216,7 @@
     .line 193
     const/4 v7, 0x2
 
-    const v8, 0x7f0200f3
+    const v8, 0x7f0200f9
 
     if-ne v4, v8, :cond_1
 

@@ -135,7 +135,7 @@
     if-nez v0, :cond_2
 
     .line 67
-    const v0, 0x7f0a0028
+    const v0, 0x7f0a005a
 
     invoke-virtual {v7, v0}, Landroid/widget/CheckBox;->setText(I)V
 
@@ -170,7 +170,7 @@
 
     .line 69
     :cond_2
-    const v0, 0x7f0a0027
+    const v0, 0x7f0a0059
 
     invoke-virtual {v7, v0}, Landroid/widget/CheckBox;->setText(I)V
 

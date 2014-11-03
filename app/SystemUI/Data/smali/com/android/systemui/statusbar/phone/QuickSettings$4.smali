@@ -49,7 +49,7 @@
 
     .line 323
     .local v2, "us":Lcom/android/systemui/statusbar/phone/QuickSettingsModel$UserState;
-    const v3, 0x7f07006f
+    const v3, 0x7f07007c
 
     invoke-virtual {p1, v3}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->findViewById(I)Landroid/view/View;
 
@@ -59,7 +59,7 @@
 
     .line 324
     .local v0, "iv":Landroid/widget/ImageView;
-    const v3, 0x7f070070
+    const v3, 0x7f07007d
 
     invoke-virtual {p1, v3}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->findViewById(I)Landroid/view/View;
 
@@ -86,7 +86,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0084
+    const v4, 0x7f0a00b7
 
     const/4 v5, 0x1
 

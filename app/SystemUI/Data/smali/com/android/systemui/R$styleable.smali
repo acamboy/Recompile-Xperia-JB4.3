@@ -39,7 +39,7 @@
 
     const/4 v2, 0x0
 
-    .line 2288
+    .line 2560
     const/4 v0, 0x5
 
     new-array v0, v0, [I
@@ -48,7 +48,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->DeadZone:[I
 
-    .line 2383
+    .line 2655
     const/4 v0, 0x3
 
     new-array v0, v0, [I
@@ -57,7 +57,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->KeyButtonView:[I
 
-    .line 2440
+    .line 2712
     new-array v0, v3, [I
 
     const v1, 0x7f010004
@@ -66,7 +66,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->NotificationLinearLayout:[I
 
-    .line 2469
+    .line 2741
     new-array v0, v3, [I
 
     const v1, 0x7f010005
@@ -75,7 +75,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->NotificationRowLayout:[I
 
-    .line 2498
+    .line 2770
     new-array v0, v3, [I
 
     const v1, 0x7f010006
@@ -84,7 +84,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->RecentsPanelView:[I
 
-    .line 2521
+    .line 2793
     new-array v0, v3, [I
 
     const v1, 0x7f01000c
@@ -93,7 +93,7 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->RemotePluginView:[I
 
-    .line 2548
+    .line 2820
     new-array v0, v3, [I
 
     const v1, 0x7f010003
@@ -104,7 +104,7 @@
 
     return-void
 
-    .line 2288
+    .line 2560
     :array_0
     .array-data 4
         0x7f010007
@@ -114,7 +114,7 @@
         0x7f01000b
     .end array-data
 
-    .line 2383
+    .line 2655
     :array_1
     .array-data 4
         0x7f010000
@@ -127,7 +127,7 @@
     .locals 0
 
     .prologue
-    .line 2269
+    .line 2541
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void

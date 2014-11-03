@@ -26,19 +26,19 @@
     .param p2, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 130
+    .line 135
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
-    .line 131
+    .line 136
     invoke-static {p2}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    .line 132
+    .line 137
     return-void
 .end method
 
@@ -51,7 +51,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 147
+    .line 152
     iget-object v2, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     iget-object v3, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
@@ -65,15 +65,15 @@
 
     move-result-object v0
 
-    .line 148
+    .line 153
     .local v0, "convertView":Landroid/view/View;
     new-instance v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
 
     invoke-direct {v1}, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;-><init>()V
 
-    .line 149
+    .line 154
     .local v1, "holder":Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
-    const v2, 0x7f07008b
+    const v2, 0x7f0700a5
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -81,8 +81,8 @@
 
     iput-object v2, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->thumbnailView:Landroid/view/View;
 
-    .line 150
-    const v2, 0x7f07008c
+    .line 155
+    const v2, 0x7f0700a6
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -92,7 +92,7 @@
 
     iput-object v2, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->thumbnailViewImage:Landroid/widget/ImageView;
 
-    .line 154
+    .line 159
     iget-object v2, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     iget-object v3, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
@@ -109,8 +109,8 @@
     # invokes: Lcom/android/systemui/recent/RecentsPanelView;->updateThumbnail(Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;Landroid/graphics/Bitmap;ZZ)V
     invoke-static {v2, v1, v3, v4, v4}, Lcom/android/systemui/recent/RecentsPanelView;->access$300(Lcom/android/systemui/recent/RecentsPanelView;Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;Landroid/graphics/Bitmap;ZZ)V
 
-    .line 155
-    const v2, 0x7f07008a
+    .line 160
+    const v2, 0x7f0700a8
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -120,7 +120,7 @@
 
     iput-object v2, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
-    .line 156
+    .line 161
     iget-object v2, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     iget-object v3, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
@@ -136,8 +136,8 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 157
-    const v2, 0x7f070089
+    .line 162
+    const v2, 0x7f0700a4
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -147,8 +147,8 @@
 
     iput-object v2, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
-    .line 158
-    const v2, 0x7f07008d
+    .line 163
+    const v2, 0x7f0700a7
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -156,8 +156,8 @@
 
     iput-object v2, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
-    .line 159
-    const v2, 0x7f07008e
+    .line 164
+    const v2, 0x7f0700a9
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -167,10 +167,10 @@
 
     iput-object v2, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->descriptionView:Landroid/widget/TextView;
 
-    .line 161
+    .line 166
     invoke-virtual {v0, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 162
+    .line 167
     return-object v0
 .end method
 
@@ -178,7 +178,7 @@
     .locals 1
 
     .prologue
-    .line 135
+    .line 140
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     # getter for: Lcom/android/systemui/recent/RecentsPanelView;->mRecentTaskDescriptions:Ljava/util/ArrayList;
@@ -213,7 +213,7 @@
     .param p1, "position"    # I
 
     .prologue
-    .line 139
+    .line 144
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -226,7 +226,7 @@
     .param p1, "position"    # I
 
     .prologue
-    .line 143
+    .line 148
     int-to-long v0, p1
 
     return-wide v0
@@ -247,15 +247,15 @@
 
     const/4 v8, 0x0
 
-    .line 166
+    .line 171
     if-nez p2, :cond_0
 
-    .line 167
+    .line 172
     invoke-virtual {p0, p3}, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->createView(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 
-    .line 169
+    .line 174
     :cond_0
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -263,7 +263,7 @@
 
     check-cast v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
 
-    .line 172
+    .line 177
     .local v1, "holder":Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
@@ -280,7 +280,7 @@
 
     add-int/lit8 v2, v6, -0x1
 
-    .line 174
+    .line 179
     .local v2, "index":I
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
@@ -295,7 +295,7 @@
 
     check-cast v4, Lcom/android/systemui/recent/TaskDescription;
 
-    .line 176
+    .line 181
     .local v4, "td":Lcom/android/systemui/recent/TaskDescription;
     iget-object v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
@@ -305,7 +305,7 @@
 
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 177
+    .line 182
     iget-object v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->thumbnailView:Landroid/view/View;
 
     invoke-virtual {v4}, Lcom/android/systemui/recent/TaskDescription;->getLabel()Ljava/lang/CharSequence;
@@ -314,21 +314,21 @@
 
     invoke-virtual {v6, v7}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 178
+    .line 183
     invoke-virtual {v4}, Lcom/android/systemui/recent/TaskDescription;->isLoaded()Z
 
     move-result v6
 
     iput-boolean v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->loadedThumbnailAndIcon:Z
 
-    .line 179
+    .line 184
     invoke-virtual {v4}, Lcom/android/systemui/recent/TaskDescription;->isLoaded()Z
 
     move-result v6
 
     if-eqz v6, :cond_1
 
-    .line 180
+    .line 185
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     invoke-virtual {v4}, Lcom/android/systemui/recent/TaskDescription;->getThumbnail()Landroid/graphics/Bitmap;
@@ -338,7 +338,7 @@
     # invokes: Lcom/android/systemui/recent/RecentsPanelView;->updateThumbnail(Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;Landroid/graphics/Bitmap;ZZ)V
     invoke-static {v6, v1, v7, v9, v11}, Lcom/android/systemui/recent/RecentsPanelView;->access$300(Lcom/android/systemui/recent/RecentsPanelView;Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;Landroid/graphics/Bitmap;ZZ)V
 
-    .line 181
+    .line 186
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     invoke-virtual {v4}, Lcom/android/systemui/recent/TaskDescription;->getIcon()Landroid/graphics/drawable/Drawable;
@@ -348,11 +348,11 @@
     # invokes: Lcom/android/systemui/recent/RecentsPanelView;->updateIcon(Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;Landroid/graphics/drawable/Drawable;ZZ)V
     invoke-static {v6, v1, v7, v9, v11}, Lcom/android/systemui/recent/RecentsPanelView;->access$400(Lcom/android/systemui/recent/RecentsPanelView;Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;Landroid/graphics/drawable/Drawable;ZZ)V
 
-    .line 183
+    .line 188
     :cond_1
     if-nez v2, :cond_5
 
-    .line 184
+    .line 189
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     # getter for: Lcom/android/systemui/recent/RecentsPanelView;->mAnimateIconOfFirstTask:Z
@@ -362,7 +362,7 @@
 
     if-eqz v6, :cond_5
 
-    .line 185
+    .line 190
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     # getter for: Lcom/android/systemui/recent/RecentsPanelView;->mItemToAnimateInWhenWindowAnimationIsFinished:Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
@@ -370,68 +370,68 @@
 
     move-result-object v3
 
-    .line 186
+    .line 191
     .local v3, "oldHolder":Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
     if-eqz v3, :cond_2
 
-    .line 187
+    .line 192
     iget-object v6, v3, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     invoke-virtual {v6, v10}, Landroid/widget/ImageView;->setAlpha(F)V
 
-    .line 188
+    .line 193
     iget-object v6, v3, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     invoke-virtual {v6, v8}, Landroid/widget/ImageView;->setTranslationX(F)V
 
-    .line 189
+    .line 194
     iget-object v6, v3, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     invoke-virtual {v6, v8}, Landroid/widget/ImageView;->setTranslationY(F)V
 
-    .line 190
+    .line 195
     iget-object v6, v3, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
     invoke-virtual {v6, v10}, Landroid/widget/TextView;->setAlpha(F)V
 
-    .line 191
+    .line 196
     iget-object v6, v3, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
     invoke-virtual {v6, v8}, Landroid/widget/TextView;->setTranslationX(F)V
 
-    .line 192
+    .line 197
     iget-object v6, v3, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
     invoke-virtual {v6, v8}, Landroid/widget/TextView;->setTranslationY(F)V
 
-    .line 193
+    .line 198
     iget-object v6, v3, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     if-eqz v6, :cond_2
 
-    .line 194
+    .line 199
     iget-object v6, v3, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     invoke-virtual {v6, v10}, Landroid/view/View;->setAlpha(F)V
 
-    .line 195
+    .line 200
     iget-object v6, v3, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     invoke-virtual {v6, v8}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 196
+    .line 201
     iget-object v6, v3, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     invoke-virtual {v6, v8}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 199
+    .line 204
     :cond_2
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     # setter for: Lcom/android/systemui/recent/RecentsPanelView;->mItemToAnimateInWhenWindowAnimationIsFinished:Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
     invoke-static {v6, v1}, Lcom/android/systemui/recent/RecentsPanelView;->access$602(Lcom/android/systemui/recent/RecentsPanelView;Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;)Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
 
-    .line 200
+    .line 205
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     invoke-virtual {v6}, Lcom/android/systemui/recent/RecentsPanelView;->getResources()Landroid/content/res/Resources;
@@ -446,7 +446,7 @@
 
     neg-int v5, v6
 
-    .line 202
+    .line 207
     .local v5, "translation":I
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
@@ -458,13 +458,13 @@
 
     move-result-object v0
 
-    .line 203
+    .line 208
     .local v0, "config":Landroid/content/res/Configuration;
     iget v6, v0, Landroid/content/res/Configuration;->orientation:I
 
     if-ne v6, v9, :cond_6
 
-    .line 204
+    .line 209
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     invoke-virtual {v6}, Lcom/android/systemui/recent/RecentsPanelView;->getLayoutDirection()I
@@ -473,52 +473,52 @@
 
     if-ne v6, v9, :cond_3
 
-    .line 205
+    .line 210
     neg-int v5, v5
 
-    .line 207
+    .line 212
     :cond_3
     iget-object v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     invoke-virtual {v6, v8}, Landroid/widget/ImageView;->setAlpha(F)V
 
-    .line 208
+    .line 213
     iget-object v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     int-to-float v7, v5
 
     invoke-virtual {v6, v7}, Landroid/widget/ImageView;->setTranslationX(F)V
 
-    .line 209
+    .line 214
     iget-object v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
     invoke-virtual {v6, v8}, Landroid/widget/TextView;->setAlpha(F)V
 
-    .line 210
+    .line 215
     iget-object v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
     int-to-float v7, v5
 
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setTranslationX(F)V
 
-    .line 212
+    .line 216
     iget-object v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     if-eqz v6, :cond_4
 
-    .line 213
+    .line 217
     iget-object v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     invoke-virtual {v6, v8}, Landroid/view/View;->setAlpha(F)V
 
-    .line 214
+    .line 218
     iget-object v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     int-to-float v7, v5
 
     invoke-virtual {v6, v7}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 221
+    .line 224
     :cond_4
     :goto_0
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
@@ -530,13 +530,13 @@
 
     if-nez v6, :cond_5
 
-    .line 222
+    .line 225
     iget-object v6, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
     # invokes: Lcom/android/systemui/recent/RecentsPanelView;->animateInIconOfFirstTask()V
     invoke-static {v6}, Lcom/android/systemui/recent/RecentsPanelView;->access$800(Lcom/android/systemui/recent/RecentsPanelView;)V
 
-    .line 227
+    .line 230
     .end local v0    # "config":Landroid/content/res/Configuration;
     .end local v3    # "oldHolder":Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
     .end local v5    # "translation":I
@@ -545,7 +545,7 @@
 
     invoke-virtual {v6, v4}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 228
+    .line 231
     iget-object v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->thumbnailView:Landroid/view/View;
 
     new-instance v7, Lcom/android/systemui/recent/RecentsPanelView$OnLongClickDelegate;
@@ -556,13 +556,13 @@
 
     invoke-virtual {v6, v7}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 229
+    .line 232
     iput-object v4, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->taskDescription:Lcom/android/systemui/recent/TaskDescription;
 
-    .line 230
+    .line 233
     return-object p2
 
-    .line 218
+    .line 221
     .restart local v0    # "config":Landroid/content/res/Configuration;
     .restart local v3    # "oldHolder":Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
     .restart local v5    # "translation":I
@@ -571,7 +571,7 @@
 
     invoke-virtual {v6, v8}, Landroid/widget/ImageView;->setAlpha(F)V
 
-    .line 219
+    .line 222
     iget-object v6, v1, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     int-to-float v7, v5
@@ -596,14 +596,14 @@
 
     const/4 v3, 0x0
 
-    .line 234
+    .line 237
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
 
-    .line 235
+    .line 238
     .local v0, "holder":Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
@@ -621,7 +621,7 @@
     # invokes: Lcom/android/systemui/recent/RecentsPanelView;->updateThumbnail(Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;Landroid/graphics/Bitmap;ZZ)V
     invoke-static {v1, v0, v2, v6, v6}, Lcom/android/systemui/recent/RecentsPanelView;->access$300(Lcom/android/systemui/recent/RecentsPanelView;Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;Landroid/graphics/Bitmap;ZZ)V
 
-    .line 236
+    .line 239
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     iget-object v2, p0, Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
@@ -637,12 +637,12 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 237
+    .line 240
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v7}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 238
+    .line 241
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     invoke-virtual {v1}, Landroid/widget/ImageView;->animate()Landroid/view/ViewPropertyAnimator;
@@ -651,12 +651,12 @@
 
     invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->cancel()V
 
-    .line 239
+    .line 242
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 240
+    .line 243
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->animate()Landroid/view/ViewPropertyAnimator;
@@ -665,77 +665,77 @@
 
     invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->cancel()V
 
-    .line 241
+    .line 244
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->thumbnailView:Landroid/view/View;
 
     invoke-virtual {v1, v4}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 242
+    .line 245
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->thumbnailView:Landroid/view/View;
 
     invoke-virtual {v1, v4}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 243
+    .line 246
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->thumbnailView:Landroid/view/View;
 
     invoke-virtual {v1, v4}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 244
+    .line 247
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->thumbnailView:Landroid/view/View;
 
     invoke-virtual {v1, v7}, Landroid/view/View;->setVisibility(I)V
 
-    .line 245
+    .line 248
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v5}, Landroid/widget/ImageView;->setAlpha(F)V
 
-    .line 246
+    .line 249
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setTranslationX(F)V
 
-    .line 247
+    .line 250
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->iconView:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setTranslationY(F)V
 
-    .line 248
+    .line 251
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setAlpha(F)V
 
-    .line 249
+    .line 252
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTranslationX(F)V
 
-    .line 250
+    .line 253
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->labelView:Landroid/widget/TextView;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTranslationY(F)V
 
-    .line 251
+    .line 254
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     if-eqz v1, :cond_0
 
-    .line 252
+    .line 255
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     invoke-virtual {v1, v5}, Landroid/view/View;->setAlpha(F)V
 
-    .line 253
+    .line 256
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     invoke-virtual {v1, v3}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 254
+    .line 257
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     invoke-virtual {v1, v3}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 255
+    .line 258
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->calloutLine:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
@@ -744,13 +744,13 @@
 
     invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->cancel()V
 
-    .line 257
+    .line 260
     :cond_0
     iput-object v4, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->taskDescription:Lcom/android/systemui/recent/TaskDescription;
 
-    .line 258
+    .line 261
     iput-boolean v6, v0, Lcom/android/systemui/recent/RecentsPanelView$ViewHolder;->loadedThumbnailAndIcon:Z
 
-    .line 259
+    .line 262
     return-void
 .end method

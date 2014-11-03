@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 130
+    .line 135
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$2;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 132
+    .line 137
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$2;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     # getter for: Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mCallback:Lcom/android/systemui/recent/RecentsCallback;
@@ -51,6 +51,6 @@
 
     invoke-interface {v0}, Lcom/android/systemui/recent/RecentsCallback;->dismiss()V
 
-    .line 133
+    .line 138
     return-void
 .end method

@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 337
+    .line 451
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$6;->this$0:Lcom/android/systemui/recent/RecentsVerticalScrollView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 4
 
     .prologue
-    .line 341
+    .line 455
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$6;->this$0:Lcom/android/systemui/recent/RecentsVerticalScrollView;
 
     # getter for: Lcom/android/systemui/recent/RecentsVerticalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    .line 342
+    .line 456
     .local v0, "transition":Landroid/animation/LayoutTransition;
     if-eqz v0, :cond_0
 
@@ -62,7 +62,7 @@
 
     if-nez v1, :cond_1
 
-    .line 343
+    .line 457
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$6;->this$0:Lcom/android/systemui/recent/RecentsVerticalScrollView;
 
@@ -74,7 +74,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->scrollTo(II)V
 
-    .line 345
+    .line 459
     :cond_1
     return-void
 .end method

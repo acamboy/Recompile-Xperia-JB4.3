@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="carrier_invalid_sim_card">Ugyldig SIM-kort</string>
+    <string name="power_settings_instructions">Hvis du aktiverer Utvidet standbymodus i Strømstyring, blir batterivarigheten optimert</string>
+    <string name="battery_low_power_settings">Batteriinformasjon</string>
+    <string name="toast_message_not_allow_turn_on_hotspot">Wi-Fi-tilkoblingspunkt er ikke tilgjengelig i flymodus</string>
+    <string name="status_bar_toolsbar_settings_title">Velg hurtiginnstillinger</string>
+    <string name="status_bar_recent_failed_to_launch_app">Kunne ikke starte appen</string>
+    <string name="toast_message_maximum_number_of_tools_reached">Maksimalt antall hurtiginnstillinger har blitt valgt</string>
+    <string name="status_bar_settings_airplanemode">Flymodus</string>
+    <string name="status_bar_settings_autorotate">Auto-roter skjerm</string>
+    <string name="status_bar_settings_gps">GPS</string>
+    <string name="status_bar_settings_settings">Snarvei til Innstillinger</string>
+    <string name="status_bar_settings_wifi">Wi-Fi</string>
+    <string name="status_bar_settings_bluetooth">Bluetooth</string>
+    <string name="status_bar_settings_mobile_data">Mobildatatrafikk</string>
+    <string name="status_bar_settings_brightness">Lysstyrke</string>
+    <string name="status_bar_settings_sound">Lyd</string>
+    <string name="status_bar_settings_wifi_hotspot">Wi-Fi-tilkoblingspunkt</string>
+    <string name="status_bar_settings_nfc">NFC</string>
+    <string name="status_bar_settings_roaming">Roaming</string>
+    <string name="status_bar_settings_autosync">Auto-synk av data</string>
+    <string name="status_bar_airplanemode">Flymodus</string>
+    <string name="status_bar_autorotate">Roter automatisk</string>
+    <string name="status_bar_gps">GPS</string>
+    <string name="status_bar_settings">Innstillinger</string>
+    <string name="status_bar_wifi">Wi-Fi</string>
+    <string name="status_bar_bluetooth">Bluetooth</string>
+    <string name="status_bar_mobile_data">Mobildata</string>
+    <string name="status_bar_brightness">Lysstyrke</string>
+    <string name="status_bar_sound">Lyd</string>
+    <string name="status_bar_wifi_hotspot">Offentlig tilkoblingspkt</string>
+    <string name="status_bar_nfc">NFC</string>
+    <string name="status_bar_roaming">Roaming</string>
+    <string name="status_bar_autosync">Auto-synk</string>
+    <string name="accessibility_state_vibrate">Vibrering</string>
+    <string name="quick_Settings">Hurtiginnstillinger</string>
+    <string name="quick_settings_description">Velg antallet hurtiginnstillinger i varselpanelet og rediger rekkefølgen på dem</string>
+    <string name="status_bar_autosync_dialog_enable_title">Vil du slå på auto-synkronisering?</string>
+    <string name="status_bar_autosync_dialog_enable_warning">"Eventuelle endringer du gjør i kontoene dine på nettet, kopieres automatisk til telefonen din.
+
+For noen kontoer kopieres også alle endringene du gjør på telefonen, automatisk til nettet.
+
+Du kan velge hvilke datatyper du vil synkronisere for hver konto, ved å gå til Innstillinger > Kontoer."</string>
+    <string name="status_bar_autosync_dialog_extended_enable_warning">"Eventuelle endringer du gjør i kontoene dine på nettet, kopieres automatisk til enheten.
+
+For noen kontoer kopieres også alle endringene du gjør på enheten, automatisk til nettet.
+
+Du kan velge hvilke datatyper du vil synkronisere for hver konto, ved å gå til Innstillinger > Kontoer.
+
+Dataoverføringskostnader kan påløpe når oppdateringene utføres på enheten. En dataplan med ubegrenset databruk anbefales."</string>
+    <string name="status_bar_autosync_dialog_disable_title">Vil du slå av auto-synkronisering av data?</string>
+    <string name="status_bar_autosync_dialog_disable_warning">Dette vil redusere data- og batteribruken, men du må synkronisere hver konto manuelt for å hente inn nylig oppdatert informasjon. Du vil heller ikke motta varsler når oppdateringer skjer.</string>
+    <string name="new_sketch">Ny skisse</string>
+    <string name="new_note">Nytt notat</string>
+    <string name="brightness_adapt_checkbox_information">Tilpass til lysforhold</string>
     <string name="app_label">Systemgrensesnitt</string>
     <string name="status_bar_clear_all_button">Fjern</string>
     <string name="status_bar_do_not_disturb_button">Ikke forstyrr</string>
@@ -107,6 +161,7 @@ Bruk kun den medfølgende laderen."</string>
     <string name="accessibility_data_connection_3g">3G</string>
     <string name="accessibility_data_connection_3.5g">3,5G</string>
     <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_h_plus">HSPAP</string>
     <string name="accessibility_data_connection_lte">LTE</string>
     <string name="accessibility_data_connection_cdma">CDMA</string>
     <string name="accessibility_data_connection_roaming">Roaming</string>
@@ -188,73 +243,20 @@ Hvis du slår på igjen databruk, kan du bli belastet med kostnader av operatør
     <string name="status_bar_help_text">"Få tilgang til dem når som helst ved å sveipe nedover.
 
 Sveip nedover igjen for å gå til systemkontrollene."</string>
-    <string name="data_service_except_mms_warning_txt">Tillate datatrafikk? Det kan påløpe ekstra kostnader avhengig av vilkårene for nettverksabonnementet ditt. Deaktiver datatrafikk når du er ferdig, for å unngå ekstra kostnader.</string>
-    <string name="expanded_no_simcard">SIM-kortet mangler</string>
-    <string name="accessibility_data_connection_h_plus">HSPAP</string>
-    <string name="expanded_airplane_no_service">Flymodus</string>
     <string name="unmount_strings_dialog_content_txt">Ikke ta ut SD-kortet mens det kobles fra</string>
     <string name="accessibility_desc_tab_quick_settings_edit">Rediger hurtiginnstillinger</string>
-    <string name="accessibility_state_vibrate">Vibrering</string>
-    <string name="battery_low_power_settings">Batteriinformasjon</string>
-    <string name="brightness_adapt_checkbox_information">Tilpass til lysforhold</string>
-    <string name="carrier_invalid_sim_card">Ugyldig SIM-kort</string>
-    <string name="new_note">Nytt notat</string>
-    <string name="new_sketch">Ny skisse</string>
-    <string name="power_settings_instructions">Hvis du aktiverer Utvidet standbymodus i Strømstyring, blir batterivarigheten optimert</string>
-    <string name="quick_Settings">Hurtiginnstillinger</string>
-    <string name="quick_settings_description">Velg antallet hurtiginnstillinger i varselpanelet og rediger rekkefølgen på dem</string>
+    <string name="description_direction_left_down">Sveip diagonalt ned til venstre for %s.</string>
+    <string name="description_direction_left_up">Sveip diagonalt opp til venstre for %s.</string>
+    <string name="description_direction_up_left">Sveip diagonalt opp til venstre for %s.</string>
+    <string name="description_direction_up_right">Sveip diagonalt opp til høyre for %s.</string>
+    <string name="description_target_sonyentrance">Hva skjer?</string>
     <string name="start_note_app">Start notat-app</string>
     <string name="start_sketch_app">Start skisseapp</string>
-    <string name="status_bar_airplanemode">Flymodus</string>
-    <string name="status_bar_autorotate">Roter automatisk</string>
-    <string name="status_bar_autosync">Auto-synk</string>
-    <string name="status_bar_autosync_dialog_disable_title">Vil du slå av auto-synkronisering av data?</string>
-    <string name="status_bar_autosync_dialog_disable_warning">Dette vil redusere data- og batteribruken, men du må synkronisere hver konto manuelt for å hente inn nylig oppdatert informasjon. Du vil heller ikke motta varsler når oppdateringer skjer.</string>
-    <string name="status_bar_autosync_dialog_enable_title">Vil du slå på auto-synkronisering?</string>
-    <string name="status_bar_autosync_dialog_enable_warning">"Eventuelle endringer du gjør i kontoene dine på nettet, kopieres automatisk til telefonen din.
-
-For noen kontoer kopieres også alle endringene du gjør på telefonen, automatisk til nettet.
-
-Du kan velge hvilke datatyper du vil synkronisere for hver konto, ved å gå til Innstillinger > Kontoer."</string>
-    <string name="status_bar_autosync_dialog_extended_enable_warning">"Eventuelle endringer du gjør i kontoene dine på nettet, kopieres automatisk til enheten.
-
-For noen kontoer kopieres også alle endringene du gjør på enheten, automatisk til nettet.
-
-Du kan velge hvilke datatyper du vil synkronisere for hver konto, ved å gå til Innstillinger > Kontoer.
-
-Dataoverføringskostnader kan påløpe når oppdateringene utføres på enheten. En dataplan med ubegrenset databruk anbefales."</string>
-    <string name="status_bar_bluetooth">Bluetooth</string>
-    <string name="status_bar_brightness">Lysstyrke</string>
-    <string name="status_bar_gps">GPS</string>
     <string name="status_bar_mirroring">Speiling</string>
-    <string name="status_bar_mobile_data">Mobildata</string>
-    <string name="status_bar_nfc">NFC</string>
-    <string name="status_bar_recent_failed_to_launch_app">Kunne ikke starte appen</string>
-    <string name="status_bar_roaming">Roaming</string>
-    <string name="status_bar_settings">Innstillinger</string>
-    <string name="status_bar_settings_airplanemode">Flymodus</string>
-    <string name="status_bar_settings_autorotate">Auto-roter skjerm</string>
-    <string name="status_bar_settings_autosync">Auto-synk av data</string>
-    <string name="status_bar_settings_bluetooth">Bluetooth</string>
-    <string name="status_bar_settings_brightness">Lysstyrke</string>
-    <string name="status_bar_settings_gps">GPS</string>
     <string name="status_bar_settings_mirroring">Skjermspeiling</string>
-    <string name="status_bar_settings_mobile_data">Mobildatatrafikk</string>
-    <string name="status_bar_settings_nfc">NFC</string>
-    <string name="status_bar_settings_roaming">Roaming</string>
-    <string name="status_bar_settings_settings">Snarvei til Innstillinger</string>
-    <string name="status_bar_settings_sound">Lyd</string>
-    <string name="status_bar_settings_wifi">Wi-Fi</string>
-    <string name="status_bar_settings_wifi_hotspot">Wi-Fi-tilkoblingspunkt</string>
-    <string name="status_bar_sound">Lyd</string>
     <string name="status_bar_tab_notifications_title">Varsler</string>
     <string name="status_bar_tab_quick_settings_edit">Rediger</string>
     <string name="status_bar_tab_quick_settings_title">Hurtiginnst.</string>
-    <string name="status_bar_toolsbar_settings_title">Velg hurtiginnstillinger</string>
-    <string name="status_bar_wifi">Wi-Fi</string>
-    <string name="status_bar_wifi_hotspot">Offentlig tilkoblingspkt</string>
     <string name="to_charge_use_charger_txt">Lad enheten ved hjelp av Sony™-laderen</string>
-    <string name="toast_message_maximum_number_of_tools_reached">Maksimalt antall hurtiginnstillinger har blitt valgt</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">Wi-Fi-tilkoblingspunkt er ikke tilgjengelig i flymodus</string>
     <string name="usb_connected_txt">USB koblet til</string>
 </resources>

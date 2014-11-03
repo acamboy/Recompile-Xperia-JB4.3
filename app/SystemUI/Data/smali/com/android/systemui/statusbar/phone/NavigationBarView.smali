@@ -54,8 +54,6 @@
 
 .field mShowMenu:Z
 
-.field mStatuBarExpanded:Z
-
 .field mTransparent:Z
 
 .field mVertical:Z
@@ -72,7 +70,7 @@
 
     const/4 v2, 0x0
 
-    .line 166
+    .line 162
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 68
@@ -91,27 +89,24 @@
     .line 77
     iput v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mNavigationIconHints:I
 
-    .line 87
-    iput-boolean v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mStatuBarExpanded:Z
-
-    .line 142
+    .line 138
     new-instance v1, Lcom/android/systemui/statusbar/phone/NavigationBarView$H;
 
     invoke-direct {v1, p0, v3}, Lcom/android/systemui/statusbar/phone/NavigationBarView$H;-><init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;Lcom/android/systemui/statusbar/phone/NavigationBarView$1;)V
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mHandler:Lcom/android/systemui/statusbar/phone/NavigationBarView$H;
 
-    .line 262
+    .line 258
     new-instance v1, Lcom/android/systemui/statusbar/phone/NavigationBarView$1;
 
     invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView$1;-><init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;)V
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mLightsOutListener:Landroid/view/View$OnTouchListener;
 
-    .line 168
+    .line 164
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mHidden:Z
 
-    .line 170
+    .line 166
     const-string v1, "window"
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -126,7 +121,7 @@
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDisplay:Landroid/view/Display;
 
-    .line 172
+    .line 168
     const-string v1, "statusbar"
 
     invoke-static {v1}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
@@ -139,14 +134,14 @@
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mBarService:Lcom/android/internal/statusbar/IStatusBarService;
 
-    .line 175
+    .line 171
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    .line 176
+    .line 172
     .local v0, "res":Landroid/content/res/Resources;
     const v1, 0x7f0c0014
 
@@ -156,23 +151,23 @@
 
     iput v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mBarSize:I
 
-    .line 177
+    .line 173
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mVertical:Z
 
-    .line 178
+    .line 174
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mShowMenu:Z
 
-    .line 179
+    .line 175
     new-instance v1, Lcom/android/systemui/statusbar/DelegateViewHelper;
 
     invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/DelegateViewHelper;-><init>(Landroid/view/View;)V
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDelegateHelper:Lcom/android/systemui/statusbar/DelegateViewHelper;
 
-    .line 181
+    .line 177
     invoke-direct {p0, v0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getIcons(Landroid/content/res/Resources;)V
 
-    .line 182
+    .line 178
     return-void
 .end method
 
@@ -181,10 +176,10 @@
     .param p1, "res"    # Landroid/content/res/Resources;
 
     .prologue
-    .line 185
+    .line 181
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateNavigationBarResources()V
 
-    .line 186
+    .line 182
     return-void
 .end method
 
@@ -193,17 +188,17 @@
     .param p1, "resId"    # I
 
     .prologue
-    .line 556
+    .line 539
     if-eqz p1, :cond_0
 
-    .line 557
+    .line 540
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    .line 559
+    .line 542
     .local v1, "res":Landroid/content/res/Resources;
     :try_start_0
     invoke-virtual {v1, p1}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
@@ -212,23 +207,23 @@
 
     move-result-object v2
 
-    .line 564
+    .line 547
     .end local v1    # "res":Landroid/content/res/Resources;
     :goto_0
     return-object v2
 
-    .line 560
+    .line 543
     .restart local v1    # "res":Landroid/content/res/Resources;
     :catch_0
     move-exception v0
 
-    .line 561
+    .line 544
     .local v0, "ex":Landroid/content/res/Resources$NotFoundException;
     const-string v2, "(unknown)"
 
     goto :goto_0
 
-    .line 564
+    .line 547
     .end local v0    # "ex":Landroid/content/res/Resources$NotFoundException;
     .end local v1    # "res":Landroid/content/res/Resources;
     :cond_0
@@ -244,7 +239,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 569
+    .line 552
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mHandler:Lcom/android/systemui/statusbar/phone/NavigationBarView$H;
 
     const/16 v1, 0x21ee
@@ -255,7 +250,7 @@
 
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 570
+    .line 553
     return-void
 .end method
 
@@ -266,18 +261,18 @@
     .param p3, "resId"    # I
 
     .prologue
-    .line 250
+    .line 246
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/widget/ImageView;
 
-    .line 251
+    .line 247
     .local v1, "iv":Landroid/widget/ImageView;
     if-eqz v1, :cond_0
 
-    .line 252
+    .line 248
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -288,11 +283,11 @@
 
     move-result-object v0
 
-    .line 253
+    .line 249
     .local v0, "d":Landroid/graphics/drawable/Drawable;
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 255
+    .line 251
     .end local v0    # "d":Landroid/graphics/drawable/Drawable;
     :cond_0
     return-void
@@ -303,28 +298,28 @@
     .param p0, "vis"    # I
 
     .prologue
-    .line 573
+    .line 556
     sparse-switch p0, :sswitch_data_0
 
-    .line 579
+    .line 562
     const-string v0, "VISIBLE"
 
     :goto_0
     return-object v0
 
-    .line 575
+    .line 558
     :sswitch_0
     const-string v0, "INVISIBLE"
 
     goto :goto_0
 
-    .line 577
+    .line 560
     :sswitch_1
     const-string v0, "GONE"
 
     goto :goto_0
 
-    .line 573
+    .line 556
     :sswitch_data_0
     .sparse-switch
         0x4 -> :sswitch_0
@@ -341,29 +336,29 @@
     .param p3, "args"    # [Ljava/lang/String;
 
     .prologue
-    .line 584
+    .line 567
     const-string v7, "NavigationBarView {"
 
     invoke-virtual {p2, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 585
+    .line 568
     new-instance v4, Landroid/graphics/Rect;
 
     invoke-direct {v4}, Landroid/graphics/Rect;-><init>()V
 
-    .line 586
+    .line 569
     .local v4, "r":Landroid/graphics/Rect;
     new-instance v6, Landroid/graphics/Point;
 
     invoke-direct {v6}, Landroid/graphics/Point;-><init>()V
 
-    .line 587
+    .line 570
     .local v6, "size":Landroid/graphics/Point;
     iget-object v7, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDisplay:Landroid/view/Display;
 
     invoke-virtual {v7, v6}, Landroid/view/Display;->getRealSize(Landroid/graphics/Point;)V
 
-    .line 589
+    .line 572
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -414,10 +409,10 @@
 
     invoke-virtual {p2, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 592
+    .line 575
     invoke-virtual {p0, v4}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
 
-    .line 593
+    .line 576
     iget v7, v4, Landroid/graphics/Rect;->right:I
 
     iget v8, v6, Landroid/graphics/Point;->x:I
@@ -433,7 +428,7 @@
     :cond_0
     const/4 v3, 0x1
 
-    .line 594
+    .line 577
     .local v3, "offscreen":Z
     :goto_0
     new-instance v7, Ljava/lang/StringBuilder;
@@ -487,7 +482,7 @@
 
     invoke-virtual {p2, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 599
+    .line 582
     const-string v7, "      mCurrentView: id=%s (%dx%d) %s"
 
     const/4 v8, 0x4
@@ -556,7 +551,7 @@
 
     invoke-virtual {p2, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 604
+    .line 587
     const-string v8, "      disabled=0x%08x vertical=%s hidden=%s low=%s menu=%s"
 
     const/4 v7, 0x5
@@ -623,30 +618,30 @@
 
     invoke-virtual {p2, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 611
+    .line 594
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getBackButton()Landroid/view/View;
 
     move-result-object v0
 
-    .line 612
+    .line 595
     .local v0, "back":Landroid/view/View;
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getHomeButton()Landroid/view/View;
 
     move-result-object v1
 
-    .line 613
+    .line 596
     .local v1, "home":Landroid/view/View;
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getRecentsButton()Landroid/view/View;
 
     move-result-object v5
 
-    .line 614
+    .line 597
     .local v5, "recent":Landroid/view/View;
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getMenuButton()Landroid/view/View;
 
     move-result-object v2
 
-    .line 616
+    .line 599
     .local v2, "menu":Landroid/view/View;
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -690,7 +685,7 @@
 
     invoke-virtual {p2, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 620
+    .line 603
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -733,7 +728,7 @@
 
     invoke-virtual {p2, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 624
+    .line 607
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -776,7 +771,7 @@
 
     invoke-virtual {p2, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 628
+    .line 611
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -819,15 +814,15 @@
 
     invoke-virtual {p2, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 632
+    .line 615
     const-string v7, "    }"
 
     invoke-virtual {p2, v7}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 633
+    .line 616
     return-void
 
-    .line 593
+    .line 576
     .end local v0    # "back":Landroid/view/View;
     .end local v1    # "home":Landroid/view/View;
     .end local v2    # "menu":Landroid/view/View;
@@ -838,14 +833,14 @@
 
     goto/16 :goto_0
 
-    .line 594
+    .line 577
     .restart local v3    # "offscreen":Z
     :cond_2
     const-string v7, ""
 
     goto/16 :goto_1
 
-    .line 604
+    .line 587
     :cond_3
     const-string v7, "false"
 
@@ -871,14 +866,14 @@
     .locals 2
 
     .prologue
-    .line 153
+    .line 149
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
-    const v1, 0x7f070054
+    const v1, 0x7f070060
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -897,14 +892,14 @@
     .locals 2
 
     .prologue
-    .line 157
+    .line 153
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
-    const v1, 0x7f070055
+    const v1, 0x7f070061
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -923,14 +918,14 @@
     .locals 2
 
     .prologue
-    .line 149
+    .line 145
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
-    const v1, 0x7f070057
+    const v1, 0x7f070063
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -949,14 +944,14 @@
     .locals 2
 
     .prologue
-    .line 145
+    .line 141
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
-    const v1, 0x7f070056
+    const v1, 0x7f070062
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -975,14 +970,14 @@
     .locals 2
 
     .prologue
-    .line 162
+    .line 158
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
-    const v1, 0x7f07005a
+    const v1, 0x7f070066
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1002,17 +997,17 @@
     .param p1, "screenOn"    # Z
 
     .prologue
-    .line 258
+    .line 254
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mScreenOn:Z
 
-    .line 259
+    .line 255
     iget v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDisabledFlags:I
 
     const/4 v1, 0x1
 
     invoke-virtual {p0, v0, v1}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setDisabledFlags(IZ)V
 
-    .line 260
+    .line 256
     return-void
 .end method
 
@@ -1020,18 +1015,18 @@
     .locals 6
 
     .prologue
-    const v5, 0x7f07005e
+    const v5, 0x7f07006a
 
     const/4 v4, 0x0
 
-    .line 477
+    .line 460
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mRotatedViews:[Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mRotatedViews:[Landroid/view/View;
 
     const/4 v2, 0x2
 
-    const v3, 0x7f070052
+    const v3, 0x7f07005e
 
     invoke-virtual {p0, v3}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->findViewById(I)Landroid/view/View;
 
@@ -1041,7 +1036,7 @@
 
     aput-object v3, v0, v4
 
-    .line 480
+    .line 463
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mRotatedViews:[Landroid/view/View;
 
     const/4 v1, 0x1
@@ -1052,7 +1047,7 @@
 
     aput-object v2, v0, v1
 
-    .line 482
+    .line 465
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mRotatedViews:[Landroid/view/View;
 
     const/4 v1, 0x3
@@ -1063,14 +1058,14 @@
 
     aput-object v2, v0, v1
 
-    .line 486
+    .line 469
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mRotatedViews:[Landroid/view/View;
 
     aget-object v0, v0, v4
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
-    .line 487
+    .line 470
     return-void
 .end method
 
@@ -1079,7 +1074,7 @@
     .param p1, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 139
+    .line 135
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDelegateHelper:Lcom/android/systemui/statusbar/DelegateViewHelper;
 
     invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/DelegateViewHelper;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
@@ -1098,10 +1093,10 @@
     .param p5, "b"    # I
 
     .prologue
-    .line 513
+    .line 496
     invoke-super/range {p0 .. p5}, Landroid/widget/LinearLayout;->onLayout(ZIIII)V
 
-    .line 514
+    .line 497
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDelegateHelper:Lcom/android/systemui/statusbar/DelegateViewHelper;
 
     const/4 v1, 0x3
@@ -1134,7 +1129,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/DelegateViewHelper;->setInitialTouchRegion([Landroid/view/View;)V
 
-    .line 515
+    .line 498
     return-void
 .end method
 
@@ -1146,39 +1141,39 @@
     .param p4, "oldh"    # I
 
     .prologue
-    .line 522
+    .line 505
     if-lez p1, :cond_1
 
     if-le p2, p1, :cond_1
 
     const/4 v0, 0x1
 
-    .line 523
+    .line 506
     .local v0, "newVertical":Z
     :goto_0
     iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mVertical:Z
 
     if-eq v0, v1, :cond_0
 
-    .line 524
+    .line 507
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mVertical:Z
 
-    .line 526
+    .line 509
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->reorient()V
 
-    .line 529
+    .line 512
     :cond_0
     const-string v1, "sizeChanged"
 
     invoke-direct {p0, v1}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->postCheckForInvalidLayout(Ljava/lang/String;)V
 
-    .line 530
+    .line 513
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/LinearLayout;->onSizeChanged(IIII)V
 
-    .line 531
+    .line 514
     return-void
 
-    .line 522
+    .line 505
     .end local v0    # "newVertical":Z
     :cond_1
     const/4 v0, 0x0
@@ -1191,7 +1186,7 @@
     .param p1, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 127
+    .line 123
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDeadZone:Lcom/android/systemui/statusbar/policy/DeadZone;
 
     if-eqz v1, :cond_0
@@ -1204,31 +1199,31 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 128
+    .line 124
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDeadZone:Lcom/android/systemui/statusbar/policy/DeadZone;
 
     invoke-virtual {v1, p1}, Lcom/android/systemui/statusbar/policy/DeadZone;->poke(Landroid/view/MotionEvent;)V
 
-    .line 130
+    .line 126
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDelegateHelper:Lcom/android/systemui/statusbar/DelegateViewHelper;
 
     if-eqz v1, :cond_1
 
-    .line 131
+    .line 127
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDelegateHelper:Lcom/android/systemui/statusbar/DelegateViewHelper;
 
     invoke-virtual {v1, p1}, Lcom/android/systemui/statusbar/DelegateViewHelper;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v0
 
-    .line 132
+    .line 128
     .local v0, "ret":Z
     if-eqz v0, :cond_1
 
     const/4 v1, 0x1
 
-    .line 134
+    .line 130
     .end local v0    # "ret":Z
     :goto_0
     return v1
@@ -1249,14 +1244,14 @@
 
     const/4 v4, 0x1
 
-    .line 490
+    .line 473
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDisplay:Landroid/view/Display;
 
     invoke-virtual {v2}, Landroid/view/Display;->getRotation()I
 
     move-result v1
 
-    .line 491
+    .line 474
     .local v1, "rot":I
     const/4 v0, 0x0
 
@@ -1266,7 +1261,7 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 492
+    .line 475
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mRotatedViews:[Landroid/view/View;
 
     aget-object v2, v2, v0
@@ -1275,12 +1270,12 @@
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 491
+    .line 474
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 494
+    .line 477
     :cond_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mRotatedViews:[Landroid/view/View;
 
@@ -1288,15 +1283,15 @@
 
     iput-object v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
-    .line 495
+    .line 478
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
     invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
 
-    .line 497
+    .line 480
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
-    const v3, 0x7f07005b
+    const v3, 0x7f070067
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1306,29 +1301,29 @@
 
     iput-object v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDeadZone:Lcom/android/systemui/statusbar/policy/DeadZone;
 
-    .line 500
+    .line 483
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mLowProfile:Z
 
     iget-boolean v3, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mTransparent:Z
 
     invoke-virtual {p0, v2, v3, v5, v4}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setLowProfile(ZZZZ)V
 
-    .line 501
+    .line 484
     iget v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDisabledFlags:I
 
     invoke-virtual {p0, v2, v4}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setDisabledFlags(IZ)V
 
-    .line 502
+    .line 485
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mShowMenu:Z
 
     invoke-virtual {p0, v2, v4}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setMenuVisibility(ZZ)V
 
-    .line 508
+    .line 491
     iget v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mNavigationIconHints:I
 
     invoke-virtual {p0, v2, v4}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setNavigationIconHints(IZ)V
 
-    .line 509
+    .line 492
     return-void
 .end method
 
@@ -1337,12 +1332,12 @@
     .param p1, "phoneStatusBar"    # Lcom/android/systemui/statusbar/BaseStatusBar;
 
     .prologue
-    .line 122
+    .line 118
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDelegateHelper:Lcom/android/systemui/statusbar/DelegateViewHelper;
 
     invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/DelegateViewHelper;->setBar(Lcom/android/systemui/statusbar/BaseStatusBar;)V
 
-    .line 123
+    .line 119
     return-void
 .end method
 
@@ -1351,12 +1346,12 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 118
+    .line 114
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDelegateHelper:Lcom/android/systemui/statusbar/DelegateViewHelper;
 
     invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/DelegateViewHelper;->setDelegateView(Landroid/view/View;)V
 
-    .line 119
+    .line 115
     return-void
 .end method
 
@@ -1365,12 +1360,12 @@
     .param p1, "disabledFlags"    # I
 
     .prologue
-    .line 313
+    .line 309
     const/4 v0, 0x0
 
     invoke-virtual {p0, p1, v0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setDisabledFlags(IZ)V
 
-    .line 314
+    .line 310
     return-void
 .end method
 
@@ -1386,22 +1381,22 @@
 
     const/4 v7, 0x0
 
-    .line 317
+    .line 313
     if-nez p2, :cond_0
 
     iget v9, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDisabledFlags:I
 
     if-ne v9, p1, :cond_0
 
-    .line 353
+    .line 342
     :goto_0
     return-void
 
-    .line 319
+    .line 315
     :cond_0
     iput p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDisabledFlags:I
 
-    .line 321
+    .line 317
     const/high16 v9, 0x200000
 
     and-int/2addr v9, p1
@@ -1410,7 +1405,7 @@
 
     move v1, v6
 
-    .line 322
+    .line 318
     .local v1, "disableHome":Z
     :goto_1
     const/high16 v9, 0x1000000
@@ -1421,7 +1416,7 @@
 
     move v2, v6
 
-    .line 323
+    .line 319
     .local v2, "disableRecent":Z
     :goto_2
     const/high16 v9, 0x400000
@@ -1438,7 +1433,7 @@
 
     move v0, v6
 
-    .line 325
+    .line 321
     .local v0, "disableBack":Z
     :goto_3
     const/high16 v9, 0x2000000
@@ -1449,18 +1444,21 @@
 
     move v3, v6
 
-    .line 328
+    .line 324
     .local v3, "disableSearch":Z
     :goto_4
-    iget-boolean v9, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mStatuBarExpanded:Z
+    if-eqz v1, :cond_6
 
-    if-ne v9, v6, :cond_6
+    if-eqz v2, :cond_6
 
-    .line 329
+    if-eqz v0, :cond_6
+
+    if-eqz v3, :cond_6
+
+    :goto_5
     invoke-virtual {p0, v6}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setSlippery(Z)V
 
-    .line 338
-    :goto_5
+    .line 327
     iget-boolean v6, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mScreenOn:Z
 
     if-nez v6, :cond_1
@@ -1469,10 +1467,10 @@
 
     if-eqz v6, :cond_1
 
-    .line 339
+    .line 328
     iget-object v6, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
-    const v9, 0x7f070053
+    const v9, 0x7f07005f
 
     invoke-virtual {v6, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1480,23 +1478,23 @@
 
     check-cast v5, Landroid/view/ViewGroup;
 
-    .line 340
+    .line 329
     .local v5, "navButtons":Landroid/view/ViewGroup;
-    if-nez v5, :cond_8
+    if-nez v5, :cond_7
 
     const/4 v4, 0x0
 
-    .line 341
+    .line 330
     .local v4, "lt":Landroid/animation/LayoutTransition;
     :goto_6
     if-eqz v4, :cond_1
 
-    .line 342
+    .line 331
     const/4 v6, 0x3
 
     invoke-virtual {v4, v6}, Landroid/animation/LayoutTransition;->disableTransitionType(I)V
 
-    .line 348
+    .line 337
     .end local v4    # "lt":Landroid/animation/LayoutTransition;
     .end local v5    # "navButtons":Landroid/view/ViewGroup;
     :cond_1
@@ -1504,43 +1502,43 @@
 
     move-result-object v9
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_8
 
     move v6, v8
 
     :goto_7
     invoke-virtual {v9, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 349
+    .line 338
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getHomeButton()Landroid/view/View;
 
     move-result-object v9
 
-    if-eqz v1, :cond_a
+    if-eqz v1, :cond_9
 
     move v6, v8
 
     :goto_8
     invoke-virtual {v9, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 350
+    .line 339
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getRecentsButton()Landroid/view/View;
 
     move-result-object v6
 
-    if-eqz v2, :cond_b
+    if-eqz v2, :cond_a
 
     :goto_9
     invoke-virtual {v6, v8}, Landroid/view/View;->setVisibility(I)V
 
-    .line 352
+    .line 341
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getSearchLight()Landroid/view/View;
 
     move-result-object v6
 
-    if-eqz v1, :cond_c
+    if-eqz v1, :cond_b
 
-    if-nez v3, :cond_c
+    if-nez v3, :cond_b
 
     :goto_a
     invoke-virtual {v6, v7}, Landroid/view/View;->setVisibility(I)V
@@ -1554,54 +1552,40 @@
     :cond_2
     move v1, v7
 
-    .line 321
+    .line 317
     goto :goto_1
 
     .restart local v1    # "disableHome":Z
     :cond_3
     move v2, v7
 
-    .line 322
+    .line 318
     goto :goto_2
 
     .restart local v2    # "disableRecent":Z
     :cond_4
     move v0, v7
 
-    .line 323
+    .line 319
     goto :goto_3
 
     .restart local v0    # "disableBack":Z
     :cond_5
     move v3, v7
 
-    .line 325
+    .line 321
     goto :goto_4
 
-    .line 333
     .restart local v3    # "disableSearch":Z
     :cond_6
-    if-eqz v1, :cond_7
-
-    if-eqz v2, :cond_7
-
-    if-eqz v0, :cond_7
-
-    if-eqz v3, :cond_7
-
-    :goto_b
-    invoke-virtual {p0, v6}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setSlippery(Z)V
-
-    goto :goto_5
-
-    :cond_7
     move v6, v7
 
-    goto :goto_b
+    .line 324
+    goto :goto_5
 
-    .line 340
+    .line 329
     .restart local v5    # "navButtons":Landroid/view/ViewGroup;
-    :cond_8
+    :cond_7
     invoke-virtual {v5}, Landroid/view/ViewGroup;->getLayoutTransition()Landroid/animation/LayoutTransition;
 
     move-result-object v4
@@ -1609,26 +1593,26 @@
     goto :goto_6
 
     .end local v5    # "navButtons":Landroid/view/ViewGroup;
+    :cond_8
+    move v6, v7
+
+    .line 337
+    goto :goto_7
+
     :cond_9
     move v6, v7
 
-    .line 348
-    goto :goto_7
-
-    :cond_a
-    move v6, v7
-
-    .line 349
+    .line 338
     goto :goto_8
 
-    :cond_b
+    :cond_a
     move v8, v7
 
-    .line 350
+    .line 339
     goto :goto_9
 
-    .line 352
-    :cond_c
+    .line 341
+    :cond_b
     const/16 v7, 0x8
 
     goto :goto_a
@@ -1639,7 +1623,7 @@
     .param p1, "layoutDirection"    # I
 
     .prologue
-    .line 244
+    .line 240
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1648,10 +1632,10 @@
 
     invoke-direct {p0, v0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getIcons(Landroid/content/res/Resources;)V
 
-    .line 246
+    .line 242
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->setLayoutDirection(I)V
 
-    .line 247
+    .line 243
     return-void
 .end method
 
@@ -1661,14 +1645,14 @@
     .param p2, "transparent"    # Z
 
     .prologue
-    .line 394
+    .line 377
     const/4 v0, 0x1
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, p1, p2, v0, v1}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setLowProfile(ZZZZ)V
 
-    .line 395
+    .line 378
     return-void
 .end method
 
@@ -1680,7 +1664,7 @@
     .param p4, "force"    # Z
 
     .prologue
-    .line 399
+    .line 382
     if-nez p4, :cond_1
 
     iget-boolean v3, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mLowProfile:Z
@@ -1691,54 +1675,54 @@
 
     if-ne p2, v3, :cond_1
 
-    .line 462
+    .line 445
     :cond_0
     :goto_0
     return-void
 
-    .line 401
+    .line 384
     :cond_1
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mLowProfile:Z
 
-    .line 402
+    .line 385
     iput-boolean p2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mTransparent:Z
 
-    .line 406
+    .line 389
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
-    const v4, 0x7f070053
+    const v4, 0x7f07005f
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 407
+    .line 390
     .local v1, "navButtons":Landroid/view/View;
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
     if-eqz p2, :cond_2
 
-    const v3, 0x7f070059
+    const v3, 0x7f070065
 
     :goto_1
     invoke-virtual {v4, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 409
+    .line 392
     .local v0, "lowLights":Landroid/view/View;
     iget-object v4, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCurrentView:Landroid/view/View;
 
     if-eqz p2, :cond_3
 
-    const v3, 0x7f070058
+    const v3, 0x7f070064
 
     :goto_2
     invoke-virtual {v4, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 413
+    .line 396
     .local v2, "outLights":Landroid/view/View;
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -1746,24 +1730,24 @@
 
     invoke-virtual {v3}, Landroid/view/ViewPropertyAnimator;->cancel()V
 
-    .line 414
+    .line 397
     invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v3
 
     invoke-virtual {v3}, Landroid/view/ViewPropertyAnimator;->cancel()V
 
-    .line 415
+    .line 398
     invoke-virtual {v2}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v3
 
     invoke-virtual {v3}, Landroid/view/ViewPropertyAnimator;->cancel()V
 
-    .line 417
+    .line 400
     if-nez p3, :cond_7
 
-    .line 418
+    .line 401
     if-eqz p1, :cond_4
 
     const/4 v3, 0x0
@@ -1771,7 +1755,7 @@
     :goto_3
     invoke-virtual {v1, v3}, Landroid/view/View;->setAlpha(F)V
 
-    .line 420
+    .line 403
     if-eqz p1, :cond_5
 
     const/high16 v3, 0x3f800000
@@ -1779,7 +1763,7 @@
     :goto_4
     invoke-virtual {v0, v3}, Landroid/view/View;->setAlpha(F)V
 
-    .line 421
+    .line 404
     if-eqz p1, :cond_6
 
     const/4 v3, 0x0
@@ -1787,53 +1771,53 @@
     :goto_5
     invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 423
+    .line 406
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setAlpha(F)V
 
-    .line 424
+    .line 407
     const/16 v3, 0x8
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 407
+    .line 390
     .end local v0    # "lowLights":Landroid/view/View;
     .end local v2    # "outLights":Landroid/view/View;
     :cond_2
-    const v3, 0x7f070058
+    const v3, 0x7f070064
 
     goto :goto_1
 
-    .line 409
+    .line 392
     .restart local v0    # "lowLights":Landroid/view/View;
     :cond_3
-    const v3, 0x7f070059
+    const v3, 0x7f070065
 
     goto :goto_2
 
-    .line 418
+    .line 401
     .restart local v2    # "outLights":Landroid/view/View;
     :cond_4
     const/high16 v3, 0x3f800000
 
     goto :goto_3
 
-    .line 420
+    .line 403
     :cond_5
     const/4 v3, 0x0
 
     goto :goto_4
 
-    .line 421
+    .line 404
     :cond_6
     const/16 v3, 0x8
 
     goto :goto_5
 
-    .line 426
+    .line 409
     :cond_7
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -1859,12 +1843,12 @@
 
     invoke-virtual {v3}, Landroid/view/ViewPropertyAnimator;->start()V
 
-    .line 431
+    .line 414
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mLightsOutListener:Landroid/view/View$OnTouchListener;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 432
+    .line 415
     invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
 
     move-result v3
@@ -1873,17 +1857,17 @@
 
     if-ne v3, v4, :cond_8
 
-    .line 433
+    .line 416
     const/4 v3, 0x0
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setAlpha(F)V
 
-    .line 434
+    .line 417
     const/4 v3, 0x0
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 436
+    .line 419
     :cond_8
     invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -1915,12 +1899,12 @@
 
     invoke-virtual {v3}, Landroid/view/ViewPropertyAnimator;->start()V
 
-    .line 447
+    .line 430
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 448
+    .line 431
     invoke-virtual {v2}, Landroid/view/View;->getVisibility()I
 
     move-result v3
@@ -1929,7 +1913,7 @@
 
     if-eq v3, v4, :cond_0
 
-    .line 449
+    .line 432
     invoke-virtual {v2}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v3
@@ -1958,7 +1942,7 @@
 
     goto/16 :goto_0
 
-    .line 426
+    .line 409
     :cond_9
     const/high16 v3, 0x3f800000
 
@@ -1969,7 +1953,7 @@
 
     goto :goto_7
 
-    .line 436
+    .line 419
     :cond_b
     const/4 v3, 0x0
 
@@ -1988,12 +1972,12 @@
     .param p1, "show"    # Z
 
     .prologue
-    .line 378
+    .line 361
     const/4 v0, 0x0
 
     invoke-virtual {p0, p1, v0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setMenuVisibility(ZZ)V
 
-    .line 379
+    .line 362
     return-void
 .end method
 
@@ -2003,22 +1987,22 @@
     .param p2, "force"    # Z
 
     .prologue
-    .line 382
+    .line 365
     if-nez p2, :cond_0
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mShowMenu:Z
 
     if-ne v0, p1, :cond_0
 
-    .line 387
+    .line 370
     :goto_0
     return-void
 
-    .line 384
+    .line 367
     :cond_0
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mShowMenu:Z
 
-    .line 386
+    .line 369
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getMenuButton()Landroid/view/View;
 
     move-result-object v1
@@ -2045,12 +2029,12 @@
     .param p1, "hints"    # I
 
     .prologue
-    .line 281
+    .line 277
     const/4 v0, 0x0
 
     invoke-virtual {p0, p1, v0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->setNavigationIconHints(IZ)V
 
-    .line 282
+    .line 278
     return-void
 .end method
 
@@ -2064,22 +2048,22 @@
 
     const/high16 v1, 0x3f000000
 
-    .line 285
+    .line 281
     if-nez p2, :cond_0
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mNavigationIconHints:I
 
     if-ne p1, v0, :cond_0
 
-    .line 310
+    .line 306
     :goto_0
     return-void
 
-    .line 293
+    .line 289
     :cond_0
     iput p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mNavigationIconHints:I
 
-    .line 295
+    .line 291
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getBackButton()Landroid/view/View;
 
     move-result-object v3
@@ -2093,7 +2077,7 @@
     :goto_1
     invoke-virtual {v3, v0}, Landroid/view/View;->setAlpha(F)V
 
-    .line 297
+    .line 293
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getHomeButton()Landroid/view/View;
 
     move-result-object v3
@@ -2107,7 +2091,7 @@
     :goto_2
     invoke-virtual {v3, v0}, Landroid/view/View;->setAlpha(F)V
 
-    .line 299
+    .line 295
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getRecentsButton()Landroid/view/View;
 
     move-result-object v0
@@ -2119,7 +2103,7 @@
     :goto_3
     invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
 
-    .line 302
+    .line 298
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getBackButton()Landroid/view/View;
 
     move-result-object v0
@@ -2139,7 +2123,7 @@
     :goto_4
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 307
+    .line 303
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getRecentsButton()Landroid/view/View;
 
     move-result-object v0
@@ -2155,7 +2139,7 @@
     :goto_5
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 309
+    .line 305
     iget v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDisabledFlags:I
 
     const/4 v1, 0x1
@@ -2167,22 +2151,22 @@
     :cond_1
     move v0, v2
 
-    .line 295
+    .line 291
     goto :goto_1
 
     :cond_2
     move v0, v2
 
-    .line 297
+    .line 293
     goto :goto_2
 
     :cond_3
     move v1, v2
 
-    .line 299
+    .line 295
     goto :goto_3
 
-    .line 302
+    .line 298
     :cond_4
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mBackAltIcon:Landroid/graphics/drawable/Drawable;
 
@@ -2202,7 +2186,7 @@
 
     goto :goto_4
 
-    .line 307
+    .line 303
     :cond_7
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mRecentIcon:Landroid/graphics/drawable/Drawable;
 
@@ -2216,18 +2200,18 @@
     .prologue
     const/high16 v4, 0x4000000
 
-    .line 362
+    .line 345
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/WindowManager$LayoutParams;
 
-    .line 363
+    .line 346
     .local v0, "lp":Landroid/view/WindowManager$LayoutParams;
     if-eqz v0, :cond_0
 
-    .line 364
+    .line 347
     iget v3, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
     and-int/2addr v3, v4
@@ -2236,21 +2220,21 @@
 
     const/4 v1, 0x1
 
-    .line 365
+    .line 348
     .local v1, "oldSlippery":Z
     :goto_0
     if-nez v1, :cond_2
 
     if-eqz p1, :cond_2
 
-    .line 366
+    .line 349
     iget v3, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
     or-int/2addr v3, v4
 
     iput v3, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
-    .line 372
+    .line 355
     :goto_1
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getContext()Landroid/content/Context;
 
@@ -2264,30 +2248,30 @@
 
     check-cast v2, Landroid/view/WindowManager;
 
-    .line 373
+    .line 356
     .local v2, "wm":Landroid/view/WindowManager;
     invoke-interface {v2, p0, v0}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 375
+    .line 358
     .end local v1    # "oldSlippery":Z
     .end local v2    # "wm":Landroid/view/WindowManager;
     :cond_0
     return-void
 
-    .line 364
+    .line 347
     :cond_1
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 367
+    .line 350
     .restart local v1    # "oldSlippery":Z
     :cond_2
     if-eqz v1, :cond_0
 
     if-nez p1, :cond_0
 
-    .line 368
+    .line 351
     iget v3, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
     const v4, -0x4000001
@@ -2299,42 +2283,30 @@
     goto :goto_1
 .end method
 
-.method public setStatusBarExpanded(Z)V
-    .locals 0
-    .param p1, "expanded"    # Z
-
-    .prologue
-    .line 357
-    iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mStatuBarExpanded:Z
-
-    .line 358
-    return-void
-.end method
-
 .method updateNavigationBarResources()V
     .locals 14
 
     .prologue
-    const v13, 0x7f070038
+    const v13, 0x7f070047
 
-    const v12, 0x7f070037
+    const v12, 0x7f070045
 
-    const v11, 0x7f0200cf
+    const v11, 0x7f0200d5
 
-    const v10, 0x7f0200ce
+    const v10, 0x7f0200d4
 
-    const v9, 0x7f02009e
+    const v9, 0x7f0200a4
 
-    .line 189
+    .line 185
     iget-object v8, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mContext:Landroid/content/Context;
 
     invoke-virtual {v8}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
-    .line 192
+    .line 188
     .local v5, "res":Landroid/content/res/Resources;
-    const v8, 0x7f02009d
+    const v8, 0x7f0200a3
 
     invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2342,8 +2314,8 @@
 
     iput-object v8, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mBackIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 193
-    const v8, 0x7f02009f
+    .line 189
+    const v8, 0x7f0200a5
 
     invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -2351,46 +2323,46 @@
 
     iput-object v8, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mBackLandIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 194
+    .line 190
     invoke-virtual {v5, v9}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v8
 
     iput-object v8, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mBackAltIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 195
+    .line 191
     invoke-virtual {v5, v9}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v8
 
     iput-object v8, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mBackAltLandIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 196
+    .line 192
     invoke-virtual {v5, v10}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v8
 
     iput-object v8, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mRecentIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 197
+    .line 193
     invoke-virtual {v5, v11}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v8
 
     iput-object v8, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mRecentLandIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 199
+    .line 195
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getBackButton()Landroid/view/View;
 
     move-result-object v1
 
-    .line 200
+    .line 196
     .local v1, "backView":Landroid/view/View;
     instance-of v8, v1, Landroid/widget/ImageView;
 
     if-eqz v8, :cond_0
 
-    .line 201
+    .line 197
     check-cast v1, Landroid/widget/ImageView;
 
     .end local v1    # "backView":Landroid/view/View;
@@ -2409,7 +2381,7 @@
     :goto_0
     invoke-virtual {v1, v8}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 207
+    .line 203
     :cond_0
     const/high16 v8, 0x7f090000
 
@@ -2417,7 +2389,7 @@
 
     move-result v7
 
-    .line 210
+    .line 206
     .local v7, "tablet":Z
     const/4 v8, 0x2
 
@@ -2437,20 +2409,20 @@
 
     aget v3, v0, v2
 
-    .line 211
+    .line 207
     .local v3, "id":I
     invoke-virtual {p0, v3}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
-    .line 212
+    .line 208
     .local v6, "rot":Landroid/view/View;
     if-eqz v6, :cond_1
 
-    .line 213
+    .line 209
     if-nez v7, :cond_5
 
-    const v8, 0x7f07005e
+    const v8, 0x7f07006a
 
     invoke-virtual {p0, v8}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->findViewById(I)Landroid/view/View;
 
@@ -2458,57 +2430,57 @@
 
     if-ne v6, v8, :cond_5
 
-    .line 214
-    const v8, 0x7f0201d4
+    .line 210
+    const v8, 0x7f020236
 
     invoke-direct {p0, v6, v13, v8}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
 
-    .line 216
-    const v8, 0x7f0201d2
+    .line 212
+    const v8, 0x7f020234
 
     invoke-direct {p0, v6, v12, v8}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
 
+    .line 214
+    const v8, 0x7f070048
+
+    const v9, 0x7f020238
+
+    invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
+
+    .line 216
+    const v8, 0x7f070049
+
+    const v9, 0x7f02023a
+
+    invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
+
     .line 218
-    const v8, 0x7f070039
+    const v8, 0x7f070061
 
-    const v9, 0x7f0201d6
-
-    invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
-
-    .line 220
-    const v8, 0x7f07003a
-
-    const v9, 0x7f0201d8
+    const v9, 0x7f0200c9
 
     invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
 
-    .line 222
-    const v8, 0x7f070055
-
-    const v9, 0x7f0200c3
-
-    invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
-
-    .line 223
-    const v8, 0x7f070056
+    .line 219
+    const v8, 0x7f070062
 
     invoke-direct {p0, v6, v8, v11}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
 
-    .line 224
-    const v8, 0x7f070057
+    .line 220
+    const v8, 0x7f070063
 
-    const v9, 0x7f0200cc
+    const v9, 0x7f0200d2
 
     invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
 
-    .line 210
+    .line 206
     :cond_1
     :goto_2
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 201
+    .line 197
     .end local v0    # "arr$":[I
     .end local v2    # "i$":I
     .end local v3    # "id":I
@@ -2534,7 +2506,7 @@
 
     goto :goto_0
 
-    .line 226
+    .line 222
     .restart local v0    # "arr$":[I
     .restart local v2    # "i$":I
     .restart local v3    # "id":I
@@ -2542,62 +2514,62 @@
     .restart local v6    # "rot":Landroid/view/View;
     .restart local v7    # "tablet":Z
     :cond_5
-    const v8, 0x7f0201d3
+    const v8, 0x7f020235
 
     invoke-direct {p0, v6, v13, v8}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
 
-    .line 228
-    const v8, 0x7f0201d1
+    .line 224
+    const v8, 0x7f020233
 
     invoke-direct {p0, v6, v12, v8}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
 
+    .line 226
+    const v8, 0x7f070048
+
+    const v9, 0x7f020237
+
+    invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
+
+    .line 228
+    const v8, 0x7f070049
+
+    const v9, 0x7f020239
+
+    invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
+
     .line 230
-    const v8, 0x7f070039
+    const v8, 0x7f070061
 
-    const v9, 0x7f0201d5
-
-    invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
-
-    .line 232
-    const v8, 0x7f07003a
-
-    const v9, 0x7f0201d7
+    const v9, 0x7f0200c8
 
     invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
 
-    .line 234
-    const v8, 0x7f070055
-
-    const v9, 0x7f0200c2
-
-    invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
-
-    .line 235
-    const v8, 0x7f070056
+    .line 231
+    const v8, 0x7f070062
 
     invoke-direct {p0, v6, v8, v10}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
 
-    .line 236
-    const v8, 0x7f070057
+    .line 232
+    const v8, 0x7f070063
 
-    const v9, 0x7f0200cb
+    const v9, 0x7f0200d1
 
     invoke-direct {p0, v6, v8, v9}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->updateImageView(Landroid/view/View;II)V
 
     goto :goto_2
 
-    .line 240
+    .line 236
     .end local v3    # "id":I
     .end local v6    # "rot":Landroid/view/View;
     :cond_6
     return-void
 
-    .line 210
+    .line 206
     nop
 
     :array_0
     .array-data 4
-        0x7f070052
         0x7f07005e
+        0x7f07006a
     .end array-data
 .end method

@@ -32,18 +32,18 @@
     .param p3, "panel"    # Lcom/android/systemui/statusbar/tablet/StatusBarPanel;
 
     .prologue
-    .line 721
+    .line 720
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$TouchOutsideListener;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 722
+    .line 721
     iput p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$TouchOutsideListener;->mMsg:I
 
-    .line 723
+    .line 722
     iput-object p3, p0, Lcom/android/systemui/statusbar/BaseStatusBar$TouchOutsideListener;->mPanel:Lcom/android/systemui/statusbar/tablet/StatusBarPanel;
 
-    .line 724
+    .line 723
     return-void
 .end method
 
@@ -55,12 +55,12 @@
     .param p2, "ev"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 727
+    .line 726
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
-    .line 728
+    .line 727
     .local v0, "action":I
     const/4 v1, 0x4
 
@@ -88,7 +88,7 @@
 
     if-nez v1, :cond_1
 
-    .line 731
+    .line 730
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$TouchOutsideListener;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -98,7 +98,7 @@
 
     invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/BaseStatusBar$H;->removeMessages(I)V
 
-    .line 732
+    .line 731
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$TouchOutsideListener;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
@@ -107,10 +107,10 @@
 
     invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/BaseStatusBar$H;->sendEmptyMessage(I)Z
 
-    .line 733
+    .line 732
     const/4 v1, 0x1
 
-    .line 735
+    .line 734
     :goto_0
     return v1
 

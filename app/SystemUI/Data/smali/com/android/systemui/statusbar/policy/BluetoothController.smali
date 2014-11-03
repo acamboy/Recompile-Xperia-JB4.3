@@ -65,7 +65,7 @@
     iput-object v2, p0, Lcom/android/systemui/statusbar/policy/BluetoothController;->mIconViews:Ljava/util/ArrayList;
 
     .line 41
-    const v2, 0x7f020134
+    const v2, 0x7f020138
 
     iput v2, p0, Lcom/android/systemui/statusbar/policy/BluetoothController;->mIconId:I
 
@@ -295,12 +295,12 @@
     if-eqz v0, :cond_1
 
     .line 121
-    const v1, 0x7f020135
+    const v1, 0x7f020139
 
     iput v1, p0, Lcom/android/systemui/statusbar/policy/BluetoothController;->mIconId:I
 
     .line 122
-    const v1, 0x7f0a0042
+    const v1, 0x7f0a0074
 
     iput v1, p0, Lcom/android/systemui/statusbar/policy/BluetoothController;->mContentDescriptionId:I
 
@@ -318,12 +318,12 @@
     .line 124
     .restart local v0    # "connected":Z
     :cond_1
-    const v1, 0x7f020134
+    const v1, 0x7f020138
 
     iput v1, p0, Lcom/android/systemui/statusbar/policy/BluetoothController;->mIconId:I
 
     .line 125
-    const v1, 0x7f0a0043
+    const v1, 0x7f0a0075
 
     iput v1, p0, Lcom/android/systemui/statusbar/policy/BluetoothController;->mContentDescriptionId:I
 

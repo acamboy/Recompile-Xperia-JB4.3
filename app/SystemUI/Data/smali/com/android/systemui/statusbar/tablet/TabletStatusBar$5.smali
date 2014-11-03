@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1168
+    .line 1173
     iput-object p1, p0, Lcom/android/systemui/statusbar/tablet/TabletStatusBar$5;->this$0:Lcom/android/systemui/statusbar/tablet/TabletStatusBar;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,13 +41,13 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 1171
+    .line 1176
     iget-object v1, p0, Lcom/android/systemui/statusbar/tablet/TabletStatusBar$5;->this$0:Lcom/android/systemui/statusbar/tablet/TabletStatusBar;
 
     # invokes: Lcom/android/systemui/statusbar/tablet/TabletStatusBar;->hideCompatibilityHelp()V
     invoke-static {v1}, Lcom/android/systemui/statusbar/tablet/TabletStatusBar;->access$1900(Lcom/android/systemui/statusbar/tablet/TabletStatusBar;)V
 
-    .line 1172
+    .line 1177
     iget-object v1, p0, Lcom/android/systemui/statusbar/tablet/TabletStatusBar$5;->this$0:Lcom/android/systemui/statusbar/tablet/TabletStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    .line 1173
+    .line 1178
     .local v0, "editor":Landroid/content/SharedPreferences$Editor;
     const-string v1, "shown_compat_mode_help"
 
@@ -64,9 +64,9 @@
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    .line 1174
+    .line 1179
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 1175
+    .line 1180
     return-void
 .end method

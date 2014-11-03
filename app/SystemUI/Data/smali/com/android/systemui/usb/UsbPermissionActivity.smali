@@ -223,7 +223,7 @@
     if-nez v7, :cond_0
 
     .line 89
-    const v7, 0x7f0a0021
+    const v7, 0x7f0a0053
 
     new-array v8, v10, [Ljava/lang/Object;
 
@@ -311,7 +311,7 @@
     .line 106
     iget-object v7, p0, Lcom/android/systemui/usb/UsbPermissionActivity;->mAlwaysUse:Landroid/widget/CheckBox;
 
-    const v8, 0x7f0a0028
+    const v8, 0x7f0a005a
 
     invoke-virtual {v7, v8}, Landroid/widget/CheckBox;->setText(I)V
 
@@ -375,7 +375,7 @@
     .restart local v1    # "ap":Lcom/android/internal/app/AlertController$AlertParams;
     .restart local v2    # "appName":Ljava/lang/String;
     :cond_0
-    const v7, 0x7f0a0020
+    const v7, 0x7f0a0052
 
     new-array v8, v10, [Ljava/lang/Object;
 
@@ -403,7 +403,7 @@
     :cond_1
     iget-object v7, p0, Lcom/android/systemui/usb/UsbPermissionActivity;->mAlwaysUse:Landroid/widget/CheckBox;
 
-    const v8, 0x7f0a0027
+    const v8, 0x7f0a0059
 
     invoke-virtual {v7, v8}, Landroid/widget/CheckBox;->setText(I)V
 

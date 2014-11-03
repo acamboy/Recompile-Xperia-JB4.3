@@ -533,7 +533,7 @@
     .line 673
     .end local v4    # "summary":Ljava/lang/CharSequence;
     :cond_3
-    const v5, 0x7f0a00a9
+    const v5, 0x7f0a00dc
 
     invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1327,7 +1327,7 @@
 
     if-eqz p1, :cond_0
 
-    const v1, 0x7f020034
+    const v1, 0x7f02003a
 
     :goto_0
     iput v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
@@ -1335,7 +1335,7 @@
     .line 392
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mAirplaneModeState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;
 
-    const v2, 0x7f0a00a0
+    const v2, 0x7f0a00d3
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1357,7 +1357,7 @@
 
     .line 389
     :cond_0
-    const v1, 0x7f020033
+    const v1, 0x7f020039
 
     goto :goto_0
 .end method
@@ -1466,14 +1466,14 @@
     .line 511
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    const v2, 0x7f02004f
+    const v2, 0x7f020055
 
     iput v2, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 512
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    const v2, 0x7f0a0067
+    const v2, 0x7f0a0099
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1485,7 +1485,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    const v2, 0x7f0a00a3
+    const v2, 0x7f0a00d6
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1510,14 +1510,14 @@
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    const v2, 0x7f02004d
+    const v2, 0x7f020053
 
     iput v2, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 515
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    const v2, 0x7f0a0065
+    const v2, 0x7f0a0097
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1531,14 +1531,14 @@
     :cond_1
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    const v2, 0x7f02004e
+    const v2, 0x7f020054
 
     iput v2, v1, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 520
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    const v2, 0x7f0a00a5
+    const v2, 0x7f0a00d8
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1549,7 +1549,7 @@
     .line 521
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBluetoothState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BluetoothState;
 
-    const v2, 0x7f0a0066
+    const v2, 0x7f0a0098
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1632,7 +1632,7 @@
 
     if-eqz v2, :cond_1
 
-    const v2, 0x7f020051
+    const v2, 0x7f020057
 
     :goto_1
     iput v2, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
@@ -1640,7 +1640,7 @@
     .line 728
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mBrightnessState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$BrightnessState;
 
-    const v3, 0x7f0a00a6
+    const v3, 0x7f0a00d9
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1668,7 +1668,7 @@
 
     .line 725
     :cond_1
-    const v2, 0x7f020050
+    const v2, 0x7f020056
 
     goto :goto_1
 .end method
@@ -1964,13 +1964,13 @@
     .restart local p3    # "signalContentDescription":Ljava/lang/String;
     .restart local p5    # "dataContentDescription":Ljava/lang/String;
     :cond_1
-    const v1, 0x7f020078
+    const v1, 0x7f02007e
 
     goto :goto_0
 
     .line 468
     :cond_2
-    const v2, 0x7f0a005e
+    const v2, 0x7f0a0090
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1987,7 +1987,7 @@
 
     .line 474
     :cond_4
-    const v2, 0x7f0a004e
+    const v2, 0x7f0a0080
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1998,7 +1998,7 @@
     .line 477
     .end local p5    # "dataContentDescription":Ljava/lang/String;
     :cond_5
-    const v1, 0x7f0a00ad
+    const v1, 0x7f0a00e0
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2087,7 +2087,7 @@
 
     if-eqz v0, :cond_1
 
-    const v1, 0x7f02005a
+    const v1, 0x7f020060
 
     :goto_0
     iput v1, v2, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
@@ -2099,7 +2099,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a00a8
+    const v3, 0x7f0a00db
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2132,7 +2132,7 @@
 
     .line 692
     :cond_1
-    const v1, 0x7f020036
+    const v1, 0x7f02003c
 
     goto :goto_0
 
@@ -2140,7 +2140,7 @@
     :cond_2
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0a00a7
+    const v3, 0x7f0a00da
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2193,7 +2193,7 @@
     .line 591
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiDisplayState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;
 
-    const v1, 0x7f020059
+    const v1, 0x7f02005f
 
     iput v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
@@ -2222,7 +2222,7 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0a00b6
+    const v2, 0x7f0a00e9
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2233,7 +2233,7 @@
     .line 595
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiDisplayState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;
 
-    const v1, 0x7f020058
+    const v1, 0x7f02005e
 
     iput v1, v0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
@@ -2346,14 +2346,14 @@
     .line 436
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
 
-    const v4, 0x7f02007c
+    const v4, 0x7f020082
 
     iput v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 437
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
 
-    const v4, 0x7f0a00b1
+    const v4, 0x7f0a00e4
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2364,7 +2364,7 @@
     .line 438
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
 
-    const v4, 0x7f0a0054
+    const v4, 0x7f0a0086
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2378,14 +2378,14 @@
     :cond_3
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
 
-    const v4, 0x7f020087
+    const v4, 0x7f02008d
 
     iput v4, v3, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->iconId:I
 
     .line 441
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
 
-    const v4, 0x7f0a00b4
+    const v4, 0x7f0a00e7
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2396,7 +2396,7 @@
     .line 442
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mWifiState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$WifiState;
 
-    const v4, 0x7f0a0053
+    const v4, 0x7f0a0085
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2488,7 +2488,7 @@
     .local v0, "r":Landroid/content/res/Resources;
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel;->mSettingsState:Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;
 
-    const v2, 0x7f0a00ae
+    const v2, 0x7f0a00e1
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

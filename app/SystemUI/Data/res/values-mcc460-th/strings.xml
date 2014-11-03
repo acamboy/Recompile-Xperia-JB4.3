@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="toast_message_not_allow_turn_on_hotspot">ฮอตสปอต WLAN ใช้ไม่ได้ในโหมดใช้งาน บนเครื่องบิน</string>
+    <string name="status_bar_settings_wifi">WLAN</string>
+    <string name="status_bar_settings_wifi_hotspot">ฮอตสปอต WLAN</string>
+    <string name="status_bar_wifi">WLAN</string>
     <string name="status_bar_settings_wifi_button">WLAN</string>
     <string name="accessibility_wifi_off">WLAN ปิดอยู่</string>
     <string name="accessibility_no_wifi">เลิกเชื่อมต่อ WLAN แล้ว</string>
@@ -13,8 +17,4 @@
     <string name="quick_settings_wifi_label">WLAN</string>
     <string name="quick_settings_wifi_off_label">ปิด WLAN</string>
     <string name="quick_settings_wifi_display_label">จอแสดงผล WLAN</string>
-    <string name="status_bar_settings_wifi">WLAN</string>
-    <string name="status_bar_settings_wifi_hotspot">ฮอตสปอต WLAN</string>
-    <string name="status_bar_wifi">WLAN</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">ฮอตสปอต WLAN ใช้ไม่ได้ในโหมดใช้งาน บนเครื่องบิน</string>
 </resources>

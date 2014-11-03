@@ -294,7 +294,7 @@
     .local v0, "icon":Landroid/graphics/drawable/Drawable;
     iget-object v10, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mContext:Landroid/content/Context;
 
-    const v11, 0x7f04002a
+    const v11, 0x7f04002c
 
     const/4 v12, 0x0
 
@@ -304,7 +304,7 @@
 
     .line 229
     .local v9, "view":Landroid/view/View;
-    const v10, 0x7f0700ae
+    const v10, 0x7f0700ca
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -314,7 +314,7 @@
 
     .line 230
     .local v6, "subtypeIcon":Landroid/widget/ImageView;
-    const v10, 0x7f0700af
+    const v10, 0x7f0700cb
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -324,7 +324,7 @@
 
     .line 231
     .local v3, "itemTitle":Landroid/widget/TextView;
-    const v10, 0x7f0700b0
+    const v10, 0x7f0700cc
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -334,7 +334,7 @@
 
     .line 232
     .local v2, "itemSubtitle":Landroid/widget/TextView;
-    const v10, 0x7f0700b2
+    const v10, 0x7f0700ce
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -344,7 +344,7 @@
 
     .line 233
     .local v5, "settingsIcon":Landroid/widget/ImageView;
-    const v10, 0x7f0700ac
+    const v10, 0x7f0700c8
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -457,7 +457,7 @@
     .line 260
     .restart local v4    # "settingsActivity":Ljava/lang/String;
     :cond_3
-    const v10, 0x7f0700b1
+    const v10, 0x7f0700cd
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1175,7 +1175,7 @@
 
     .line 375
     .local v2, "radioView":Landroid/view/View;
-    const v4, 0x7f0700ad
+    const v4, 0x7f0700c9
 
     invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1314,7 +1314,7 @@
 
     .line 343
     .local v2, "radioView":Landroid/view/View;
-    const v5, 0x7f0700ad
+    const v5, 0x7f0700c9
 
     invoke-virtual {v2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1542,7 +1542,7 @@
     .line 199
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mInputMethodSwitchButton:Lcom/android/systemui/statusbar/tablet/InputMethodButton;
 
-    const v1, 0x7f0200c4
+    const v1, 0x7f0200ca
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/tablet/InputMethodButton;->setIconImage(I)V
 
@@ -1723,7 +1723,7 @@
 
     .prologue
     .line 141
-    const v0, 0x7f0700b7
+    const v0, 0x7f0700d3
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->findViewById(I)Landroid/view/View;
 
@@ -1734,7 +1734,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mInputMethodMenuList:Landroid/widget/LinearLayout;
 
     .line 142
-    const v0, 0x7f0700b4
+    const v0, 0x7f0700d0
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->findViewById(I)Landroid/view/View;
 
@@ -1745,7 +1745,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mHardKeyboardSection:Landroid/widget/LinearLayout;
 
     .line 143
-    const v0, 0x7f0700b6
+    const v0, 0x7f0700d2
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->findViewById(I)Landroid/view/View;
 
@@ -1756,7 +1756,7 @@
     iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mHardKeyboardSwitch:Landroid/widget/Switch;
 
     .line 144
-    const v0, 0x7f0700b8
+    const v0, 0x7f0700d4
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->findViewById(I)Landroid/view/View;
 
@@ -1796,7 +1796,7 @@
     .line 192
     iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/InputMethodsPanel;->mInputMethodSwitchButton:Lcom/android/systemui/statusbar/tablet/InputMethodButton;
 
-    const v1, 0x7f0200c6
+    const v1, 0x7f0200cc
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/tablet/InputMethodButton;->setIconImage(I)V
 

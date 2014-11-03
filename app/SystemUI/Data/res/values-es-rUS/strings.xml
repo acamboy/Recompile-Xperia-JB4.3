@@ -141,7 +141,7 @@ Utiliza solo el cargador proporcionado."</string>
     <string name="data_usage_disabled_dialog_title">Datos inhabilitados</string>
     <string name="data_usage_disabled_dialog">"Llegaste al límite especificado de uso de datos.
 
-ISi vuelves a permitir datos, es posible que tu operador realice cargos."</string>
+Si vuelves a permitir datos, es posible que tu operador realice cargos."</string>
     <string name="data_usage_disabled_dialog_enable">Volver a habilitar los datos</string>
     <string name="status_bar_settings_signal_meter_disconnected">Sin conexión a Internet</string>
     <string name="status_bar_settings_signal_meter_wifi_nossid">Con conexión Wi-Fi</string>
@@ -187,6 +187,4 @@ ISi vuelves a permitir datos, es posible que tu operador realice cargos."</strin
     <string name="status_bar_help_text">"Accede a ellos en cualquier momento al deslizar el dedo hacia abajo.
 
 Vuelve a deslizar el dedo hacia abajo para acceder a los controles del sistema."</string>
-    <string name="expanded_no_simcard">No hay tarjeta SIM.</string>
-    <string name="expanded_airplane_no_service">Modo avión</string>
 </resources>

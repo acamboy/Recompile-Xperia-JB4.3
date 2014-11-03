@@ -54,50 +54,52 @@
 
     .line 33
     .local v0, "state":I
-    const/4 v1, 0x3
+    packed-switch v0, :pswitch_data_0
 
-    if-ne v0, v1, :cond_1
-
-    .line 34
-    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/WifiService;
-
-    invoke-virtual {v1, v4}, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->notifyStateChanged(I)V
-
-    .line 42
-    :cond_0
+    .line 49
     :goto_0
     return-void
 
     .line 35
-    :cond_1
-    if-ne v0, v3, :cond_2
+    :pswitch_0
+    iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/WifiService;
 
-    .line 36
+    invoke-virtual {v1, v4}, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->notifyStateChanged(I)V
+
+    goto :goto_0
+
+    .line 38
+    :pswitch_1
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/WifiService;
 
     invoke-virtual {v1, v3}, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->notifyStateChanged(I)V
 
     goto :goto_0
 
-    .line 37
-    :cond_2
-    if-nez v0, :cond_3
-
-    .line 38
+    .line 41
+    :pswitch_2
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/WifiService;
 
     invoke-virtual {v1, v3}, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->notifyStateChanging(I)V
 
     goto :goto_0
 
-    .line 39
-    :cond_3
-    if-ne v0, v4, :cond_0
-
-    .line 40
+    .line 44
+    :pswitch_3
     iget-object v1, p0, Lcom/sonymobile/systemui/statusbar/tools/WifiService$1;->this$0:Lcom/sonymobile/systemui/statusbar/tools/WifiService;
 
     invoke-virtual {v1, v4}, Lcom/sonymobile/systemui/statusbar/tools/WifiService;->notifyStateChanging(I)V
 
     goto :goto_0
+
+    .line 33
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_3
+        :pswitch_0
+    .end packed-switch
 .end method

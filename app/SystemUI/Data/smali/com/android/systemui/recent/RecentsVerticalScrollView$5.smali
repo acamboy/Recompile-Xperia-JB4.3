@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 170
+    .line 178
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsVerticalScrollView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 4
 
     .prologue
-    .line 172
+    .line 180
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsVerticalScrollView;
 
     iget-object v2, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsVerticalScrollView;
@@ -52,7 +52,7 @@
 
     iput v2, v1, Lcom/android/systemui/recent/RecentsVerticalScrollView;->mLastScrollPosition:I
 
-    .line 173
+    .line 181
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsVerticalScrollView;
 
     const/4 v2, 0x0
@@ -63,14 +63,14 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->scrollTo(II)V
 
-    .line 174
+    .line 182
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$5;->this$0:Lcom/android/systemui/recent/RecentsVerticalScrollView;
 
     invoke-virtual {v1}, Lcom/android/systemui/recent/RecentsVerticalScrollView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 
-    .line 175
+    .line 183
     .local v0, "observer":Landroid/view/ViewTreeObserver;
     invoke-virtual {v0}, Landroid/view/ViewTreeObserver;->isAlive()Z
 
@@ -78,10 +78,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 176
+    .line 184
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 178
+    .line 186
     :cond_0
     return-void
 .end method

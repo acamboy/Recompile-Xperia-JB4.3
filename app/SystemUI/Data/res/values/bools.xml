@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bool name="config_recents_interface_for_tablets">false</bool>
-    <bool name="config_recents_thumbnail_image_fits_to_xy">false</bool>
+    <bool name="config_recents_thumbnail_image_fits_to_xy">true</bool>
     <bool name="config_hspa_data_distinguishable">true</bool>
     <bool name="config_enableMobileComboIcon">true</bool>
     <bool name="config_showRATIconAlways">false</bool>
@@ -13,6 +13,11 @@
     <bool name="quick_settings_show_rotation_lock">false</bool>
     <bool name="config_hasSettingsPanel">false</bool>
     <bool name="config_hasFlipSettingsPanel">false</bool>
-    <bool name="config_show4GForLTE">true</bool>
+    <bool name="config_show4GForLTE">false</bool>
+    <bool name="config_showOperatorNameInStatusBar">false</bool>
     <bool name="config_roundedCornersEnabled">true</bool>
+    <bool name="config_showCallBusyingIconForDsds">true</bool>
+    <bool name="config_showSimIndicatorWhenNoSim">false</bool>
+    <bool name="config_showVoiceRATIcon">false</bool>
+    <bool name="config_showSpecificDualSimMobileLabel">false</bool>
 </resources>

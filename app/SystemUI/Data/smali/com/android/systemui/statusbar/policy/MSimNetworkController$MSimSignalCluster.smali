@@ -15,13 +15,10 @@
 
 
 # virtual methods
-.method public abstract setCallState(II)V
-.end method
-
 .method public abstract setIsAirplaneMode(ZI)V
 .end method
 
-.method public abstract setMobileDataIndicators(ZIIILjava/lang/String;Ljava/lang/String;IIZ)V
+.method public abstract setMobileDataIndicators(ZIIILjava/lang/String;Ljava/lang/String;IIIII)V
 .end method
 
 .method public abstract setWifiIndicators(ZIILjava/lang/String;)V

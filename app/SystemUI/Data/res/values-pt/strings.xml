@@ -185,6 +185,4 @@ Se você reativá-los, poderá receber uma cobrança do operador."</string>
     <string name="status_bar_help_title">As notificações aparecem aqui</string>
     <string name="status_bar_help_text">"Acesse a qualquer momento deslizando para baixo.
 Deslize para baixo novamente para acessar os controles do sistema."</string>
-    <string name="expanded_no_simcard">Sem cartão SIM</string>
-    <string name="expanded_airplane_no_service">Modo avião</string>
 </resources>

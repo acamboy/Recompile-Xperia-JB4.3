@@ -217,7 +217,7 @@
 
     .line 72
     .local v0, "ap":Lcom/android/internal/app/AlertController$AlertParams;
-    const v5, 0x7f0a0029
+    const v5, 0x7f0a005b
 
     invoke-virtual {p0, v5}, Lcom/android/systemui/usb/UsbDebuggingActivity;->getString(I)Ljava/lang/String;
 
@@ -231,7 +231,7 @@
     iput v5, v0, Lcom/android/internal/app/AlertController$AlertParams;->mIconId:I
 
     .line 74
-    const v5, 0x7f0a002a
+    const v5, 0x7f0a005c
 
     const/4 v6, 0x1
 
@@ -301,7 +301,7 @@
     .line 84
     iget-object v5, p0, Lcom/android/systemui/usb/UsbDebuggingActivity;->mAlwaysAllow:Landroid/widget/CheckBox;
 
-    const v6, 0x7f0a002b
+    const v6, 0x7f0a005d
 
     invoke-virtual {p0, v6}, Lcom/android/systemui/usb/UsbDebuggingActivity;->getString(I)Ljava/lang/String;
 

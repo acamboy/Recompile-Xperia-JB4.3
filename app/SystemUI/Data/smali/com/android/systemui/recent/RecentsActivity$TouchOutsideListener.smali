@@ -29,15 +29,15 @@
     .param p2, "panel"    # Lcom/android/systemui/statusbar/tablet/StatusBarPanel;
 
     .prologue
-    .line 96
+    .line 106
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsActivity$TouchOutsideListener;->this$0:Lcom/android/systemui/recent/RecentsActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 97
+    .line 107
     iput-object p2, p0, Lcom/android/systemui/recent/RecentsActivity$TouchOutsideListener;->mPanel:Lcom/android/systemui/statusbar/tablet/StatusBarPanel;
 
-    .line 98
+    .line 108
     return-void
 .end method
 
@@ -49,12 +49,12 @@
     .param p2, "ev"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 101
+    .line 111
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
-    .line 102
+    .line 112
     .local v0, "action":I
     const/4 v1, 0x4
 
@@ -82,16 +82,16 @@
 
     if-nez v1, :cond_1
 
-    .line 105
+    .line 115
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsActivity$TouchOutsideListener;->this$0:Lcom/android/systemui/recent/RecentsActivity;
 
     invoke-virtual {v1}, Lcom/android/systemui/recent/RecentsActivity;->dismissAndGoHome()V
 
-    .line 106
+    .line 116
     const/4 v1, 0x1
 
-    .line 108
+    .line 118
     :goto_0
     return v1
 

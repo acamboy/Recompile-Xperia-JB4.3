@@ -1,9 +1,6 @@
 .class Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;
-.super Ljava/lang/Object;
+.super Landroid/database/ContentObserver;
 .source "MSimNetworkController.java"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -22,168 +19,87 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/statusbar/policy/MSimNetworkController;)V
+.method constructor <init>(Lcom/android/systemui/statusbar/policy/MSimNetworkController;Landroid/os/Handler;)V
     .locals 0
+    .param p2, "x0"    # Landroid/os/Handler;
 
     .prologue
-    .line 117
+    .line 155
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 7
+.method public onChange(ZLandroid/net/Uri;)V
+    .locals 4
+    .param p1, "selfChange"    # Z
+    .param p2, "uri"    # Landroid/net/Uri;
 
     .prologue
-    const/4 v4, 0x0
+    .line 158
+    invoke-virtual {p2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
-    .line 120
-    iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
+    move-result-object v1
 
-    # getter for: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mShowRoamIcon:[Z
-    invoke-static {v3}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/MSimNetworkController;)[Z
+    .line 159
+    .local v1, "key":Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object v5
-
-    iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
-
-    # getter for: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mShowRoamIcon:[Z
-    invoke-static {v3}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/MSimNetworkController;)[Z
-
-    move-result-object v3
-
-    aget-boolean v3, v3, v4
-
-    if-nez v3, :cond_0
-
-    const/4 v3, 0x1
-
+    .local v0, "i":I
     :goto_0
-    aput-boolean v3, v5, v4
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    .line 121
-    const-string v3, "StatusBar.MSimNetworkController"
+    # getter for: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mNumPhones:I
+    invoke-static {v2}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/MSimNetworkController;)I
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    move-result v2
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    if-ge v0, v2, :cond_1
 
-    const-string v6, "mAlternateRunnableSub0 flag="
+    .line 160
+    sget-object v2, Landroid/provider/Settings$Global;->MULTI_SIM_USER_PREFERRED_SUBS:[Ljava/lang/String;
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aget-object v2, v2, v0
 
-    move-result-object v5
+    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    iget-object v6, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
+    move-result v2
 
-    # getter for: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mShowRoamIcon:[Z
-    invoke-static {v6}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/MSimNetworkController;)[Z
+    if-nez v2, :cond_0
 
-    move-result-object v6
-
-    aget-boolean v6, v6, v4
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v3, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 123
-    invoke-static {}, Landroid/telephony/MSimTelephonyManager;->getDefault()Landroid/telephony/MSimTelephonyManager;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/telephony/MSimTelephonyManager;->getPreferredDataSubscription()I
-
-    move-result v1
-
-    .line 124
-    .local v1, "dataSub":I
-    if-eqz v1, :cond_1
-
-    .line 125
-    const-string v3, "StatusBar.MSimNetworkController"
-
-    const-string v5, "mAlternateRunnableSub0 not dataSub. Exit Alternating"
-
-    invoke-static {v3, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 126
-    iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
-
-    # getter for: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mIsAlternating:[Z
-    invoke-static {v3}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$100(Lcom/android/systemui/statusbar/policy/MSimNetworkController;)[Z
-
-    move-result-object v3
-
-    aput-boolean v4, v3, v4
-
-    .line 131
+    .line 159
     :goto_1
-    iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
+    add-int/lit8 v0, v0, 0x1
 
-    iget-object v3, v3, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mSimSignalClusters:Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    .local v2, "i$":Ljava/util/Iterator;
-    :goto_2
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimSignalCluster;
-
-    .line 132
-    .local v0, "cluster":Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimSignalCluster;
-    iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
-
-    invoke-virtual {v3, v0, v4}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->refreshSignalCluster(Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimSignalCluster;I)V
-
-    goto :goto_2
-
-    .end local v0    # "cluster":Lcom/android/systemui/statusbar/policy/MSimNetworkController$MSimSignalCluster;
-    .end local v1    # "dataSub":I
-    .end local v2    # "i$":Ljava/util/Iterator;
-    :cond_0
-    move v3, v4
-
-    .line 120
     goto :goto_0
 
-    .line 128
-    .restart local v1    # "dataSub":I
-    :cond_1
+    .line 161
+    :cond_0
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
+
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
 
-    iget-object v3, v3, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->mHandler:Landroid/os/Handler;
+    iget-object v3, v3, Lcom/android/systemui/statusbar/policy/NetworkController;->mContext:Landroid/content/Context;
 
-    const-wide/16 v5, 0xfa0
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    invoke-virtual {v3, p0, v5, v6}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+    move-result-object v3
+
+    # invokes: Lcom/android/systemui/statusbar/policy/MSimNetworkController;->onSubscriptionStatusChanged(Landroid/content/ContentResolver;I)V
+    invoke-static {v2, v3, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->access$100(Lcom/android/systemui/statusbar/policy/MSimNetworkController;Landroid/content/ContentResolver;I)V
+
+    .line 162
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/MSimNetworkController$1;->this$0:Lcom/android/systemui/statusbar/policy/MSimNetworkController;
+
+    invoke-virtual {v2, v0}, Lcom/android/systemui/statusbar/policy/MSimNetworkController;->refreshViews(I)V
 
     goto :goto_1
 
-    .line 134
-    .restart local v2    # "i$":Ljava/util/Iterator;
-    :cond_2
+    .line 164
+    :cond_1
     return-void
 .end method

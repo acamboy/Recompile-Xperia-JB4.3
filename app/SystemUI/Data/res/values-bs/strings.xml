@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="carrier_invalid_sim_card">Nevažeća SIM kartica</string>
+    <string name="power_settings_instructions">Omogućavanjem načina rada s produženim stanjem pripravnosti u Upravljanju napajanjem se optimizira trajanje baterije</string>
+    <string name="battery_low_power_settings">Informacije o bateriji</string>
+    <string name="toast_message_not_allow_turn_on_hotspot">Wi-Fi pristupna tačka nije dostupna u načinu rada u avionu</string>
+    <string name="status_bar_toolsbar_settings_title">Odaberi brze postavke</string>
+    <string name="status_bar_recent_failed_to_launch_app">Nije bilo moguće pokrenuti aplikaciju</string>
+    <string name="toast_message_maximum_number_of_tools_reached">Odabran je maksimalni broj brzih postavki</string>
+    <string name="status_bar_settings_airplanemode">Način rada u avionu</string>
+    <string name="status_bar_settings_autorotate">Autom. rotacija ekrana</string>
+    <string name="status_bar_settings_gps">GPS</string>
+    <string name="status_bar_settings_settings">Prečica do Postavki</string>
+    <string name="status_bar_settings_wifi">Wi-Fi</string>
+    <string name="status_bar_settings_bluetooth">Bluetooth</string>
+    <string name="status_bar_settings_mobile_data">Promet Mob. pod.</string>
+    <string name="status_bar_settings_brightness">Osvjetljenje</string>
+    <string name="status_bar_settings_sound">Zvuk</string>
+    <string name="status_bar_settings_wifi_hotspot">Wi-Fi pristupna tačka</string>
+    <string name="status_bar_settings_nfc">NFC</string>
+    <string name="status_bar_settings_roaming">Roming</string>
+    <string name="status_bar_settings_autosync">Automat. sinhr. pod.</string>
+    <string name="status_bar_airplanemode">Avion</string>
+    <string name="status_bar_autorotate">Automatska rotacija</string>
+    <string name="status_bar_gps">GPS</string>
+    <string name="status_bar_settings">Postavke</string>
+    <string name="status_bar_wifi">Wi-Fi</string>
+    <string name="status_bar_bluetooth">Bluetooth</string>
+    <string name="status_bar_mobile_data">Mobilni podaci</string>
+    <string name="status_bar_brightness">Osvjetljenje</string>
+    <string name="status_bar_sound">Zvuk</string>
+    <string name="status_bar_wifi_hotspot">Pristupna tačka</string>
+    <string name="status_bar_nfc">NFC</string>
+    <string name="status_bar_roaming">Roming</string>
+    <string name="status_bar_autosync">Automatsko sinhroniz.</string>
+    <string name="accessibility_state_vibrate">Vibracija</string>
+    <string name="quick_Settings">Brze postavke</string>
+    <string name="quick_settings_description">Odaberite broj brzih postavki u Ploči s obavještenjima i uredite njihov redoslijed</string>
+    <string name="status_bar_autosync_dialog_enable_title">Uključiti automatsko sinhroniziranje podataka?</string>
+    <string name="status_bar_autosync_dialog_enable_warning">"Sve promjene koje načinite na računima na webu će biti automatski kopirane na telefon.
+
+Neki računi također mogu automatski kopirati na web promjene koje izvršite na telefonu.
+
+Da biste izabrali koje vrste podataka će se sinhronizirati za svaki računa, idite na Postavke > Računi."</string>
+    <string name="status_bar_autosync_dialog_extended_enable_warning">"Sve promjene koje napravite na računima na webu će se automatski kopirati na vaš uređaj.
+
+Neki računi također mogu automatski kopirati na web sve promjene koje napravite na uređaj.
+
+Da biste odabrali koju vrstu podataka želite sinhronizirati za svaki račun, idite na Postavke > Računi.
+
+Mogu biti zaračunati troškovi prijenosa podataka prilikom ažuriranja uređaja. Preporučuje se pretplata bez ograničenja u prijenosu podataka."</string>
+    <string name="status_bar_autosync_dialog_disable_title">Isključiti automatsko sinhroniziranje podataka?</string>
+    <string name="status_bar_autosync_dialog_disable_warning">Ovim će se smanjiti korištenje baterije i podataka, ali trebat ćete svaki račun sinhronizirati ručno kako biste prikupili nedavne informacije. Pored toga, nećete primati obavještenja prilikom izvršavanja ažuriranja.</string>
+    <string name="new_sketch">Nova skica</string>
+    <string name="new_note">Nova bilješka</string>
+    <string name="brightness_adapt_checkbox_information">Prilagođavanje uslovima osvjetljenja</string>
     <string name="app_label">Korisnički UI</string>
     <string name="status_bar_clear_all_button">Obrisati</string>
     <string name="status_bar_do_not_disturb_button">Ne ometaj</string>
@@ -107,6 +161,7 @@ Koristite samo isporučeni punjač."</string>
     <string name="accessibility_data_connection_3g">3G</string>
     <string name="accessibility_data_connection_3.5g">3.5G</string>
     <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_h_plus">HSPAP</string>
     <string name="accessibility_data_connection_lte">LTE</string>
     <string name="accessibility_data_connection_cdma">CDMA</string>
     <string name="accessibility_data_connection_roaming">Roming</string>
@@ -188,70 +243,20 @@ Ako ponovno omogućite podatke, operater će vam možda zaračunati troškove."<
     <string name="status_bar_help_text">"Pristupite im u svakom trenutku prevlačenjem prema dolje.
 
 Prevucite ponovo prema dolje za kontrole sistema."</string>
-    <string name="accessibility_data_connection_h_plus">HSPAP</string>
     <string name="unmount_strings_dialog_content_txt">Ne uklanjajte SD karticu dok se prekida veza s njom</string>
     <string name="accessibility_desc_tab_quick_settings_edit">Uredi brze postavke</string>
-    <string name="accessibility_state_vibrate">Vibracija</string>
-    <string name="battery_low_power_settings">Informacije o bateriji</string>
-    <string name="brightness_adapt_checkbox_information">Prilagođavanje uslovima osvjetljenja</string>
-    <string name="carrier_invalid_sim_card">Nevažeća SIM kartica</string>
-    <string name="new_note">Nova bilješka</string>
-    <string name="new_sketch">Nova skica</string>
-    <string name="power_settings_instructions">Omogućavanjem načina rada s produženim stanjem pripravnosti u Upravljanju napajanjem se optimizira trajanje baterije</string>
-    <string name="quick_Settings">Brze postavke</string>
-    <string name="quick_settings_description">Odaberite broj brzih postavki u Ploči s obavještenjima i uredite njihov redoslijed</string>
+    <string name="description_direction_left_down">Dijagonalno prevucite dolje lijevo za %s.</string>
+    <string name="description_direction_left_up">Dijagonalno prevucite gore lijevo za %s.</string>
+    <string name="description_direction_up_left">Dijagonalno prevucite gore lijevo za %s.</string>
+    <string name="description_direction_up_right">Dijagonalno prevucite gore desno za %s.</string>
+    <string name="description_target_sonyentrance">Šta je novo</string>
     <string name="start_note_app">Pokrenite aplikaciju za bilješke</string>
     <string name="start_sketch_app">Pokrenite aplikaciju za skiciranje</string>
-    <string name="status_bar_airplanemode">Avion</string>
-    <string name="status_bar_autorotate">Automatska rotacija</string>
-    <string name="status_bar_autosync">Automatsko sinhroniz.</string>
-    <string name="status_bar_autosync_dialog_disable_title">Isključiti automatsko sinhroniziranje podataka?</string>
-    <string name="status_bar_autosync_dialog_disable_warning">Ovim će se smanjiti korištenje baterije i podataka, ali trebat ćete svaki račun sinhronizirati ručno kako biste prikupili nedavne informacije. Pored toga, nećete primati obavještenja prilikom izvršavanja ažuriranja.</string>
-    <string name="status_bar_autosync_dialog_enable_title">Uključiti automatsko sinhroniziranje podataka?</string>
-    <string name="status_bar_autosync_dialog_enable_warning">"Sve promjene koje načinite na računima na webu će biti automatski kopirane na telefon.
-
-Neki računi također mogu automatski kopirati na web promjene koje izvršite na telefonu.
-
-Da biste izabrali koje vrste podataka će se sinhronizirati za svaki računa, idite na Postavke > Računi."</string>
-    <string name="status_bar_autosync_dialog_extended_enable_warning">"Sve promjene koje napravite na računima na webu će se automatski kopirati na vaš uređaj.
-
-Neki računi također mogu automatski kopirati na web sve promjene koje napravite na uređaj.
-
-Da biste odabrali koju vrstu podataka želite sinhronizirati za svaki račun, idite na Postavke > Računi.
-
-Mogu biti zaračunati troškovi prijenosa podataka prilikom ažuriranja uređaja. Preporučuje se pretplata bez ograničenja u prijenosu podataka."</string>
-    <string name="status_bar_bluetooth">Bluetooth</string>
-    <string name="status_bar_brightness">Osvjetljenje</string>
-    <string name="status_bar_gps">GPS</string>
     <string name="status_bar_mirroring">Prikaz na drugom ur.</string>
-    <string name="status_bar_mobile_data">Mobilni podaci</string>
-    <string name="status_bar_nfc">NFC</string>
-    <string name="status_bar_recent_failed_to_launch_app">Nije bilo moguće pokrenuti aplikaciju</string>
-    <string name="status_bar_roaming">Roming</string>
-    <string name="status_bar_settings">Postavke</string>
-    <string name="status_bar_settings_airplanemode">Način rada u avionu</string>
-    <string name="status_bar_settings_autorotate">Autom. rotacija ekrana</string>
-    <string name="status_bar_settings_autosync">Automat. sinhr. pod.</string>
-    <string name="status_bar_settings_bluetooth">Bluetooth</string>
-    <string name="status_bar_settings_brightness">Osvjetljenje</string>
-    <string name="status_bar_settings_gps">GPS</string>
     <string name="status_bar_settings_mirroring">Prikaz ekrana na drugom uređaju</string>
-    <string name="status_bar_settings_mobile_data">Promet Mob. pod.</string>
-    <string name="status_bar_settings_nfc">NFC</string>
-    <string name="status_bar_settings_roaming">Roming</string>
-    <string name="status_bar_settings_settings">Prečica do Postavki</string>
-    <string name="status_bar_settings_sound">Zvuk</string>
-    <string name="status_bar_settings_wifi">Wi-Fi</string>
-    <string name="status_bar_settings_wifi_hotspot">Wi-Fi pristupna tačka</string>
-    <string name="status_bar_sound">Zvuk</string>
     <string name="status_bar_tab_notifications_title">Obavještenja</string>
     <string name="status_bar_tab_quick_settings_edit">Uredi</string>
     <string name="status_bar_tab_quick_settings_title">Brze postavke</string>
-    <string name="status_bar_toolsbar_settings_title">Odaberi brze postavke</string>
-    <string name="status_bar_wifi">Wi-Fi</string>
-    <string name="status_bar_wifi_hotspot">Pristupna tačka</string>
     <string name="to_charge_use_charger_txt">Da biste napunili bateriju uređaja, koristite Sony™ punjač</string>
-    <string name="toast_message_maximum_number_of_tools_reached">Odabran je maksimalni broj brzih postavki</string>
-    <string name="toast_message_not_allow_turn_on_hotspot">Wi-Fi pristupna tačka nije dostupna u načinu rada u avionu</string>
     <string name="usb_connected_txt">USB povezan</string>
 </resources>
